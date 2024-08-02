@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ordinary Differential Equations | Deniz Bilman</title>
+    <link>https://bilman.github.io/teaching/ode/</link>
+      <atom:link href="https://bilman.github.io/teaching/ode/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ordinary Differential Equations</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://bilman.github.io/teaching/ode/featured.png</url>
+      <title>Ordinary Differential Equations</title>
+      <link>https://bilman.github.io/teaching/ode/</link>
+    </image>
+    
+    <item>
+      <title>Introduction</title>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-1/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-1/</guid>
+      <description>&lt;h2 id=&#34;what-are-differential-equations-anyway&#34;&gt;What Are Differential Equations Anyway?&lt;/h2&gt;
+&lt;p&gt;This lecture introduces the subject with Newton&amp;rsquo;s Law of Cooling
+&lt;/p&gt;
+$$
+\frac{\mathrm{d} u}{\mathrm{~d} t}=-K\left(u(t)-T_{0}\right),
+$$
+&lt;p&gt;
+where $u=u(t)$ denotes the temperature of an object at time $t$ in an environment with constant ambient temperature $T_0$. Many notions that will appear in the course are introduced. Examples are integral curves, initial-value problems, equilibrium states, and phase line analysis.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/rxgv13wyvc5eua3/uc-2074-Lec-1-1.pdf?dl=0&#34;&gt;The notes for this lecture are available here.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;supplementary-jupyter-notebook&#34;&gt;Supplementary Jupyter Notebook&lt;/h2&gt;
+&lt;iframe
+      src=&#34;http://nbviewer.jupyter.org/url/github.com/bilman/Math216ODE/blob/master/216Lecture1_v2.ipynb?flush_cache=true&#34;
+      width=&#34;100%&#34;
+      height=&#34;1000px&#34;
+      style=&#34;border:none;&#34;&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Initial-Value Problem and the Definite Integral</title>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-2/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-2/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Notion of an initial-value problem is introduced. Integral representation of solutions of an initial-value problem for differential equations of the form
+&lt;/p&gt;
+$$
+\frac{\mathrm{d} u}{\mathrm{d}t} = f(t)
+$$
+&lt;p&gt;
+is explained.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/wbkkuzmok5h73yo/uc-2074-Lec-1-2.pdf?dl=0&#34;&gt;The notes for this lecture are available here.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Separable Equations</title>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-3/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-3/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;We cover solving separable differential equations which are of the form
+&lt;/p&gt;
+$$
+\frac{\mathrm{d} x}{\mathrm{~d} t}=h(t) g(x).
+$$
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/milfwbijjhu7vub/uc-2074-Lec-1-3.pdf?dl=0&#34;&gt;The notes for this lecture are available here.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;supplementary-jupyter-notebook&#34;&gt;Supplementary Jupyter Notebook&lt;/h2&gt;
+&lt;iframe
+      src=&#34;http://nbviewer.jupyter.org/url/github.com/bilman/Math216ODE/blob/master/216Lecture2.ipynb?flush_cache=true&#34;
+      width=&#34;100%&#34;
+      height=&#34;1000px&#34;
+      style=&#34;border:none;&#34;&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>First-Order Linear ODEs</title>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-4/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-4/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;This lecture evolves around the fact that if a solution for the first-order linear ODE
+&lt;/p&gt;
+$$
+\frac{\mathrm{d} x}{\mathrm{d} t}+p(t) x=f(t)
+$$
+&lt;p&gt;
+exists, we can always find it. General solution, particular solutions, and using integrating factors are covered.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/yrui1vsksbnw0c9/uc-2074-Lec-1-6.pdf?dl=0&#34;&gt;The notes for this lecture are available here.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;supplementary-jupyter-notebook&#34;&gt;Supplementary Jupyter Notebook&lt;/h2&gt;
+&lt;iframe
+      src=&#34;http://nbviewer.jupyter.org/url/github.com/bilman/Math216ODE/blob/master/216Lecture3.ipynb?flush_cache=true&#34;
+      width=&#34;100%&#34;
+      height=&#34;1000px&#34;
+      style=&#34;border:none;&#34;&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>First-Order Linear ODEs with Constant Coefficients</title>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-5/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-5/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;We study how to solve differential equations of the form
+&lt;/p&gt;
+$$
+\frac{\mathrm{d} x}{\mathrm{~d} t}+k x=f(t).
+$$
+&lt;p&gt;
+A special case of the Method of Undetermined Coefficients is also introduced.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/i4us99f6brvw0m5/uc-2074-Lec-1-7.pdf?dl=0&#34;&gt;The notes for this lecture are available here.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Growth and Decay Problems</title>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-6/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-6/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;We cover differential equations that model certain types of growth and decay. Examples include population growth equation, logistic equation, etc.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/whmpqcuk8gjwem1/uc-2074-Lec-1-8.pdf?dl=0&#34;&gt;The notes for this lecture are available here.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;supplementary-jupyter-notebook&#34;&gt;Supplementary Jupyter Notebook&lt;/h2&gt;
+&lt;iframe
+      src=&#34;http://nbviewer.jupyter.org/url/github.com/bilman/Math216ODE/blob/master/216Lecture6.ipynb?flush_cache=true&#34;
+      width=&#34;100%&#34;
+      height=&#34;1000px&#34;
+      style=&#34;border:none;&#34;&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Second-Order Linear Differential Equations</title>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-7/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-7/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;We cover finding general solution of second-order linear differential equations which are of the form
+&lt;/p&gt;
+$$
+\frac{\mathrm{d}^{2} x}{\mathrm{~d} t^{2}}+p(t) \frac{\mathrm{d} x}{\mathrm{~d} t}+q(t) x=f(t).
+$$
+&lt;p&gt;
+The notion of linear independence is also introduced.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/2cxzsj33l4o67mx/uc-2074-Lec-2-1.pdf?dl=0&#34;&gt;The notes for this lecture are available here.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Initial-Value Problems for Homogeneous Equations</title>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-8/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-8/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;We continue our study of second-order linear differential equations
+&lt;/p&gt;
+$$
+\frac{\mathrm{d}^{2} x}{\mathrm{~d} t^{2}}+p(t) \frac{\mathrm{d} x}{\mathrm{~d} t}+q(t) x=f(t).
+$$
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/awp8vzlzcgruor9/uc-2074-Lec-2-2.pdf?dl=0&#34;&gt;The notes for this lecture are available here.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reduction of Order</title>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-9/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-9/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Suppose we are lucky enough to know a solution $x_{1}(t)$ of the second-order linear homogeneous ODE
+&lt;/p&gt;
+$$
+x^{\prime \prime}+p(t) x^{\prime}+q(t) x=0 .
+$$
+&lt;p&gt;
+Then we can find another solution of this ODE by solving a first-order differential equation.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/al3d3mqsinsq7n6/uc-2074-Lec-2-3.pdf?dl=0&#34;&gt;The notes for this lecture are available here.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Second-Order Homogeneous Linear Constant-Coefficient ODEs</title>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-10/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-10/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;We consider the general linear, second-order homogeneous and constant-coefficient differential equation
+&lt;/p&gt;
+$$
+a x^{\prime \prime}+b x^{\prime}+c x=0,
+$$
+&lt;p&gt;
+where the coefficients $a, b$, and $c$ are real constants and $a \neq 0$.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/lgcs23xjtpjwt7j/uc-2074-Lec-2-4.pdf?dl=0&#34;&gt;The notes for this lecture are available here.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mechanical Vibrations I: Free Response</title>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-11/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-11/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;This lecture starts the treatment of a horizontal mass-spring system with mass $m&gt;0$ and spring constant $k&gt;0$:
+&lt;/p&gt;
+$$
+m \frac{\mathrm{d}^{2} x}{\mathrm{~d} t^{2}}+\delta \frac{\mathrm{d} x}{\mathrm{~d} t}+k x=f(t),
+$$
+&lt;p&gt;
+where the damping parameter $\delta\geq 0$ may or may not be zero. We start with the free response: $f(t)\equiv 0$.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/6ddr43jtmrom44n/uc-2074-Lec-2-5.pdf?dl=0&#34;&gt;The notes for this lecture are available here.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Method of Undetermined Coefficients</title>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-12/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-12/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;The Method of Undetermined Coefficients provides a way to obtain a particular solution of a linear second-order constant-coefficient non-homogeneous ODE
+&lt;/p&gt;
+$$
+a x^{\prime \prime}(t)+b x^{\prime}(t)+c x(t)=f(t)
+$$
+&lt;p&gt;
+in case the forcing $f(t)$ is comes from a number of special types of functions &amp;mdash; one reduces the problem to a system of linear algebraic equations.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/ixi5kstdg2rjkhq/uc-2074-Lec-2-6.pdf?dl=0&#34;&gt;The notes for this lecture are available here.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;supplementary-jupyter-notebooks&#34;&gt;Supplementary Jupyter Notebooks&lt;/h2&gt;
+&lt;iframe
+      src=&#34;http://nbviewer.jupyter.org/url/github.com/bilman/Math216ODE/blob/master/216Lecture19.ipynb?flush_cache=true&#34;
+      width=&#34;100%&#34;
+      height=&#34;1000px&#34;
+      style=&#34;border:none;&#34;&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mechanical Vibrations II: Forced Response</title>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-13/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-13/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;We continue with the solution of ODEs that govern a spring-mass system:
+&lt;/p&gt;
+$$
+m x^{\prime \prime}(t)+\delta x^{\prime}(t)+k x(t)=f(t),
+$$
+&lt;p&gt;
+where $\delta \geqslant 0$ is the damping constant, $m&gt;0$ is the mass of the object, and $k&gt;0$ is the spring constant. $f(t)$ is forcing (or input).&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/pzb6dqar1ecl6z3/uc-2074-Lec-2-7.pdf?dl=0&#34;&gt;The notes for this lecture are available here.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;supplementary-jupyter-notebooks&#34;&gt;Supplementary Jupyter Notebooks&lt;/h2&gt;
+&lt;iframe
+      src=&#34;http://nbviewer.jupyter.org/url/github.com/bilman/Math216ODE/blob/master/216Lecture20.ipynb?flush_cache=true&#34;
+      width=&#34;100%&#34;
+      height=&#34;1000px&#34;
+      style=&#34;border:none;&#34;&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Variation of Parameters</title>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-14/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-14/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Our quest on finding a particular solution of
+&lt;/p&gt;
+$$
+x^{\prime \prime}(t)+p(t) x^{\prime}(t)+q(t) x(t)=f(t)
+$$
+&lt;p&gt;
+continues. Earlier, we used the Method of Undetermined Coefficients to do that. That method had two restrictions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the coefficients $p(t)$ and $q(t)$ had to be constants (the ODE is constant-coefficient),&lt;/li&gt;
+&lt;li&gt;the forcing $f(t)$ had to be from special families of functions such as exponentials, trigonometric, polynomials.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With the Variation of Parameters, we will lift these restrictions.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/r1dqczzp984ycke/uc-2074-Lec-2-10.pdf?dl=0&#34;&gt;The notes for this lecture are available here.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Laplace Transform</title>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-15/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-15/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;We introduce the Laplace transform
+&lt;/p&gt;
+$$
+F(s)=\mathcal{L}[f(t)]=\int_{0}^{\infty} \mathrm{e}^{-s t} f(t) \mathrm{d} t
+$$
+&lt;p&gt;
+of a function $f(t)$ defined for $t\geq 0$. We cover the existence theory and properties of this transform.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/vk7ob3k6g0lx5px/uc-2074-Lec-3-1.pdf?dl=0&#34;&gt;The notes for this lecture are available here.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Inverse Laplace Transform</title>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-16/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-16/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;We cover the inverse of the Laplace transform.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/wv588j4bg49m6ni/uc-2074-Lec-3-2.pdf?dl=0&#34;&gt;The notes for this lecture are available here.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Solving an Initial-Value Problem Using Laplace Transform</title>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-17/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-17/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;We now use Laplace transforms to solve initial-value problems. To do this, we cover how differentiation corresponds to multiplication under the Laplace transform.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/gv9gwxxtag1r2nw/uc-2074-Lec-3-3.pdf?dl=0&#34;&gt;The notes for this lecture are available here.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Convolution Theorem</title>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-18/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-18/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;For given $F(s)$ and $G(s)$, we cover how to compute the inverse Laplace transform
+$
+\mathcal{L}^{-1}[F(s) G(s)].
+$&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/793x2w06d6n6688/uc-2074-Lec-3-6.pdf?dl=0&#34;&gt;The notes for this lecture are available here.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Systems of Linear Differential Equations</title>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-19/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-19/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;We cover systems of linear differential equations, introduce the matrix formulation, and cover the relevant matrix theory.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/2j82b6m2fvfke1f/uc-2074-Lec-4-2.pdf?dl=0&#34;&gt;The notes for this lecture are available here.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;supplementary-jupyter-notebook&#34;&gt;Supplementary Jupyter Notebook&lt;/h2&gt;
+&lt;p&gt;There are multiple Jupyter notebooks embedded below.&lt;/p&gt;
+&lt;h3 id=&#34;matrix-theory&#34;&gt;Matrix Theory&lt;/h3&gt;
+&lt;iframe
+      src=&#34;http://nbviewer.jupyter.org/url/github.com/bilman/Math216ODE/blob/master/216Lecture7-8.ipynb?flush_cache=true&#34;
+      width=&#34;100%&#34;
+      height=&#34;1000px&#34;
+      style=&#34;border:none;&#34;&gt;
+&lt;/iframe&gt;
+&lt;h3 id=&#34;systems-of-odes&#34;&gt;Systems of ODEs&lt;/h3&gt;
+&lt;iframe
+      src=&#34;http://nbviewer.jupyter.org/url/github.com/bilman/Math216ODE/blob/master/216Lecture9.ipynb?flush_cache=true&#34;
+      width=&#34;100%&#34;
+      height=&#34;1000px&#34;
+      style=&#34;border:none;&#34;&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Phase Plane Analysis</title>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-20/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-20/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;We continue analyzing solution trajectories for linear systems of first order homogeneous differential equations with constant coefficients:
+&lt;/p&gt;
+$$
+\begin{aligned}
+&amp;\frac{\mathrm{d} x}{\mathrm{~d} t}=a x+b y \\\
+&amp;\frac{\mathrm{d} y}{\mathrm{~d} t}=c x+d y
+\end{aligned}
+$$
+&lt;p&gt;We cover&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Phase portraits,&lt;/li&gt;
+&lt;li&gt;Equilibrium points and their classification,&lt;/li&gt;
+&lt;li&gt;Direction fields.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/svq5flcdf82qz9o/uc-2074-Lec-4-3-revised.pdf?dl=0&#34;&gt;The notes for this lecture are available here.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;supplementary-jupyter-notebook&#34;&gt;Supplementary Jupyter Notebook&lt;/h2&gt;
+&lt;p&gt;There are multiple Jupyter notebooks embedded below.&lt;/p&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;iframe
+      src=&#34;http://nbviewer.jupyter.org/url/github.com/bilman/Math216ODE/blob/master/216Lecture10.ipynb?flush_cache=true&#34;
+      width=&#34;100%&#34;
+      height=&#34;1000px&#34;
+      style=&#34;border:none;&#34;&gt;
+&lt;/iframe&gt;
+&lt;h3 id=&#34;systems-with-two-real-distinct-eigenvalues&#34;&gt;Systems with two real distinct eigenvalues&lt;/h3&gt;
+&lt;iframe
+      src=&#34;http://nbviewer.jupyter.org/url/github.com/bilman/Math216ODE/blob/master/216Lecture11.ipynb?flush_cache=true&#34;
+      width=&#34;100%&#34;
+      height=&#34;1000px&#34;
+      style=&#34;border:none;&#34;&gt;
+&lt;/iframe&gt;
+&lt;h3 id=&#34;systems-with-a-pair-of-complex-conjugate-eigenvalues&#34;&gt;Systems with a pair of complex-conjugate eigenvalues&lt;/h3&gt;
+&lt;iframe
+      src=&#34;http://nbviewer.jupyter.org/url/github.com/bilman/Math216ODE/blob/master/216Lecture12.ipynb?flush_cache=true&#34;
+      width=&#34;100%&#34;
+      height=&#34;1000px&#34;
+      style=&#34;border:none;&#34;&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Qualitative Analysis of First-Order ODEs</title>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-21/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-21/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;We end the semester with qualitative analysis of first order ODEs that are autonomous:
+&lt;/p&gt;
+$$\frac{\mathrm{d} x}{\mathrm{~d} t}=f(x).$$
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/tl1pt2n4083su7r/uc-2074-Lec-5-1-2-3-revised.pdf?dl=0&#34;&gt;The notes for this lecture are available here.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Existence &amp; Uniqueness</title>
+      <link>https://bilman.github.io/teaching/ode/appendix-1/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/ode/appendix-1/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;In this appendix we cover existence and uniqueness theory for initial-value problems of the form
+&lt;/p&gt;
+$$
+\left\{
+\begin{aligned}
+\frac{\mathrm{d} y}{\mathrm{d} t}&amp;=f(y,t)\quad t&gt;0 \\\ y(t_0)&amp;=y_0
+\end{aligned}
+\right.
+$$
+&lt;h2 id=&#34;jupyter-notebook&#34;&gt;Jupyter Notebook&lt;/h2&gt;
+&lt;iframe
+      src=&#34;http://nbviewer.jupyter.org/url/github.com/bilman/Math216ODE/blob/master/216Lecture5.ipynb?flush_cache=true&#34;
+      width=&#34;100%&#34;
+      height=&#34;1000px&#34;
+      style=&#34;border:none;&#34;&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Some Modeling</title>
+      <link>https://bilman.github.io/teaching/ode/appendix-2/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/ode/appendix-2/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;In this appendix we cover modeling certain physical/chemical phenomena by first-order linear ordinary differential equations.&lt;/p&gt;
+&lt;h2 id=&#34;jupyter-notebook&#34;&gt;Jupyter Notebook&lt;/h2&gt;
+&lt;iframe
+      src=&#34;http://nbviewer.jupyter.org/url/github.com/bilman/Math216ODE/blob/master/216Lecture4.ipynb?flush_cache=true&#34;
+      width=&#34;100%&#34;
+      height=&#34;1000px&#34;
+      style=&#34;border:none;&#34;&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

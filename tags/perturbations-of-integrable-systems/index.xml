@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Perturbations of Integrable Systems | Deniz Bilman</title>
+    <link>https://bilman.github.io/tags/perturbations-of-integrable-systems/</link>
+      <atom:link href="https://bilman.github.io/tags/perturbations-of-integrable-systems/index.xml" rel="self" type="application/rss+xml" />
+    <description>Perturbations of Integrable Systems</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Sep 2016 14:31:34 -0400</lastBuildDate>
+    <image>
+      <url>https://bilman.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <title>Perturbations of Integrable Systems</title>
+      <link>https://bilman.github.io/tags/perturbations-of-integrable-systems/</link>
+    </image>
+    
+    <item>
+      <title>On the evolution of scattering data under perturbations of the Toda lattice</title>
+      <link>https://bilman.github.io/publication/toda-perturbations/</link>
+      <pubDate>Thu, 01 Sep 2016 14:31:34 -0400</pubDate>
+      <guid>https://bilman.github.io/publication/toda-perturbations/</guid>
+      <description>&lt;!-- Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). --&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

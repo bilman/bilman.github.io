@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Runge-Kutta Methods | Deniz Bilman</title>
+    <link>https://bilman.github.io/tags/runge-kutta-methods/</link>
+      <atom:link href="https://bilman.github.io/tags/runge-kutta-methods/index.xml" rel="self" type="application/rss+xml" />
+    <description>Runge-Kutta Methods</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 27 Jul 2018 14:31:04 -0400</lastBuildDate>
+    <image>
+      <url>https://bilman.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <title>Runge-Kutta Methods</title>
+      <link>https://bilman.github.io/tags/runge-kutta-methods/</link>
+    </image>
+    
+    <item>
+      <title>Benchmarking numerical methods for lattice equations with the Toda lattice</title>
+      <link>https://bilman.github.io/publication/toda-benchmark/</link>
+      <pubDate>Fri, 27 Jul 2018 14:31:04 -0400</pubDate>
+      <guid>https://bilman.github.io/publication/toda-benchmark/</guid>
+      <description>&lt;!-- Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

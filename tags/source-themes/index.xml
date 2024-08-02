@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Source Themes | Deniz Bilman</title>
+    <link>https://bilman.github.io/tags/source-themes/</link>
+      <atom:link href="https://bilman.github.io/tags/source-themes/index.xml" rel="self" type="application/rss+xml" />
+    <description>Source Themes</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 16 Jan 2017 14:29:44 -0400</lastBuildDate>
+    <image>
+      <url>https://bilman.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <title>Source Themes</title>
+      <link>https://bilman.github.io/tags/source-themes/</link>
+    </image>
+    
+    <item>
+      <title>Numerical inverse scattering for the Toda lattice</title>
+      <link>https://bilman.github.io/publication/toda-nist/</link>
+      <pubDate>Mon, 16 Jan 2017 14:29:44 -0400</pubDate>
+      <guid>https://bilman.github.io/publication/toda-nist/</guid>
+      <description>&lt;p&gt;Time evolution of purely dispersive initial data is computed at $t=10000$ without time-stepping, at least by setting $t=10000$ in the Riemann-Hilbert problem and solving different Riemann-Hilbert problems as $n$ varies. Below are plots of $a_n$ (the off-diagonal of the bi-infinite Jacobi matrix) and $b_n$ (the diagonal of the bi-infinite Jacobi matrix).&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/publication/toda-nist/TodaSolution-NoS-a-10000.png&#34;
+    alt=&#34;$a_n(t=10000)$, $-7500\leq n\leq 7500$. There are no solitons.&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;$a_n(t=10000)$, $-7500\leq n\leq 7500$. There are no solitons.&lt;/p&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/publication/toda-nist/TodaSolution-NoS-b-10000.png&#34;
+    alt=&#34;$b_n(t=10000)$, $-7500\leq n\leq 7500$. There are no solitons.&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;$b_n(t=10000)$, $-7500\leq n\leq 7500$. There are no solitons.&lt;/p&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Below is the space-evolution of (truncated) contour for the Riemann-Hilbert problem that&amp;rsquo;s solved to compute the time evolution of initial data that generates a soliton to $t=1000$. Here $n$ varies from $n=-1250$ to $n=0$.&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/publication/toda-nist/Toda-1000.gif&#34;
+    alt=&#34;Time evolution of pure step (discontinuous) initial data&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;Time evolution of pure step (discontinuous) initial data&lt;/p&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>On the evolution of scattering data under perturbations of the Toda lattice</title>
+      <link>https://bilman.github.io/publication/toda-perturbations/</link>
+      <pubDate>Thu, 01 Sep 2016 14:31:34 -0400</pubDate>
+      <guid>https://bilman.github.io/publication/toda-perturbations/</guid>
+      <description>&lt;!-- Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). --&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

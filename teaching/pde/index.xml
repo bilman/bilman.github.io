@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Partial Differential Equations | Deniz Bilman</title>
+    <link>https://bilman.github.io/teaching/pde/</link>
+      <atom:link href="https://bilman.github.io/teaching/pde/index.xml" rel="self" type="application/rss+xml" />
+    <description>Partial Differential Equations</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://bilman.github.io/teaching/pde/featured.jpg</url>
+      <title>Partial Differential Equations</title>
+      <link>https://bilman.github.io/teaching/pde/</link>
+    </image>
+    
+    <item>
+      <title>Introduction</title>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-1/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-1/</guid>
+      <description>&lt;p&gt;Let $u$ be a function of several variables $u(x_1,x_2,\ldots,x_n)$. We say $u$ is &lt;strong&gt;smooth&lt;/strong&gt; provided $u$ is infinitely differentiable with respect to all of the variables. We denote partial derivative of $u$ with respect to $x_k$ by
+&lt;/p&gt;
+$$
+u_{x_k} := \frac{\partial u}{\partial x_k}
+$$
+&lt;p&gt;
+We sometimes also write $\partial_{x_k}$ to denote the differential operator $\frac{\partial}{\partial x_k}$. With this notation, we may express mixed partial derivatives as
+&lt;/p&gt;
+$$
+u_{x_j x_k} = \frac{\partial^2 u}{\partial x_k \partial x_j} = \partial_{x_k} \partial_{x_j} u.
+$$
+&lt;p&gt;
+We will for the most part be working with functions that have continuous partial derivatives and hence (by Clairaut-Schwarz&amp;rsquo;s Theorem) assume that the partial derivatives commute:
+&lt;/p&gt;
+$$
+u_{x_j x_k}=u_{x_k x_j}.
+$$
+&lt;p&gt;
+This assumption also provides us with a well-defined notation to express high-order derivatives. The &lt;em&gt;multi-index notation&lt;/em&gt; due to L. Schwartz.&lt;/p&gt;
+&lt;h3 id=&#34;multi-index-notation&#34;&gt;Multi-index Notation&lt;/h3&gt;
+&lt;p&gt;A &lt;strong&gt;multi-index&lt;/strong&gt; is a vector $\alpha=(\alpha_1,\ldots, \alpha_n)$ where each component $\alpha_j$ is a nonnegative integer. The &lt;strong&gt;order of a multi-index&lt;/strong&gt; $\alpha$ is denoted by $|\alpha|$ and is defined by:
+&lt;/p&gt;
+$$
+|\alpha|:= \alpha_1 + \cdots + \alpha_n.
+$$
+&lt;p&gt;Given a multi-index $\alpha$, we define
+&lt;/p&gt;
+$$
+D^{\alpha} u:=\frac{\partial^{|\alpha|} u}{\partial x_{1}^{\alpha_{1}} \cdots \partial x_{n}^{\alpha_{n}}}=\partial_{x_{1}}^{\alpha_{1}} \cdots \partial_{x_{n}}^{\alpha_{n}} u
+$$
+&lt;h4 id=&#34;example&#34;&gt;Example&lt;/h4&gt;
+&lt;p&gt;Let $u$ be a function of 3 variables $(x,y,z)$ and $\alpha=(1,3,2)$. Then
+&lt;/p&gt;
+$$
+D^{\alpha} u= \partial_{x}\partial_{y}^3\partial_{z}^2 u = u_{xyyyzz}
+$$
+&lt;p&gt;
+where both of the equalities uses the commutativity of the partial derivatives.&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example&lt;/h4&gt;
+&lt;p&gt;If $u=u\left(x_{1}, \ldots, x_{n}\right)$, then $D^1u=\left\{u_{x_{i}}\colon i=1, \ldots, n \right\}$.&lt;/p&gt;
+&lt;p&gt;In practice, for $k$ non-negative integer, $D^k u$ denotes the set of all partial derivatives of $u$ of order $k$. Assigning a certain ordering we can regard $D^k u(x)$ for $x\in\mathbb{R}^n$ as a point in $\mathbb{R}^{n^k}$.&lt;/p&gt;
+&lt;h4 id=&#34;special-cases&#34;&gt;Special Cases&lt;/h4&gt;
+&lt;p&gt;Let $x=(x_1,\ldots,x_n)\in\mathbb{R}^n$.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$k=1$: In this case we have:
+&lt;/p&gt;
+$$
+D^1 u(x)=D u(x) =:(u_{x_1}(x),u_{x_2}(x),\ldots,u_{x_n}(x)),
+$$
+&lt;p&gt;
+which is the gradient vector $\nabla u(x)$, hence $Du(x)\in\mathbb{R}^n$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$k=2$: In this case we regard the elements of $D^2u(x)$ as they are arranged in an $n\times n$ matrix:
+&lt;/p&gt;
+$$
+D^2u(x):=
+\begin{bmatrix}
+u_{x_1 x_1}(x) &amp; &amp;\cdots&amp; &amp; u_{x_1 x_n}(x) \\\ u_{x_2 x_1}(x) &amp; &amp;\cdots&amp; &amp; u_{x_2 x_n}(x)\\\ &amp; &amp;\cdots&amp; &amp; \\\ \vdots &amp; &amp;\cdots&amp; &amp; \vdots \\\ &amp; &amp;\cdots&amp; &amp; \\\ u_{x_n x_1}(x) &amp; &amp;\cdots&amp; &amp; u_{x_n x_n}(x)
+\end{bmatrix}
+$$
+&lt;p&gt;
+which is the Hessian matrix of $u$ at $x$, and hence $D^2u(x)\in S(n)$, the space of real symmetric $n\times n$ matrices. Note that in this case $\mathrm{tr}(D^2u(x))$ gives the Laplacian of $u$ at $x$ (in rectangular coordinates).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;partial-differential-equations&#34;&gt;Partial Differential Equations&lt;/h3&gt;
+&lt;p&gt;A &lt;strong&gt;partial differential equation&lt;/strong&gt; (PDE) is an equation involving a(n unknown) function $u$ of several variables and its partial derivatives. The &lt;strong&gt;order&lt;/strong&gt; of a PDE is the order of the highest-order derivative in the PDE.&lt;/p&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Transport equation: $u_t + b\cdot Du = 0$, $b\in\mathbb{R}^n$; first order.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Laplace&amp;rsquo;s equation: $u_{xx}+ u_{yy} =0$; second order.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Poisson&amp;rsquo;s equation: $u_{xx}+ u_{yy} =f(x,y)$; second order.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Heat equation: $u_t - u_{xx} =0$; second order.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wave equation: $u_{tt} - u_{xx} =0$; second order.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Airy&amp;rsquo;s equation: $u_t + u_{xxx} = 0$; third order.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Korteweg-de Vries equation: $u_t + u u_x + u_{xxx} = 0$; third order.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Eikonal equation: $u_x^2 +u_y^2 = c^2$; first order.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We express a general $k^{\text{th}}$ order PDE in the form
+&lt;/p&gt;
+$$
+F(x, u, Du, D^2 u, \ldots, D^k u)=0
+$$
+&lt;p&gt;
+for some function $F$.&lt;/p&gt;
+&lt;h3 id=&#34;classification&#34;&gt;Classification&lt;/h3&gt;
+&lt;p&gt;A PDE of order $k$ is &lt;strong&gt;linear&lt;/strong&gt; if it is of the form
+&lt;/p&gt;
+$$
+\sum_{|\alpha|\leq k} a_{\alpha}(x)D^{\alpha} u = 0.
+$$
+&lt;p&gt;
+If $u_1$ and $u_2$ are two solutions of a linear PDE, then so is any linear combination $c_1 u + c_2 u_2$, $c_1$ and $c_2$ are constants.&lt;/p&gt;
+&lt;p&gt;We say a PDE is &lt;strong&gt;nonlinear&lt;/strong&gt; if it is not linear.&lt;/p&gt;
+&lt;p&gt;A nonlinear PDE of order $k$ is &lt;strong&gt;semilinear&lt;/strong&gt; if it is linear in the highest-order derivatives. In other words, if it is of the form:
+&lt;/p&gt;
+$$
+\left(\sum_{|\alpha|=k} a_{\alpha}(x) D^{\alpha} u \right) + a_0 \left(D^{k-1}u, D^{k-2}u,\ldots, Du, u, x \right)=0.
+$$
+&lt;p&gt;
+As you can see, the coefficients of the terms with the highest-order derivatives are allowed to depend only on $x$.&lt;/p&gt;
+&lt;p&gt;A PDE of order $k$ is &lt;strong&gt;quasilinear&lt;/strong&gt; if it is of the form&lt;/p&gt;
+$$
+\left(\sum_{|\alpha|=k} a_{\alpha}(D^{k-1}u,D^{k-2}u,\ldots, Du,u,x)D^{\alpha} u \right) + a_0 \left(D^{k-1}u, D^{k-2}u,\ldots, Du, u, x \right)=0
+$$
+&lt;p&gt;
+but it is not semilinear. This means that in a quasilinear PDE, the highest-order derivatives $D^\alpha$, $|\alpha|=k$ are allowed to be multiplied by terms involving derivatives of lower orders.&lt;/p&gt;
+&lt;p&gt;A PDE order $k$ is &lt;strong&gt;fully nonlinear&lt;/strong&gt; if it is nonlinear but not quasilinear or semilinear. In this case the highest order derivatives of $u$ themselves appear nonlinearly in the PDE.&lt;/p&gt;
+&lt;h4 id=&#34;examples-1&#34;&gt;Examples&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Airy&amp;rsquo;s equation: $u_t + u_{xxx} = 0$; linear.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Korteweg-de Vries equation: $u_t + u u_x + u_{xxx} = 0$; semilinear.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Inviscid Burger&amp;rsquo;s equation: $u_t + uu_x=0$; quasilinear.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Eikonal equation: $u_x^2 +u_y^2 = c^2$; fully nonlinear.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;main-goals-and-motivations-in-studying-pdes&#34;&gt;Main Goals and Motivations in Studying PDEs&lt;/h2&gt;
+&lt;p&gt;Just like ordinary differential equations, a partial differential equation may have no solution, or infinitely many solutions.&lt;/p&gt;
+&lt;h4 id=&#34;example-2&#34;&gt;Example&lt;/h4&gt;
+&lt;p&gt;Consider $u_t - u_x =0$. $u(x,t):=0$ is a solution. So is $u(x,t):=C$ for any constant $C\in \mathbb{R}$. So is $u(x,t):= x+t$, and actually, so is $u(x,t):= C_1(x+t)+C_2$ for any constants $C_1,C_2\in\mathbb{R}$.&lt;/p&gt;
+&lt;p&gt;We impose auxiliary conditions, e.g. initial conditions and boundary conditions, and pose a problem to pick a particular solution. For example,
+&lt;/p&gt;
+$$
+\left\\{
+  \begin{alignedat}{2}
+    u_t - u_x &amp;= 0 \quad&amp;&amp; x\in\mathbb{R},~t&gt;0\\\ u&amp;=g \quad&amp;&amp; x\in\mathbb{R}
+  \end{alignedat}
+\right.
+$$
+&lt;p&gt;
+where $g\colon \mathbb{R}\to \mathbb{R}$ is a given function. This is an initial-value problem.&lt;/p&gt;
+&lt;h3 id=&#34;well-posedness&#34;&gt;Well-Posedness&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Bad news:&lt;/strong&gt; Most PDEs cannot be solved in explicit form. Thus, most of the efforts are geared towards understanding existence, properties, and behavior of solutions.&lt;/p&gt;
+&lt;p&gt;Given a PDE problem such as the initial value-problem above, we focus on three main issues:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Existence:&lt;/strong&gt; the problem in fact has a solution.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Uniqueness:&lt;/strong&gt; this solution is unique.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Continuous dependence on given data:&lt;/strong&gt; the solution depends continuously on the data given under some appropriate norm.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If a PDE problem has all of the properties 1, 2, and 3 above, we say that the problem is &lt;strong&gt;well-posed&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;notion-of-a-solution&#34;&gt;Notion of a Solution&lt;/h3&gt;
+&lt;p&gt;What do we mean by solution of a PDE in general? Ideally, a solution to a $k^{\text{th}}$-order PDE is required to have continuous partial derivatives of all orders up to and including order $k$. Such a solution is called a &lt;strong&gt;classical&lt;/strong&gt; solution. But it is often the case that one is interested in functions that satisfy a weaker formulation of the PDE, that is, solutions that are not required to be differentiable. Such solutions, loosely speaking, are called &lt;strong&gt;weak solutions&lt;/strong&gt;, &lt;strong&gt;distributional solutions&lt;/strong&gt;, or &lt;strong&gt;integral solutions&lt;/strong&gt;, depending on the context of the treatment. We will give a brief introduction to such solutions and work with them when we cover shock theory for scalar conservation laws.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/9qlte3uqbnovcuz/MATH7006-Lec-1-Introduction.pdf?dl=0&#34;&gt;The notes for this lecture are available here (12 pages).&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/0h3eal4dvjvcv8r/Math-7006-Sp21-HW1.pdf?dl=0&#34;&gt;Homework 1 is posted.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Transport Equation</title>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-2/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-2/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;This lecture introduces the transport equation
+&lt;/p&gt;
+$$
+u_t + b\cdot Du = 0,\quad \text{in}~ \mathbb{R}^n\times\mathbb{R}
+$$
+&lt;p&gt;
+and gives a procedure based on (a very basic) implementation of the &lt;em&gt;method of characteristics&lt;/em&gt; for the solution of the initial-value problem
+&lt;/p&gt;
+$$
+\left\{
+\begin{alignedat}{2}
+u_t + b\cdot Du &amp;= 0\quad &amp;&amp;\text{in}~ \mathbb{R}^n\times\mathbb{R}\\\ u&amp;=g\quad &amp;&amp;\text{on}~ \mathbb{R}^n
+\end{alignedat}
+\right.
+$$
+&lt;p&gt;
+for an unknown function $u=u(x,t)$, $u \colon \mathbb{R}^n\times\mathbb{R} \to \mathbb{R}$ and a given function $g\colon \mathbb{R}^n\to \mathbb{R}$ with sufficient regularity.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/fd085ptb5za6bfz/MATH7006-Lec-2-Transport-Equation.pdf?dl=0&#34;&gt;The notes for this lecture are available here (14 pages).&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/5r1rknxzimqun51/Math-7006-Sp21-HW2.pdf?dl=0&#34;&gt;Homework 2 is posted.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Laplace&#39;s Equation</title>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-3/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-3/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;This lecture introduces Laplace&amp;rsquo;s equation
+&lt;/p&gt;
+$$
+\Delta u = 0 \quad \text{in}~ \mathbb{R}^n
+$$
+&lt;p&gt;
+and gives a construction of its fundamental solution.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/tc8it8lhfjup5ca/MATH7006-Lec-3-Laplaces-Equation.pdf?dl=0&#34;&gt;The notes for this lecture are available here (15 pages).&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Poisson&#39;s Equation</title>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-4/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-4/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;This lecture considers Poisson&amp;rsquo;s equation
+&lt;/p&gt;
+$$
+-\Delta u = f\quad \text{in}~ \mathbb{R}^n,
+$$
+&lt;p&gt;
+where $f\colon \mathbb{R}^n \to \mathbb{R}$ is a given function. We cover some essential identities and theorems from calculus such as &lt;strong&gt;Gauss&amp;rsquo; (Divergence) Theorem&lt;/strong&gt; and &lt;strong&gt;Green&amp;rsquo;s identities&lt;/strong&gt;. We prove the following. Let
+&lt;/p&gt;
+$$
+u(x):= \int\limits_{\mathbb{R}^n} \Phi(x-y) f(y)\\,\mathrm{d}y,
+$$
+&lt;p&gt;
+where $\Phi$ is the fundamental solution of Laplace&amp;rsquo;s equation constructed in &lt;a href=&#34;https://bilman.github.io/teaching/pde/pde-lec-3/&#34;&gt;Lecture 3&lt;/a&gt; and $f\in C^2_\mathrm{c}(\mathbb{R}^n)$. Then&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;$u\in C^2(\mathbb{R}^n)$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$-\Delta u = f$ in $\mathbb{R}^n$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/ppjduthcrvwya5p/MATH7006-Lec-4-Poissons-Equation.pdf?dl=0&#34;&gt;The notes for this lecture are available here (21 pages).&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Properties of Harmonic Functions</title>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-5/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-5/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;This lecture covers properties of harmonic functions such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mean value property&lt;/li&gt;
+&lt;li&gt;Maximum principle&lt;/li&gt;
+&lt;li&gt;Regularity&lt;/li&gt;
+&lt;li&gt;Derivative estimates&lt;/li&gt;
+&lt;li&gt;Analyticity&lt;/li&gt;
+&lt;li&gt;Harnack&amp;rsquo;s inequality&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/j4y3xx6ifpu454g/MATH7006-Lec-5-Properties-Harmonic.pdf?dl=0&#34;&gt;The notes for this lecture are available here (27 pages).&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/8wrvwmp0vh348qi/Math-7006-Sp21-HW3.pdf?dl=0&#34;&gt;Homework 3 is posted.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Green&#39;s Function for Poisson&#39;s Equation</title>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-6/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-6/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;In this lecture we let $U\subset \mathbb{R}^n$ be open and bounded with $C^1$ boundary $\partial U$, and obtain a representation for solutions $u\in C^2(\overline{U})$ of the boundary-value problem
+&lt;/p&gt;
+$$
+\left\{
+\begin{alignedat}{2}
+-\Delta u &amp;= f\quad &amp;&amp;\text{in}~U\\ u&amp;=g\quad&amp;&amp;\text{on}~\partial U
+\end{alignedat}\right.
+$$
+&lt;p&gt;
+by introducing &lt;strong&gt;Green&amp;rsquo;s functions&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/wjcwqvtm5afwyh4/MATH7006-Lec-6-Greens-Functions.pdf?dl=0&#34;&gt;The notes for this lecture are available here (21 pages).&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/kvpik6mwwem44ld/Math-7006-Sp21-HW4.pdf?dl=0&#34;&gt;Homework 4 is posted.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Energy Methods for Poisson&#39;s Equation</title>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-7/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-7/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;In this lecture we cover &lt;strong&gt;energy methods&lt;/strong&gt; for the boundary-value problem (BVP)
+&lt;/p&gt;
+$$
+\left\{
+\begin{alignedat}{2}
+-\Delta u &amp;= f\quad &amp;&amp;\text{in}~U\\ u&amp;=g\quad&amp;&amp;\text{on}~\partial U
+\end{alignedat}
+\right.
+$$
+&lt;p&gt;
+We define the &lt;strong&gt;energy functional&lt;/strong&gt;
+&lt;/p&gt;
+$$
+I[w]:= \int\limits_U \frac{1}{2} |D w(y)|^2 - w(y)f(y) \\, \mathrm{d}y
+$$
+&lt;p&gt;
+for $w$ belonging to the admissible set
+&lt;/p&gt;
+$$
+\mathcal{A}:= \left\{w\in C^2(\overline{U})~\vert~ w=g~\text{on}~\partial U\right\},
+$$
+&lt;p&gt;
+and among other things, cover &lt;strong&gt;Dirichlet&amp;rsquo;s Principle&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;$u\in C^2(\overline{U})$ solves (BVP) if and only if $I[u]=\min_{w\in\mathcal{A}} I[w]$.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/04qdk8lkpmaqpzx/MATH7006-Lec-7-Energy-Methods.pdf?dl=0&#34;&gt;The notes for this lecture are available here (8 pages).&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/44gf38y4fuaagtc/Math-7006-Sp21-HW5.pdf?dl=0&#34;&gt;Homework 5 is posted.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Heat Equation</title>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-8/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-8/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;In this lecture we begin our treatment of the &lt;strong&gt;heat equation&lt;/strong&gt;
+&lt;/p&gt;
+$$
+u_t - \Delta u = 0,
+$$
+&lt;p&gt;
+where the unknown function is $u=u(x,t)$ with $u\colon \mathbb{R}^n\times(0,\infty)$. We construct the fundamental solution using dilation symmetry of the heat operator and then give a representation for solutions of the initial-value problem (IVP)
+&lt;/p&gt;
+$$
+\left\{
+\begin{alignedat}{2}
+u_t -\Delta u &amp;= 0\quad &amp;&amp;\text{in}~\mathbb{R}^n \times(0,\infty)\\\ u&amp;=g\quad&amp;&amp;\text{on}~\mathbb{R}^n \times \\{t=0\\}
+\end{alignedat}
+\right.
+$$
+&lt;p&gt;
+that is, we show that
+&lt;/p&gt;
+$$
+u(x,t):=(\Phi * g)(x,t)
+$$
+&lt;p&gt;
+satisfies (IVP) and that $u \in C^{\infty}\left(\mathbb{R}^{n} \times(0, \infty)\right)$ provided $g\in C\left(\mathbb{R}^{n}\right) \cap L^{\infty}\left(\mathbb{R}^{n}\right)$.&lt;/p&gt;
+&lt;p&gt;We then move on to the treatment of the inhomogeneous problem and cover &lt;strong&gt;Duhamel&amp;rsquo;s principle&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/emwafa1twh3bulc/MATH7006-Lec-8-Heat-Equation-Basics.pdf?dl=0&#34;&gt;The notes for this lecture are available here (21 pages).&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Heat Equation: Properties of Solutions</title>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-9/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-9/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;We continue the treatment of the heat equation and cover properties of the solutions of the initial-boundary-value problem (IBVP)
+&lt;/p&gt;
+$$
+\left\{
+\begin{alignedat}{2}
+u_t -\Delta u &amp;= 0\quad &amp;&amp;\text{in}~U_T\\\ u&amp;=g\quad&amp;&amp;\text{on}~\Gamma_T
+\end{alignedat}
+\right.
+$$
+&lt;p&gt;
+where $U_T:=U \times (0,T]$ is called a &lt;strong&gt;parabolic cylinder&lt;/strong&gt;. Here $U\subset \mathbb{R}^n$ is open and bounded, $T&gt;0$ is a some terminal time, and $\Gamma_T:=\overline{U}_T \setminus U_T$ is the &lt;strong&gt;parabolic boundary&lt;/strong&gt; of $U_T$.&lt;/p&gt;
+&lt;p&gt;We cover properties of the solutions of (IBVP), including&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mean value property&lt;/li&gt;
+&lt;li&gt;Maximum principles &amp;amp; uniqueness&lt;/li&gt;
+&lt;li&gt;Regularity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We then consider the initial-value problem posed on $\mathbb{R}^n\times (0,T)$, discuss the maximum principle and uniqueness.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/3bd7hiqcdjaz28l/MATH7006-Lec-9-Heat-Eqn-Properties.pdf?dl=0&#34;&gt;The notes for this lecture are available here (17 pages).&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/dipvwr8ei7xbbrn/Math-7006-Sp21-HW6.pdf?dl=0&#34;&gt;Homework 6 is posted.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Heat Equation: Energy Methods</title>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-10/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-10/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;We cover energy methods for the heat equation. In addition to a simple uniqueness argument, they lead to various decay properties for the solutions. See &lt;a href=&#34;https://www.dropbox.com/s/nit8dtvmtn64bly/Math-7006-Sp20-HW5.pdf?dl=0&#34;&gt;Homework 5&lt;/a&gt;, for example.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/bup9ty9dkpyakaa/MATH7006-Lec-10-Heat-Eqn-Energy.pdf?dl=0&#34;&gt;The notes for this lecture are available here (2 pages).&lt;/a&gt;&lt;/p&gt;
+&lt;!-- ## Homework
+[Homework 6 is posted.](https://www.dropbox.com/s/ltgbnkodozxg8h0/Math-7006-Sp20-HW6.pdf?dl=0) --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Wave Equation</title>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-11/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-11/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;In this lecture we begin the treatment of the wave equation
+&lt;/p&gt;
+$$
+u_{tt} - \Delta u =0
+$$
+&lt;p&gt;
+on $\mathbb{R}^n \times (0,\infty)$. We first consider the case in one spatial dimensions and obtain D&amp;rsquo;Alembert&amp;rsquo;s solution formula for the solution of the initial-value problem&lt;/p&gt;
+$$
+\left\{
+\begin{alignedat}{2}
+u_{tt} -\Delta u &amp;= 0\quad &amp;&amp;\text{in}~\mathbb{R} \times(0,\infty)\\\ u=g\quad u_t&amp;=h&amp;&amp;\text{on}~\mathbb{R} \times \\{t=0\\}
+\end{alignedat}
+\right.
+$$
+&lt;p&gt;We then move on to the initial-boundary value problem posed on the half-line, that is,&lt;/p&gt;
+$$
+\left\{
+\begin{alignedat}{2}
+u_{tt} -\Delta u &amp;= 0\quad &amp;&amp;\text{in}~\mathbb{R} \times(0,\infty)\\\
+u=g,\quad u_t&amp;=h&amp;&amp;\text{on}~\mathbb{R} \times \\{t=0\\}\\\
+u&amp;=0, &amp;&amp;\text{on}~\\{x=0\\}\times (0,\infty)
+\end{alignedat}
+\right.
+$$
+&lt;p&gt;where $\mathbb{R}_+ :=(0,\infty)$, and obtain a representation for its solution.&lt;/p&gt;
+&lt;h3 id=&#34;spherical-means&#34;&gt;Spherical Means&lt;/h3&gt;
+&lt;p&gt;Finally, we introduce the &lt;strong&gt;spherical means&lt;/strong&gt;
+&lt;/p&gt;
+$$
+\begin{aligned}
+U(x;r,t)&amp;:=\frac{1}{\mathrm{surf}(\partial B(x;r))}\int\limits_{\partial B(x;r)} u(y,t)\\, \mathrm{d}S_y\\\ G(x;r)&amp;:=\frac{1}{\mathrm{surf}(\partial B(x;r))}\int\limits_{\partial B(x;r)} g(y)\\, \mathrm{d}S_y\\\ H(x;r)&amp;:=\frac{1}{\mathrm{surf}(\partial B(x;r))}\int\limits_{\partial B(x;r)} h(y)\\, \mathrm{d}S_y
+\end{aligned}
+$$
+&lt;p&gt;for the problem (IVP) posed on $\mathbb{R}^n \times (0,\infty)$
+&lt;/p&gt;
+$$
+\left\{
+\begin{alignedat}{2}
+u_{tt} -\Delta u &amp;= 0\quad &amp;&amp;\text{in}~\mathbb{R}^n \times(0,\infty)\\\ u=g\quad u_t&amp;=h&amp;&amp;\text{on}~\mathbb{R}^n \times \\{t=0\\}
+\end{alignedat}
+\right.
+$$
+&lt;p&gt;
+and show that they satisfy Euler-Poisson-Darboux equation:&lt;/p&gt;
+&lt;p&gt;Fix $x\in\mathbb{R}^n$, let $u\in C^m(\mathbb{R}^n\times[0,\infty])$ satisfy (IVP). Then $U\in C^m\left(\overline{\mathbb{R}}_+\times[0,\infty]\right)$ and&lt;/p&gt;
+$$
+\left\{
+\begin{alignedat}{2}
+U_{tt} -U_{rr} -\left(\frac{n-1}{r}\right) U_r &amp;= 0\quad &amp;&amp;\text{in}~\mathbb{R}_+\times(0,\infty)\\
+u=G\quad u_t&amp;=H&amp;&amp;\text{on}~{\mathbb{R}\_+} \times \{t=0\}
+\end{alignedat}
+\right.
+$$
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/1tyi3e948kwhfs5/MATH7006-Lec-11-Wave-Eqn-Intro.pdf?dl=0&#34;&gt;The notes for this lecture are available here (9 pages).&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Wave Equation in Higher Dimensions</title>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-12/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-12/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;We treat the initial-value problem for the wave equation in $\mathbb{R}^n\times (0,\infty)$, for $n\geq 2$. Starting with the case $n=3$, using spherical means, we obtain &lt;strong&gt;Kirchoff&amp;rsquo;s solution formula&lt;/strong&gt; for $u(x,t)$. We then employ &lt;strong&gt;Hadamard&amp;rsquo;s method of descent&lt;/strong&gt; to obtain &lt;strong&gt;Poisson&amp;rsquo;s solution formula&lt;/strong&gt; for $u(x,t)$ for the case $n=2$.&lt;/p&gt;
+&lt;p&gt;We generalize this framework to $\mathbb{R}^n$ for $n\geq 3$.&lt;/p&gt;
+&lt;p&gt;We then cover &lt;strong&gt;Huygens&amp;rsquo; principle&lt;/strong&gt; and highlight fundamental differences between the solutions and their domains of dependence in even vs. odd spatial dimensions.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/odcz19uzznk2v5t/MATH7006-Lec-12-Wave-Equation-Rn.pdf?dl=0&#34;&gt;The notes for this lecture are available here (39 pages).&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nonhomogeneous Wave Equation</title>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-13/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-13/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;This lecture is on &lt;strong&gt;Duhamel&amp;rsquo;s principle&lt;/strong&gt; to solve the nonhomogenous initial-value problem:&lt;/p&gt;
+$$
+\left\{
+\begin{alignedat}{2}
+u_{tt} -\Delta u &amp;= f\quad &amp;&amp;\text{in}~\mathbb{R}^n \times(0,\infty)\\\ u=g\quad u_t&amp;=h&amp;&amp;\text{on}~\mathbb{R}^n \times \\{t=0\\}
+\end{alignedat}
+\right.
+$$
+&lt;p&gt;
+where $n\geq 2$ and $f\in C^{[n/2]+1}(\mathbb{R}^n \times [0,\infty))$.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/3zl8fykftpp1ytq/MATH7006-Lec-13-Wave-Eqn-Nonhomogeneous.pdf?dl=0&#34;&gt;The notes for this lecture are available here (6 pages).&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Energy Methods for the Wave Equation</title>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-14/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-14/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;We introduce the energy for the wave equation and cover&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Uniqueness&lt;/li&gt;
+&lt;li&gt;Domain of dependence&lt;/li&gt;
+&lt;li&gt;Finite speed of propagation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;for solutions.&lt;/p&gt;
+&lt;p&gt;This lecture concludes the treatment of four important linear PDEs: the transport equation, Laplace&amp;rsquo;s equation, the heat equation, and the wave equation.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/xldj1os1uskuioz/MATH7006-Lec-14-Wave-Eqn-Energy-Methods.pdf?dl=0&#34;&gt;The notes for this lecture are available here (10 pages).&lt;/a&gt;&lt;/p&gt;
+&lt;!-- ## Homework
+[Homework 7 is posted.](https://www.dropbox.com/s/2imfzjvqu294fuy/Math-7006-Sp20-HW7.pdf?dl=0) --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Method of Characteristics</title>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-15/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-15/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;The method of characteristics was already employed to construct the solution of the (constant-coefficient) transport equation in &lt;a href=&#34;https://bilman.github.io/teaching/pde/pde-lec-2/&#34;&gt;Lecture 2&lt;/a&gt;. We now begin the &lt;strong&gt;general treatment of the method of characteristics&lt;/strong&gt; for general first-order PDEs.&lt;/p&gt;
+&lt;p&gt;We write a first order PDE for an unknown function $u$ as
+&lt;/p&gt;
+$$
+F(Du,u,x)=0.
+$$
+&lt;p&gt;
+Here $x\in U$, where $U \subset \mathbb{R}^{n}$ is open, and $u\colon \overline{U} \to \mathbb{R}$. $F$ is of the form
+&lt;/p&gt;
+$$
+F\colon \mathbb{R}^n \times \mathbb{R} \times \overline{U} \to \mathbb{R}.
+$$
+&lt;p&gt;
+and construct solutions of
+&lt;/p&gt;
+$$
+\left\{
+\begin{alignedat}{2}
+F(Du,u,x) &amp;= 0 &amp;&amp;\text{in}~U \\\ u&amp;=g\quad &amp;&amp;\text{on}~\Gamma
+\end{alignedat}
+\right.
+$$
+&lt;p&gt;
+where $\Gamma \subseteq \partial U$, and $g\colon \Gamma \to \mathbb{R}$ is given. $F$ and $g$ are as smooth as we like and the boundary $\partial U$ is $C^1$. We give several examples before a theoretical treatment.&lt;/p&gt;
+&lt;!-- ![Characteristics](../img/featured.jpg &#34;Method of characteristics&#34;) --&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/x7kr85ic4q43brr/Math7006-Lec-15-Characteristics.pdf?dl=0&#34;&gt;The notes for this lecture are available here (24 pages).&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Method of Characteristics: Local Theory</title>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-16/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-16/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;We continue the general treatment of the method of characteristics &lt;a href=&#34;https://bilman.github.io/teaching/pde/pde-lec-15/&#34;&gt;Lecture 15&lt;/a&gt; to construct solutions of the Cauchy problem
+&lt;/p&gt;
+$$
+\left\{
+\begin{alignedat}{2}
+F(Du,u,x) &amp;= 0 &amp;&amp;\text{in}~U \\ u&amp;=g\quad &amp;&amp;\text{on}~\Gamma
+\end{alignedat}
+\right.
+$$
+&lt;p&gt;
+We cover&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the non-characteristic condition&lt;/li&gt;
+&lt;li&gt;compatibility conditions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;for the boundary curve $\Gamma$ and data.&lt;/p&gt;
+&lt;p&gt;We then move on to the local theory.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/va41xl1o3uixxur/MATH7006-Lec-16-Characteristics-Local-Theory.pdf?dl=0&#34;&gt;The notes for this lecture are available here (23 pages).&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Scalar Conservation Laws</title>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-17/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-17/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;We being our treatment of &lt;strong&gt;scalar conservation laws&lt;/strong&gt;:&lt;/p&gt;
+$$
+u_t + (F(u))_x = 0\quad \text{in}~\mathbb{R}^n\times(0,\infty)
+$$
+&lt;p&gt;
+for $u=u(x,t)$, $u\colon \mathbb{R}\times(0,\infty)\to \mathbb{R}$. Here $F\colon \mathbb{R}\to \mathbb{R}$ is given. Our focus is the initial-value problem (IVP)&lt;/p&gt;
+$$
+\left\{
+\begin{alignedat}{2}
+u_t + (F(u))_x &amp;= 0 \quad&amp;&amp;\text{in}~\mathbb{R}\times(0,\infty)\\\ u&amp;=g \quad &amp;&amp;\text{on}~\mathbb{R}\times\\{t=0\\}
+\end{alignedat}
+\right.
+$$
+&lt;p&gt;We first observe that if $(F&#39;\circ g)(\zeta)&lt;0$ for some $\zeta\in\mathbb{R}$, the projected characteristic curves intersect at finite time, which result in formation of discontinuities and gradient catastrophe. We then introduce the notion of a &lt;strong&gt;weak solution&lt;/strong&gt; (an integral solution) to allow for discontinuities. We then cover &lt;strong&gt;Rankine-Hugoniot&lt;/strong&gt; condition, which imposes restrictions on the behavior of a weak solution at a curve of discontinuity.&lt;/p&gt;
+&lt;p&gt;We then illustrate non-uniqueness of weak solutions, state the &lt;strong&gt;entropy condition&lt;/strong&gt; and provide a &lt;em&gt;glimpse&lt;/em&gt; of Lax-Oleinik theory, arriving at the definition of a &lt;strong&gt;shock&lt;/strong&gt; and the notion of an &lt;strong&gt;entropy solution&lt;/strong&gt;. We provide some examples as well.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/aw2cx4r67st04sn/MATH7006-Lec-17-Conservation-Laws.pdf?dl=0&#34;&gt;The notes for this lecture are available here (44 pages).&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Riemann&#39;s Problem &amp; Applications</title>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-18/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-18/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;We continue our discussion with &lt;strong&gt;Riemann&amp;rsquo;s problem&lt;/strong&gt;, the initial value problem
+&lt;/p&gt;
+$$
+\left\{
+\begin{alignedat}{2}
+u_t + (F(u))_x &amp;= 0 \quad&amp;&amp;\text{in}~\mathbb{R}\times(0,\infty)\\ u&amp;=g \quad &amp;&amp;\text{on}~\mathbb{R}\times\{t=0\}
+\end{alignedat}
+\right.
+$$
+&lt;p&gt;
+where $g$ is a piecewise-constant function
+&lt;/p&gt;
+$$
+g(x)=\begin{cases} u_L,&amp; x&lt;0 \\ u_R,&amp; x&gt;0 \end{cases}
+$$
+&lt;p&gt;
+with $u_L\neq u_R$. Assuming that $F$ is uniformly convex and $C^2$, we give the unique entropy solution of Riemann&amp;rsquo;s problem for the cases $u_L &lt; u_R$ and $u_L &gt; u_R$.&lt;/p&gt;
+&lt;p&gt;We then give several examples with more general, piecewise-constant initial data.&lt;/p&gt;
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/ru76lcz4bm0aonn/MATH7006-Lec-18-Riemann-Problem-Applications.pdf?dl=0&#34;&gt;The notes for this lecture are available here (14 pages).&lt;/a&gt;&lt;/p&gt;
+&lt;!-- ## Homework
+[Homework 8 is posted.](https://www.dropbox.com/s/aitiuj0c85hyv3j/Math-7006-Sp20-HW8.pdf?dl=0) --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Plane Waves, Traveling Waves, and Solitons</title>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-19/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-19/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;We end the semester with some &lt;strong&gt;basic linear wave theory&lt;/strong&gt; and &lt;strong&gt;solitons&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/kdvsolitons2.png&#34; alt=&#34;KdV Solitons&#34;&gt;&lt;/p&gt;
+&lt;p&gt;We obtain linear dispersion relation for the plane wave solutions of several PDEs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;heat equation&lt;/li&gt;
+&lt;li&gt;wave equation&lt;/li&gt;
+&lt;li&gt;Klein-Gordon equation&lt;/li&gt;
+&lt;li&gt;Airy&amp;rsquo;s equation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;and introduce notions of &lt;strong&gt;dispersion&lt;/strong&gt; and &lt;strong&gt;dissipation&lt;/strong&gt;. Inline with this, we cover &lt;strong&gt;phase velocity&lt;/strong&gt; for plane waves.&lt;/p&gt;
+&lt;p&gt;We then discuss what a &lt;strong&gt;soliton&lt;/strong&gt; is along with a brief history of integrability in context of nonlinear wave equations, from John Scott Russell&amp;rsquo;s observation of &lt;strong&gt;the great wave of translation&lt;/strong&gt; in 1984 to the FPUT recurrence at Los Alamos in 1950s, followed by Zabusky and Kruskal&amp;rsquo;s discovery of a soliton in 1964, and the seminal paper of Gardner, Greene, Kruskal, and Miura in 1967.&lt;/p&gt;
+&lt;p&gt;We end the semester with calculating the famous $1$-soliton solution
+&lt;/p&gt;
+$$
+u(x,t)=\frac{\sigma}{2}\mathrm{sech}\left( \frac{\sqrt{\sigma}}{2}(x-\sigma t - c)\right)^2,
+$$
+&lt;p&gt;
+$\sigma&gt;0$, $c\in\mathbb{R}$, of the Korteweg-de Vries equation
+&lt;/p&gt;
+$$
+u_t + 6 u u_x + u_{xxx}=0.
+$$
+&lt;figure&gt;&lt;img src=&#34;../img/kdvsolitons.gif&#34;&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/dkvghc7n8fpcz00/MATH7006-Lec-19-Similarity-Solutions.pdf?dl=0&#34;&gt;The notes for this lecture are available here (20 pages).&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Appendix on Surface Integrals</title>
+      <link>https://bilman.github.io/teaching/pde/pde-appendix-1/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/pde/pde-appendix-1/</guid>
+      <description>&lt;p&gt;This is a review on surface integrals.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/ncwnmk55w18vph5/Appendix-Surface-Integrals.pdf?dl=0&#34;&gt;The notes for this appendix are available here (13 pages).&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
