@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Anomalous Dispersion | Deniz Bilman</title>
-    <link>https://bilman.github.io/tags/anomalous-dispersion/</link>
-      <atom:link href="https://bilman.github.io/tags/anomalous-dispersion/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/tags/anomalous-dispersion/</link>
+      <atom:link href="http://localhost:1313/tags/anomalous-dispersion/index.xml" rel="self" type="application/rss+xml" />
     <description>Anomalous Dispersion</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 15 Mar 2020 00:00:44 -0400</lastBuildDate>
     <image>
-      <url>https://bilman.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:1313/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
       <title>Anomalous Dispersion</title>
-      <link>https://bilman.github.io/tags/anomalous-dispersion/</link>
+      <link>http://localhost:1313/tags/anomalous-dispersion/</link>
     </image>
     
     <item>
       <title>Extreme superposition: rogue waves of infinite order and the Painlevé-III hierarchy</title>
-      <link>https://bilman.github.io/publication/extreme-superposition/</link>
+      <link>http://localhost:1313/publication/extreme-superposition/</link>
       <pubDate>Sun, 15 Mar 2020 00:00:44 -0400</pubDate>
-      <guid>https://bilman.github.io/publication/extreme-superposition/</guid>
+      <guid>http://localhost:1313/publication/extreme-superposition/</guid>
       <description>&lt;!-- 
 
 
@@ -56,8 +56,8 @@ $$
 \mathrm{i}\Psi_t + \frac{1}{2}\Psi_{XX}+|\Psi|^2\Psi=0,
 $$
 &lt;p&gt;
-identified in this work. The computational method developed in this work is based on numerical solution of the Riemann-Hilbert problem representation of $\Psi(X,T)$ for each $(X,T)$. While this Mathematica module can be used in code repository linked above, we recommend using the more recent Julia software package &lt;a href=&#34;https://bilman.github.io/publication/rwionls-jl/&#34;&gt;RogueWaveInfiniteNLS.jl&lt;/a&gt;&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/publication/extreme-superposition/anim.gif&#34;
+identified in this work. The computational method developed in this work is based on numerical solution of the Riemann-Hilbert problem representation of $\Psi(X,T)$ for each $(X,T)$. While this Mathematica module can be used in code repository linked above, we recommend using the more recent Julia software package &lt;a href=&#34;http://localhost:1313/publication/rwionls-jl/&#34;&gt;RogueWaveInfiniteNLS.jl&lt;/a&gt;&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/extreme-superposition/anim.gif&#34;
     alt=&#34;Time evolution of the special solution. Blue: the real part, purple: the imaginary part&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Time evolution of the special solution. Blue: the real part, purple: the imaginary part&lt;/p&gt;
     &lt;/figcaption&gt;
