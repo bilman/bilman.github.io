@@ -22,6 +22,16 @@
     </item>
     
     <item>
+      <title>Matrix Vector Multiplication</title>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-1/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-1/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-1.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+    View Jupyter Notebook
+&lt;/a&gt;</description>
+    </item>
+    
+    <item>
       <title>Introduction</title>
       <link>https://bilman.github.io/teaching/ode/ode-lec-1/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
@@ -231,6 +241,16 @@ where $g\colon \mathbb{R}\to \mathbb{R}$ is a given function. This is an initial
     </item>
     
     <item>
+      <title>Orthogonal Vectors and Matrices</title>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-2/</link>
+      <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-2/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-2.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+    View Jupyter Notebook
+&lt;/a&gt;</description>
+    </item>
+    
+    <item>
       <title>The Initial-Value Problem and the Definite Integral</title>
       <link>https://bilman.github.io/teaching/ode/ode-lec-2/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
@@ -276,6 +296,16 @@ for an unknown function $u=u(x,t)$, $u \colon \mathbb{R}^n\times\mathbb{R} \to \
 &lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/5r1rknxzimqun51/Math-7006-Sp21-HW2.pdf?dl=0&#34;&gt;Homework 2 is posted.&lt;/a&gt;&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Norms</title>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-3/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-3/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-3.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+    View Jupyter Notebook
+&lt;/a&gt;</description>
     </item>
     
     <item>
@@ -1209,6 +1239,15 @@ $$
       height=&#34;1000px&#34;
       style=&#34;border:none;&#34;&gt;
 &lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Special session at the IMACS Conference 2025 in Athens, GA</title>
+      <link>https://bilman.github.io/post/imacs-session/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/post/imacs-session/</guid>
+      <description>&lt;p&gt;Robert Buckingham, Peter Miller, and I are organizing a special session on &amp;ldquo;Singular asymptotics for integrable nonlinear waves and related topics&amp;rdquo;.&lt;/p&gt;
 </description>
     </item>
     

@@ -5,6 +5,10 @@
     <loc>https://bilman.github.io/contact/contact/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://bilman.github.io/teaching/nla/nla-lec-1/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://bilman.github.io/teaching/ode/ode-lec-1/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -13,12 +17,20 @@
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://bilman.github.io/teaching/nla/nla-lec-2/</loc>
+    <lastmod>2025-01-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://bilman.github.io/teaching/ode/ode-lec-2/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://bilman.github.io/teaching/pde/pde-lec-2/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/teaching/nla/nla-lec-3/</loc>
+    <lastmod>2025-01-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://bilman.github.io/teaching/ode/ode-lec-3/</loc>
@@ -177,6 +189,22 @@
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://bilman.github.io/post/</loc>
+    <lastmod>2025-01-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/post/imacs-session/</loc>
+    <lastmod>2025-01-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/teaching/</loc>
+    <lastmod>2025-01-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/teaching/nla/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://bilman.github.io/tags/anomalous-temporal-decay/</loc>
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -231,10 +259,6 @@
   </url><url>
     <loc>https://bilman.github.io/tags/universality/</loc>
     <lastmod>2024-08-07T14:29:12-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://bilman.github.io/post/</loc>
-    <lastmod>2024-08-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://bilman.github.io/post/rwionls-jl-post-copy/</loc>
@@ -302,10 +326,6 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://bilman.github.io/tags/python/</loc>
-    <lastmod>2023-10-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://bilman.github.io/teaching/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>

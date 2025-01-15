@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Numerical Linear Algebra | Deniz Bilman</title>
+    <link>https://bilman.github.io/teaching/nla/</link>
+      <atom:link href="https://bilman.github.io/teaching/nla/index.xml" rel="self" type="application/rss+xml" />
+    <description>Numerical Linear Algebra</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://bilman.github.io/teaching/nla/featured.png</url>
+      <title>Numerical Linear Algebra</title>
+      <link>https://bilman.github.io/teaching/nla/</link>
+    </image>
+    
+    <item>
+      <title>Matrix Vector Multiplication</title>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-1/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-1/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-1.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+    View Jupyter Notebook
+&lt;/a&gt;</description>
+    </item>
+    
+    <item>
+      <title>Orthogonal Vectors and Matrices</title>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-2/</link>
+      <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-2/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-2.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+    View Jupyter Notebook
+&lt;/a&gt;</description>
+    </item>
+    
+    <item>
+      <title>Norms</title>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-3/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-3/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-3.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+    View Jupyter Notebook
+&lt;/a&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
