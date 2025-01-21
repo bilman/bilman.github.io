@@ -42,5 +42,15 @@
 &lt;/a&gt;</description>
     </item>
     
+    <item>
+      <title>Singular Value Decomposition (SVD)</title>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-4/</link>
+      <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-4/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-4.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+    View Jupyter Notebook
+&lt;/a&gt;</description>
+    </item>
+    
   </channel>
 </rss>
