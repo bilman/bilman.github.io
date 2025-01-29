@@ -41,10 +41,10 @@
   
     
   
-  <meta name="description" content="Summary We continue our discussion with Riemann&rsquo;s problem, the initial value problem $$ \left\{ \begin{alignedat}{2} u_t &#43; (F(u))_x &= 0 \quad&&\text{in}~\mathbb{R}\times(0,\infty)\\ u&=g \quad &&\text{on}~\mathbb{R}\times\{t=0\} \end{alignedat} \right. $$ where $g$ is a piecewise-constant function $$ g(x)=\begin{cases} u_L,& x&lt;0 \\ u_R,& x&gt;0 \end{cases} $$ with $u_L\neq u_R$." />
+  <meta name="description" content=" View Jupyter Notebook " />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://bilman.github.io/teaching/pde/pde-lec-18/" />
+  <link rel="alternate" hreflang="en-us" href="https://bilman.github.io/teaching/nla/nla-lec-4-app/" />
 
   
   
@@ -203,7 +203,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://bilman.github.io/teaching/pde/pde-lec-18/" />
+  <link rel="canonical" href="https://bilman.github.io/teaching/nla/nla-lec-4-app/" />
 
   
   
@@ -229,18 +229,18 @@
     <meta property="twitter:creator" content="@denizbilman" />
   
   <meta property="og:site_name" content="Deniz Bilman" />
-  <meta property="og:url" content="https://bilman.github.io/teaching/pde/pde-lec-18/" />
-  <meta property="og:title" content="Riemann&#39;s Problem &amp; Applications | Deniz Bilman" />
-  <meta property="og:description" content="Summary We continue our discussion with Riemann&rsquo;s problem, the initial value problem $$ \left\{ \begin{alignedat}{2} u_t &#43; (F(u))_x &= 0 \quad&&\text{in}~\mathbb{R}\times(0,\infty)\\ u&=g \quad &&\text{on}~\mathbb{R}\times\{t=0\} \end{alignedat} \right. $$ where $g$ is a piecewise-constant function $$ g(x)=\begin{cases} u_L,& x&lt;0 \\ u_R,& x&gt;0 \end{cases} $$ with $u_L\neq u_R$." /><meta property="og:image" content="https://bilman.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:url" content="https://bilman.github.io/teaching/nla/nla-lec-4-app/" />
+  <meta property="og:title" content="Straightforward Applications of SVD | Deniz Bilman" />
+  <meta property="og:description" content=" View Jupyter Notebook " /><meta property="og:image" content="https://bilman.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://bilman.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2021-01-01T00:00:00&#43;00:00"
+        content="2025-01-29T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2021-01-01T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2025-01-29T00:00:00&#43;00:00">
   
 
   
@@ -250,7 +250,7 @@
   
 
 
-  <title>Riemann&#39;s Problem &amp; Applications | Deniz Bilman</title>
+  <title>Straightforward Applications of SVD | Deniz Bilman</title>
 
   
   
@@ -836,7 +836,7 @@
             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
         </span>
     </a><div class="ltr:pr-0 overflow-hidden">
-        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+        <ul class="hb-sidebar-list"><li class="flex flex-col open"><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/teaching/nla/"
@@ -879,13 +879,14 @@
   >Lecture 4
     </a>
               
-            </li><li class="flex flex-col "><a
+            </li><li class="flex flex-col open"><a
     class="hb-sidebar-custom-link
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
     href="/teaching/nla/nla-lec-4-app/"
     
   >Lecture 4 (Applications)
     </a>
+  
               
             </li></ul>
       </div>
@@ -1086,7 +1087,7 @@
               
             </li></ul>
       </div>
-            </li><li class="flex flex-col open"><a
+            </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/teaching/pde/"
@@ -1233,28 +1234,13 @@
   >Lecture 17
     </a>
               
-            </li><li class="flex flex-col open"><a
+            </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
-      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/teaching/pde/pde-lec-18/"
     
   >Lecture 18
     </a>
-  
-    <ul class="hb-sidebar-mobile-toc"><li>
-              <a
-                href="#summary"
-                class="hb-docs-link"
-              >Summary</a>
-            </li>
-          <li>
-              <a
-                href="#full-set-of-lecture-notes"
-                class="hb-docs-link"
-              >Full Set of Lecture Notes</a>
-            </li>
-          </ul>
-  
               
             </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
@@ -1552,13 +1538,7 @@
 
 
 
-  <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-4 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-4 rtl:-ml-4"><p class="mb-4 font-semibold tracking-tight">On this page</p><ul>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#summary">Summary</a>
-      </li>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#full-set-of-lecture-notes">Full Set of Lecture Notes</a>
-      </li></ul>
+  <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-4 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-4 rtl:-ml-4">
 
   
   
@@ -1592,17 +1572,17 @@
         <a href="https://bilman.github.io/teaching/">Teaching</a>
       </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg>
       <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
-        <a href="https://bilman.github.io/teaching/pde/">Partial Differential Equations</a>
-      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg><div class="whitespace-nowrap font-medium text-gray-700 dark:text-gray-100">Lecture 18</div>
+        <a href="https://bilman.github.io/teaching/nla/">Numerical Linear Algebra</a>
+      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg><div class="whitespace-nowrap font-medium text-gray-700 dark:text-gray-100">Lecture 4 (Applications)</div>
 </div>
 
       </div>
       
 
-      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Riemann&#39;s Problem &amp; Applications</h1>
+      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Straightforward Applications of SVD</h1>
 
       <div class="mt-4 mb-16">
-      <div class="text-gray-500 dark:text-gray-300 text-sm flex items-center flex-wrap gap-y-2"><span class="mr-1">Jan 1, 2021</span>
+      <div class="text-gray-500 dark:text-gray-300 text-sm flex items-center flex-wrap gap-y-2"><span class="mr-1">Jan 29, 2025</span>
         
 
         
@@ -1633,36 +1613,15 @@
       
 
       <div class="prose prose-slate lg:prose-xl dark:prose-invert">
-        <h2 id="summary">Summary</h2>
-<p>We continue our discussion with <strong>Riemann&rsquo;s problem</strong>, the initial value problem
-</p>
-$$
-\left\{
-\begin{alignedat}{2}
-u_t + (F(u))_x &= 0 \quad&&\text{in}~\mathbb{R}\times(0,\infty)\\ u&=g \quad &&\text{on}~\mathbb{R}\times\{t=0\}
-\end{alignedat}
-\right.
-$$
-<p>
-where $g$ is a piecewise-constant function
-</p>
-$$
-g(x)=\begin{cases} u_L,& x<0 \\ u_R,& x>0 \end{cases}
-$$
-<p>
-with $u_L\neq u_R$. Assuming that $F$ is uniformly convex and $C^2$, we give the unique entropy solution of Riemann&rsquo;s problem for the cases $u_L < u_R$ and $u_L > u_R$.</p>
-<p>We then give several examples with more general, piecewise-constant initial data.</p>
-<h2 id="full-set-of-lecture-notes">Full Set of Lecture Notes</h2>
-<p><a href="https://www.dropbox.com/s/ru76lcz4bm0aonn/MATH7006-Lec-18-Riemann-Problem-Applications.pdf?dl=0" target="_blank" rel="noopener">The notes for this lecture are available here (14 pages).</a></p>
-<!-- ## Homework
-[Homework 8 is posted.](https://www.dropbox.com/s/aitiuj0c85hyv3j/Math-7006-Sp20-HW8.pdf?dl=0) -->
-
+        <a href="/Lecture-4-Applications.html" class="text-blue-500 hover:underline">
+    View Jupyter Notebook
+</a>
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2021-01-01T00:00:00.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2025-01-29T00:00:00.000Z">
     <span>Last updated on</span>
-    Jan 1, 2021</time>
+    Jan 29, 2025</time>
 
       <div class="container mx-auto prose prose-slate lg:prose-xl dark:prose-invert mt-5">
         
@@ -1686,7 +1645,7 @@ with $u_L\neq u_R$. Assuming that $F$ is uniformly convex and $C^2$, we give the
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbilman.github.io%2Fteaching%2Fpde%2Fpde-lec-18%2F&amp;text=Riemann%27s&#43;Problem&#43;%26&#43;Applications"
+    href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbilman.github.io%2Fteaching%2Fnla%2Fnla-lec-4-app%2F&amp;text=Straightforward&#43;Applications&#43;of&#43;SVD"
     title="X"
     aria-label="X"
     id="share-link-x"
@@ -1704,7 +1663,7 @@ with $u_L\neq u_R$. Assuming that $F$ is uniformly convex and $C^2$, we give the
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fbilman.github.io%2Fteaching%2Fpde%2Fpde-lec-18%2F&amp;t=Riemann%27s&#43;Problem&#43;%26&#43;Applications"
+    href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fbilman.github.io%2Fteaching%2Fnla%2Fnla-lec-4-app%2F&amp;t=Straightforward&#43;Applications&#43;of&#43;SVD"
     title="Facebook"
     aria-label="Facebook"
     id="share-link-facebook"
@@ -1724,7 +1683,7 @@ with $u_L\neq u_R$. Assuming that $F$ is uniformly convex and $C^2$, we give the
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="mailto:?subject=Riemann%27s%20Problem%20%26%20Applications&amp;body=https%3A%2F%2Fbilman.github.io%2Fteaching%2Fpde%2Fpde-lec-18%2F"
+    href="mailto:?subject=Straightforward%20Applications%20of%20SVD&amp;body=https%3A%2F%2Fbilman.github.io%2Fteaching%2Fnla%2Fnla-lec-4-app%2F"
     title="Email"
     aria-label="Email"
     id="share-link-email"
@@ -1742,7 +1701,7 @@ with $u_L\neq u_R$. Assuming that $F$ is uniformly convex and $C^2$, we give the
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fbilman.github.io%2Fteaching%2Fpde%2Fpde-lec-18%2F&amp;title=Riemann%27s&#43;Problem&#43;%26&#43;Applications"
+    href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fbilman.github.io%2Fteaching%2Fnla%2Fnla-lec-4-app%2F&amp;title=Straightforward&#43;Applications&#43;of&#43;SVD"
     title="LinkedIn"
     aria-label="LinkedIn"
     id="share-link-linkedin"
@@ -1760,7 +1719,7 @@ with $u_L\neq u_R$. Assuming that $F$ is uniformly convex and $C^2$, we give the
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="whatsapp://send?text=Riemann%27s&#43;Problem&#43;%26&#43;Applications%20https%3A%2F%2Fbilman.github.io%2Fteaching%2Fpde%2Fpde-lec-18%2F"
+    href="whatsapp://send?text=Straightforward&#43;Applications&#43;of&#43;SVD%20https%3A%2F%2Fbilman.github.io%2Fteaching%2Fnla%2Fnla-lec-4-app%2F"
     title="WhatsApp"
     aria-label="WhatsApp"
     id="share-link-whatsapp"
@@ -1924,17 +1883,17 @@ with $u_L\neq u_R$. Assuming that $F$ is uniformly convex and $C^2$, we give the
   <div class="flex flex-col md:flex-row flex-nowrap justify-between gap-5 pt-2">
     <div class="">
       
-        <a class="group flex no-underline" href="/teaching/pde/pde-lec-17/">
+        <a class="group flex no-underline" href="/teaching/nla/nla-lec-4/">
           <span
             class="mt-[-0.3rem] me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
           ><span class="ltr:inline rtl:hidden">&larr;</span></span>
           <span class="flex flex-col">
             <span
               class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-            >Scalar Conservation Laws</span>
+            >Singular Value Decomposition (SVD)</span>
             <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
               
-                Jan 1, 2021
+                Jan 20, 2025
               
             </span>
           </span>
@@ -1942,23 +1901,6 @@ with $u_L\neq u_R$. Assuming that $F$ is uniformly convex and $C^2$, we give the
       
     </div>
     <div class="">
-      
-        <a class="group flex text-right no-underline" href="/teaching/pde/pde-lec-19/">
-          <span class="flex flex-col">
-            <span
-              class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-            >Plane Waves, Traveling Waves, and Solitons</span
-            >
-            <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-              
-                Jan 1, 2021
-              
-            </span>
-          </span>
-          <span
-            class="mt-[-0.3rem] ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
-          ><span class="ltr:inline">&rarr;</span></span>
-        </a>
       
     </div>
   </div>
