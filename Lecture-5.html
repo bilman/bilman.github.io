@@ -7527,6 +7527,16 @@ $$
 b=A x \quad \Longleftrightarrow U^* b=U^* A x=U^* U \Sigma V^* x \quad \Longleftrightarrow \quad b^{\prime}=\Sigma x^{\prime} .
 $$</p>
 <p>We see that $A$ reduces to the diagonal matrix $\Sigma$ when the range is expressed in the basis of columns of $U$ and the domain is expressed in the basis of columns of $V$.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="SVD-vs.-Eigenvalue-Decomposition">SVD vs. Eigenvalue Decomposition<a class="anchor-link" href="#SVD-vs.-Eigenvalue-Decomposition">¶</a></h2><p>The theme above is diagonalizing a matrix by expressing it in terms of a new basis. This underlies the study of eigenvalues of a square matrix.</p>
 <p>Indeed, a non-defective $m\times m$ square matrix (meaning that the square matrix has $m$ linearly independent eigenvectors) can be expressed as a diagonal matrix of eigenvalues $\Lambda$ if the range and the domain are represented in a basis of eigenvectors.</p>
 <p>If the columns of a matrix $X \in \mathbb{C}^{m \times m}$ contain linearly independent eigenvectors of $A \in \mathbb{C}^{m \times m}$, the eigenvalue decomposition of $A$ is</p>
@@ -7541,6 +7551,38 @@ then the newly expanded vectors $b^{\prime}$ and $x^{\prime}$ satisfy $b^{\prime
 <p>The SVD uses orthonormal bases, whereas the eigenvalue decomposition uses a basis that generally is not orthogonal.</p>
 <p>Not all matrices (even square ones) have an eigenvalue decomposition, but all matrices (even rectangular ones) have a singular value decomposition.</p>
 <p>In applications, eigenvalues tend to be relevant to problems involving the behavior of iterated forms of $A$, such as matrix powers $A^k$ or exponentials $e^{t A}$, whereas singular vectors tend to be relevant to problems involving the behavior of $A$ itself, or its inverse.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Courant-Fischer's-Min-Max-Principle">Courant-Fischer's Min-Max Principle<a class="anchor-link" href="#Courant-Fischer's-Min-Max-Principle">¶</a></h2><p>The Courant-Fischer Min-Max Principle provides a variational characterization of the eigenvalues of a Hermitian matrix. It describes each eigenvalue in terms of the maximum and minimum values of a quadratic form over subspaces of a given dimension.</p>
+<p>Let $A$ be an $m \times m$ Hermitian matrix with eigenvalues $\lambda_1 \geq \lambda_2 \geq \cdots \geq \lambda_m$. Then one has the following two characterizations of the eigenvalues:</p>
+$$
+\lambda_j =  \max_{S: \operatorname{dim}(S)=j}\left( \max_{\substack{x\in S \\ \|x\|_2=1}} x^* A x \right)
+$$<p>and alternatively,</p>
+$$
+\lambda_j =  \min_{S: \operatorname{dim}(S)=m-j+1}\left( \max_{\substack{x\in S \\ \|x\|_2=1}} x^* A x \right).
+$$<p>This means in particular for the largest eigenvalue $\lambda_1$:</p>
+<p>Among all unit vectors $x$, the one that maximizes $x^* A x$ is the eigenvector corresponding to $\lambda_1$.</p>
+<p>Likewise, for the smallest eigenvalue $\lambda_m$:</p>
+<p>Among all unit vectors $x$, the one that minimizes $x^* A x$ is the eigenvector corresponding to $\lambda_1$.</p>
+<p>For intermediate eigenvalues $\lambda_j$, we have similar considerations but restricted to subspaces $S$ of dimension related to $j$.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Matrix-Properties-via-the-SVD">Matrix Properties via the SVD<a class="anchor-link" href="#Matrix-Properties-via-the-SVD">¶</a></h2><p>Let $A \in \mathbb{C}^{m\times n}$. Let $p=\min(\{m,n\})$ and let $r\leq p$ denote the number of nonzero singular values of $A$.</p>
 <p>Let $\operatorname{span}(\{ x, y, \ldots, z\})$ denote the space spanned by the vectors $x,y,\ldots,z$.</p>
 <h4 id="Theorem-5.1:">Theorem 5.1:<a class="anchor-link" href="#Theorem-5.1:">¶</a></h4><p>The rank of $A$ is $r$, the number of nonzero singular values.</p>
@@ -7552,7 +7594,7 @@ then the newly expanded vectors $b^{\prime}$ and $x^{\prime}$ satisfy $b^{\prime
 <h4 id="Theorem-5.4:">Theorem 5.4:<a class="anchor-link" href="#Theorem-5.4:">¶</a></h4><p>The nonzero singular values of $A$ are the square roots of the nonzero eigenvalues of $A^* A$ or $A A^*$. (These matrices have the same nonzero eigenvalues.)</p>
 <h4 id="Proof:">Proof:<a class="anchor-link" href="#Proof:">¶</a></h4><p>Done in class.</p>
 <h4 id="Theorem-5.5:">Theorem 5.5:<a class="anchor-link" href="#Theorem-5.5:">¶</a></h4><p>If $A=A^*$, then the singular values of $A$ are the absolute values of the eigenvalues of $A$.</p>
-<h4 id="Proof:">Proof:<a class="anchor-link" href="#Proof:">¶</a></h4><p>Done in class.</p>
+<h4 id="Proof:">Proof:<a class="anchor-link" href="#Proof:">¶</a></h4><p>Done in class.x`</p>
 <h4 id="Theorem-5.6:">Theorem 5.6:<a class="anchor-link" href="#Theorem-5.6:">¶</a></h4><p>For $A \in \mathbb{C}^{m \times m}$, $\displaystyle|\operatorname{det}(A)|=\prod_{i=1}^m \sigma_i$.</p>
 <h4 id="Proof:">Proof:<a class="anchor-link" href="#Proof:">¶</a></h4><p>Done in class.</p>
 </div>
@@ -7606,16 +7648,6 @@ $$<h4 id="Proof:">Proof:<a class="anchor-link" href="#Proof:">¶</a></h4><p>Done
 <p>Theorems 5.8 and 5.9 , the standards for computing low-rank approximations with respect to $\|\cdot\|_2$ and $\|\cdot\|_F$.</p>
 <p>Besides these examples, the SVD is also an ingredient in robust algorithms for least squares fitting, intersection of subspaces, regularization, and numerous other problems.</p>
 <p>With this lecture we conclude the first part of the course.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 </div>
 </div>
 </div>
