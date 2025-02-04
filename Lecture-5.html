@@ -7564,10 +7564,10 @@ then the newly expanded vectors $b^{\prime}$ and $x^{\prime}$ satisfy $b^{\prime
 <h2 id="Courant-Fischer's-Min-Max-Principle">Courant-Fischer's Min-Max Principle<a class="anchor-link" href="#Courant-Fischer's-Min-Max-Principle">¶</a></h2><p>The Courant-Fischer Min-Max Principle provides a variational characterization of the eigenvalues of a Hermitian matrix. It describes each eigenvalue in terms of the maximum and minimum values of a quadratic form over subspaces of a given dimension.</p>
 <p>Let $A$ be an $m \times m$ Hermitian matrix with eigenvalues $\lambda_1 \geq \lambda_2 \geq \cdots \geq \lambda_m$. Then one has the following two characterizations of the eigenvalues:</p>
 $$
-\lambda_j =  \max_{S: \operatorname{dim}(S)=j}\left( \max_{\substack{x\in S \\ \|x\|_2=1}} x^* A x \right)
+\lambda_j =  \min_{S: \operatorname{dim}(S)=m-j+1}\left( \max_{\substack{x\in S \\ \|x\|_2=1}} x^* A x \right).
 $$<p>and alternatively,</p>
 $$
-\lambda_j =  \min_{S: \operatorname{dim}(S)=m-j+1}\left( \max_{\substack{x\in S \\ \|x\|_2=1}} x^* A x \right).
+\lambda_j =  \max_{S: \operatorname{dim}(S)=j}\left( \min_{\substack{x\in S \\ \|x\|_2=1}} x^* A x \right)
 $$<p>This means in particular for the largest eigenvalue $\lambda_1$:</p>
 <p>Among all unit vectors $x$, the one that maximizes $x^* A x$ is the eigenvector corresponding to $\lambda_1$.</p>
 <p>Likewise, for the smallest eigenvalue $\lambda_m$:</p>
