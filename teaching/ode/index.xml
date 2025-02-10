@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ordinary Differential Equations | Deniz Bilman</title>
-    <link>https://bilman.github.io/teaching/ode/</link>
-      <atom:link href="https://bilman.github.io/teaching/ode/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/teaching/ode/</link>
+      <atom:link href="http://localhost:1313/teaching/ode/index.xml" rel="self" type="application/rss+xml" />
     <description>Ordinary Differential Equations</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://bilman.github.io/teaching/ode/featured.png</url>
+      <url>http://localhost:1313/teaching/ode/featured.png</url>
       <title>Ordinary Differential Equations</title>
-      <link>https://bilman.github.io/teaching/ode/</link>
+      <link>http://localhost:1313/teaching/ode/</link>
     </image>
     
     <item>
       <title>Introduction</title>
-      <link>https://bilman.github.io/teaching/ode/ode-lec-1/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-1/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/teaching/ode/ode-lec-1/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-1/</guid>
       <description>&lt;h2 id=&#34;what-are-differential-equations-anyway&#34;&gt;What Are Differential Equations Anyway?&lt;/h2&gt;
 &lt;p&gt;This lecture introduces the subject with Newton&amp;rsquo;s Law of Cooling
 &lt;/p&gt;
@@ -39,9 +39,9 @@ where $u=u(t)$ denotes the temperature of an object at time $t$ in an environmen
     
     <item>
       <title>The Initial-Value Problem and the Definite Integral</title>
-      <link>https://bilman.github.io/teaching/ode/ode-lec-2/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-2/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/teaching/ode/ode-lec-2/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-2/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;Notion of an initial-value problem is introduced. Integral representation of solutions of an initial-value problem for differential equations of the form
 &lt;/p&gt;
@@ -57,9 +57,9 @@ is explained.&lt;/p&gt;
     
     <item>
       <title>Separable Equations</title>
-      <link>https://bilman.github.io/teaching/ode/ode-lec-3/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-3/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/teaching/ode/ode-lec-3/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-3/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We cover solving separable differential equations which are of the form
 &lt;/p&gt;
@@ -80,9 +80,9 @@ $$
     
     <item>
       <title>First-Order Linear ODEs</title>
-      <link>https://bilman.github.io/teaching/ode/ode-lec-4/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-4/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/teaching/ode/ode-lec-4/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-4/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;This lecture evolves around the fact that if a solution for the first-order linear ODE
 &lt;/p&gt;
@@ -105,9 +105,9 @@ exists, we can always find it. General solution, particular solutions, and using
     
     <item>
       <title>First-Order Linear ODEs with Constant Coefficients</title>
-      <link>https://bilman.github.io/teaching/ode/ode-lec-5/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-5/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/teaching/ode/ode-lec-5/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-5/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We study how to solve differential equations of the form
 &lt;/p&gt;
@@ -123,9 +123,9 @@ A special case of the Method of Undetermined Coefficients is also introduced.&lt
     
     <item>
       <title>Growth and Decay Problems</title>
-      <link>https://bilman.github.io/teaching/ode/ode-lec-6/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-6/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/teaching/ode/ode-lec-6/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-6/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We cover differential equations that model certain types of growth and decay. Examples include population growth equation, logistic equation, etc.&lt;/p&gt;
 &lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
@@ -142,9 +142,9 @@ A special case of the Method of Undetermined Coefficients is also introduced.&lt
     
     <item>
       <title>Second-Order Linear Differential Equations</title>
-      <link>https://bilman.github.io/teaching/ode/ode-lec-7/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-7/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/teaching/ode/ode-lec-7/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-7/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We cover finding general solution of second-order linear differential equations which are of the form
 &lt;/p&gt;
@@ -160,9 +160,9 @@ The notion of linear independence is also introduced.&lt;/p&gt;
     
     <item>
       <title>Initial-Value Problems for Homogeneous Equations</title>
-      <link>https://bilman.github.io/teaching/ode/ode-lec-8/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-8/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/teaching/ode/ode-lec-8/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-8/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We continue our study of second-order linear differential equations
 &lt;/p&gt;
@@ -176,9 +176,9 @@ $$
     
     <item>
       <title>Reduction of Order</title>
-      <link>https://bilman.github.io/teaching/ode/ode-lec-9/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-9/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/teaching/ode/ode-lec-9/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-9/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;Suppose we are lucky enough to know a solution $x_{1}(t)$ of the second-order linear homogeneous ODE
 &lt;/p&gt;
@@ -194,9 +194,9 @@ Then we can find another solution of this ODE by solving a first-order different
     
     <item>
       <title>Second-Order Homogeneous Linear Constant-Coefficient ODEs</title>
-      <link>https://bilman.github.io/teaching/ode/ode-lec-10/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-10/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/teaching/ode/ode-lec-10/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-10/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We consider the general linear, second-order homogeneous and constant-coefficient differential equation
 &lt;/p&gt;
@@ -212,9 +212,9 @@ where the coefficients $a, b$, and $c$ are real constants and $a \neq 0$.&lt;/p&
     
     <item>
       <title>Mechanical Vibrations I: Free Response</title>
-      <link>https://bilman.github.io/teaching/ode/ode-lec-11/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-11/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/teaching/ode/ode-lec-11/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-11/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;This lecture starts the treatment of a horizontal mass-spring system with mass $m&gt;0$ and spring constant $k&gt;0$:
 &lt;/p&gt;
@@ -230,9 +230,9 @@ where the damping parameter $\delta\geq 0$ may or may not be zero. We start with
     
     <item>
       <title>Method of Undetermined Coefficients</title>
-      <link>https://bilman.github.io/teaching/ode/ode-lec-12/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-12/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/teaching/ode/ode-lec-12/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-12/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;The Method of Undetermined Coefficients provides a way to obtain a particular solution of a linear second-order constant-coefficient non-homogeneous ODE
 &lt;/p&gt;
@@ -255,9 +255,9 @@ in case the forcing $f(t)$ is comes from a number of special types of functions 
     
     <item>
       <title>Mechanical Vibrations II: Forced Response</title>
-      <link>https://bilman.github.io/teaching/ode/ode-lec-13/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-13/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/teaching/ode/ode-lec-13/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-13/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We continue with the solution of ODEs that govern a spring-mass system:
 &lt;/p&gt;
@@ -280,9 +280,9 @@ where $\delta \geqslant 0$ is the damping constant, $m&gt;0$ is the mass of the 
     
     <item>
       <title>Variation of Parameters</title>
-      <link>https://bilman.github.io/teaching/ode/ode-lec-14/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-14/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/teaching/ode/ode-lec-14/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-14/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;Our quest on finding a particular solution of
 &lt;/p&gt;
@@ -303,9 +303,9 @@ continues. Earlier, we used the Method of Undetermined Coefficients to do that. 
     
     <item>
       <title>Laplace Transform</title>
-      <link>https://bilman.github.io/teaching/ode/ode-lec-15/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-15/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/teaching/ode/ode-lec-15/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-15/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We introduce the Laplace transform
 &lt;/p&gt;
@@ -321,9 +321,9 @@ of a function $f(t)$ defined for $t\geq 0$. We cover the existence theory and pr
     
     <item>
       <title>Inverse Laplace Transform</title>
-      <link>https://bilman.github.io/teaching/ode/ode-lec-16/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-16/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/teaching/ode/ode-lec-16/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-16/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We cover the inverse of the Laplace transform.&lt;/p&gt;
 &lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
@@ -333,9 +333,9 @@ of a function $f(t)$ defined for $t\geq 0$. We cover the existence theory and pr
     
     <item>
       <title>Solving an Initial-Value Problem Using Laplace Transform</title>
-      <link>https://bilman.github.io/teaching/ode/ode-lec-17/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-17/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/teaching/ode/ode-lec-17/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-17/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We now use Laplace transforms to solve initial-value problems. To do this, we cover how differentiation corresponds to multiplication under the Laplace transform.&lt;/p&gt;
 &lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
@@ -345,9 +345,9 @@ of a function $f(t)$ defined for $t\geq 0$. We cover the existence theory and pr
     
     <item>
       <title>The Convolution Theorem</title>
-      <link>https://bilman.github.io/teaching/ode/ode-lec-18/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-18/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/teaching/ode/ode-lec-18/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-18/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;For given $F(s)$ and $G(s)$, we cover how to compute the inverse Laplace transform
 $
@@ -360,9 +360,9 @@ $&lt;/p&gt;
     
     <item>
       <title>Systems of Linear Differential Equations</title>
-      <link>https://bilman.github.io/teaching/ode/ode-lec-19/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-19/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/teaching/ode/ode-lec-19/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-19/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We cover systems of linear differential equations, introduce the matrix formulation, and cover the relevant matrix theory.&lt;/p&gt;
 &lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
@@ -388,9 +388,9 @@ $&lt;/p&gt;
     
     <item>
       <title>Phase Plane Analysis</title>
-      <link>https://bilman.github.io/teaching/ode/ode-lec-20/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-20/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/teaching/ode/ode-lec-20/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-20/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We continue analyzing solution trajectories for linear systems of first order homogeneous differential equations with constant coefficients:
 &lt;/p&gt;
@@ -436,9 +436,9 @@ $$
     
     <item>
       <title>Qualitative Analysis of First-Order ODEs</title>
-      <link>https://bilman.github.io/teaching/ode/ode-lec-21/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-21/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/teaching/ode/ode-lec-21/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-21/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We end the semester with qualitative analysis of first order ODEs that are autonomous:
 &lt;/p&gt;
@@ -450,9 +450,9 @@ $$\frac{\mathrm{d} x}{\mathrm{~d} t}=f(x).$$
     
     <item>
       <title>Existence &amp; Uniqueness</title>
-      <link>https://bilman.github.io/teaching/ode/appendix-1/</link>
+      <link>http://localhost:1313/teaching/ode/appendix-1/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/teaching/ode/appendix-1/</guid>
+      <guid>http://localhost:1313/teaching/ode/appendix-1/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;In this appendix we cover existence and uniqueness theory for initial-value problems of the form
 &lt;/p&gt;
@@ -475,9 +475,9 @@ $$
     
     <item>
       <title>Some Modeling</title>
-      <link>https://bilman.github.io/teaching/ode/appendix-2/</link>
+      <link>http://localhost:1313/teaching/ode/appendix-2/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/teaching/ode/appendix-2/</guid>
+      <guid>http://localhost:1313/teaching/ode/appendix-2/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;In this appendix we cover modeling certain physical/chemical phenomena by first-order linear ordinary differential equations.&lt;/p&gt;
 &lt;h2 id=&#34;jupyter-notebook&#34;&gt;Jupyter Notebook&lt;/h2&gt;
