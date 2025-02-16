@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Deniz Bilman</title>
-    <link>http://localhost:1313/</link>
-      <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://bilman.github.io/</link>
+      <atom:link href="https://bilman.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Deniz Bilman</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 24 Jul 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <url>https://bilman.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
       <title>Deniz Bilman</title>
-      <link>http://localhost:1313/</link>
+      <link>https://bilman.github.io/</link>
     </image>
     
     <item>
       <title>Contact</title>
-      <link>http://localhost:1313/contact/contact/</link>
+      <link>https://bilman.github.io/contact/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/contact/</guid>
+      <guid>https://bilman.github.io/contact/contact/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Matrix Vector Multiplication</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-1/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-1/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-1/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-1.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-1/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-1.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Introduction</title>
-      <link>http://localhost:1313/teaching/ode/ode-lec-1/</link>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-1/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/ode/ode-lec-1/</guid>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-1/</guid>
       <description>&lt;h2 id=&#34;what-are-differential-equations-anyway&#34;&gt;What Are Differential Equations Anyway?&lt;/h2&gt;
 &lt;p&gt;This lecture introduces the subject with Newton&amp;rsquo;s Law of Cooling
 &lt;/p&gt;
@@ -58,9 +58,9 @@ where $u=u(t)$ denotes the temperature of an object at time $t$ in an environmen
     
     <item>
       <title>Introduction</title>
-      <link>http://localhost:1313/teaching/pde/pde-lec-1/</link>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-1/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/pde/pde-lec-1/</guid>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-1/</guid>
       <description>&lt;p&gt;Let $u$ be a function of several variables $u(x_1,x_2,\ldots,x_n)$. We say $u$ is &lt;strong&gt;smooth&lt;/strong&gt; provided $u$ is infinitely differentiable with respect to all of the variables. We denote partial derivative of $u$ with respect to $x_k$ by
 &lt;/p&gt;
 $$
@@ -242,19 +242,19 @@ where $g\colon \mathbb{R}\to \mathbb{R}$ is a given function. This is an initial
     
     <item>
       <title>Orthogonal Vectors and Matrices</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-2/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-2/</link>
       <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-2/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-2.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-2/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-2.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>The Initial-Value Problem and the Definite Integral</title>
-      <link>http://localhost:1313/teaching/ode/ode-lec-2/</link>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-2/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/ode/ode-lec-2/</guid>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-2/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;Notion of an initial-value problem is introduced. Integral representation of solutions of an initial-value problem for differential equations of the form
 &lt;/p&gt;
@@ -270,9 +270,9 @@ is explained.&lt;/p&gt;
     
     <item>
       <title>Transport Equation</title>
-      <link>http://localhost:1313/teaching/pde/pde-lec-2/</link>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-2/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/pde/pde-lec-2/</guid>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-2/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;This lecture introduces the transport equation
 &lt;/p&gt;
@@ -300,19 +300,19 @@ for an unknown function $u=u(x,t)$, $u \colon \mathbb{R}^n\times\mathbb{R} \to \
     
     <item>
       <title>Norms</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-3/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-3/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-3/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-3.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-3/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-3.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Separable Equations</title>
-      <link>http://localhost:1313/teaching/ode/ode-lec-3/</link>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-3/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/ode/ode-lec-3/</guid>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-3/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We cover solving separable differential equations which are of the form
 &lt;/p&gt;
@@ -333,9 +333,9 @@ $$
     
     <item>
       <title>Laplace&#39;s Equation</title>
-      <link>http://localhost:1313/teaching/pde/pde-lec-3/</link>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-3/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/pde/pde-lec-3/</guid>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-3/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;This lecture introduces Laplace&amp;rsquo;s equation
 &lt;/p&gt;
@@ -351,19 +351,19 @@ and gives a construction of its fundamental solution.&lt;/p&gt;
     
     <item>
       <title>Singular Value Decomposition (SVD)</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-4/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-4/</link>
       <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-4/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-4.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-4/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-4.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>First-Order Linear ODEs</title>
-      <link>http://localhost:1313/teaching/ode/ode-lec-4/</link>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-4/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/ode/ode-lec-4/</guid>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-4/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;This lecture evolves around the fact that if a solution for the first-order linear ODE
 &lt;/p&gt;
@@ -386,9 +386,9 @@ exists, we can always find it. General solution, particular solutions, and using
     
     <item>
       <title>Poisson&#39;s Equation</title>
-      <link>http://localhost:1313/teaching/pde/pde-lec-4/</link>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-4/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/pde/pde-lec-4/</guid>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-4/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;This lecture considers Poisson&amp;rsquo;s equation
 &lt;/p&gt;
@@ -402,7 +402,7 @@ $$
 u(x):= \int\limits_{\mathbb{R}^n} \Phi(x-y) f(y)\\,\mathrm{d}y,
 $$
 &lt;p&gt;
-where $\Phi$ is the fundamental solution of Laplace&amp;rsquo;s equation constructed in &lt;a href=&#34;http://localhost:1313/teaching/pde/pde-lec-3/&#34;&gt;Lecture 3&lt;/a&gt; and $f\in C^2_\mathrm{c}(\mathbb{R}^n)$. Then&lt;/p&gt;
+where $\Phi$ is the fundamental solution of Laplace&amp;rsquo;s equation constructed in &lt;a href=&#34;https://bilman.github.io/teaching/pde/pde-lec-3/&#34;&gt;Lecture 3&lt;/a&gt; and $f\in C^2_\mathrm{c}(\mathbb{R}^n)$. Then&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;$u\in C^2(\mathbb{R}^n)$.&lt;/p&gt;
@@ -418,19 +418,19 @@ where $\Phi$ is the fundamental solution of Laplace&amp;rsquo;s equation constru
     
     <item>
       <title>Straightforward Applications of SVD</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-4-app/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-4-app/</link>
       <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-4-app/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-4-Applications.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-4-app/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-4-Applications.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>First-Order Linear ODEs with Constant Coefficients</title>
-      <link>http://localhost:1313/teaching/ode/ode-lec-5/</link>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-5/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/ode/ode-lec-5/</guid>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-5/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We study how to solve differential equations of the form
 &lt;/p&gt;
@@ -446,9 +446,9 @@ A special case of the Method of Undetermined Coefficients is also introduced.&lt
     
     <item>
       <title>Properties of Harmonic Functions</title>
-      <link>http://localhost:1313/teaching/pde/pde-lec-5/</link>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-5/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/pde/pde-lec-5/</guid>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-5/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;This lecture covers properties of harmonic functions such as:&lt;/p&gt;
 &lt;ul&gt;
@@ -468,19 +468,19 @@ A special case of the Method of Undetermined Coefficients is also introduced.&lt
     
     <item>
       <title>More on the SVD</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-5/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-5/</link>
       <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-5/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-5.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-5/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-5.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Growth and Decay Problems</title>
-      <link>http://localhost:1313/teaching/ode/ode-lec-6/</link>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-6/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/ode/ode-lec-6/</guid>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-6/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We cover differential equations that model certain types of growth and decay. Examples include population growth equation, logistic equation, etc.&lt;/p&gt;
 &lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
@@ -497,9 +497,9 @@ A special case of the Method of Undetermined Coefficients is also introduced.&lt
     
     <item>
       <title>Green&#39;s Function for Poisson&#39;s Equation</title>
-      <link>http://localhost:1313/teaching/pde/pde-lec-6/</link>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-6/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/pde/pde-lec-6/</guid>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-6/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;In this lecture we let $U\subset \mathbb{R}^n$ be open and bounded with $C^1$ boundary $\partial U$, and obtain a representation for solutions $u\in C^2(\overline{U})$ of the boundary-value problem
 &lt;/p&gt;
@@ -520,19 +520,19 @@ by introducing &lt;strong&gt;Green&amp;rsquo;s functions&lt;/strong&gt;.&lt;/p&g
     
     <item>
       <title>Projectors</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-6/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-6/</link>
       <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-6/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-6.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-6/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-6.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Second-Order Linear Differential Equations</title>
-      <link>http://localhost:1313/teaching/ode/ode-lec-7/</link>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-7/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/ode/ode-lec-7/</guid>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-7/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We cover finding general solution of second-order linear differential equations which are of the form
 &lt;/p&gt;
@@ -548,9 +548,9 @@ The notion of linear independence is also introduced.&lt;/p&gt;
     
     <item>
       <title>Energy Methods for Poisson&#39;s Equation</title>
-      <link>http://localhost:1313/teaching/pde/pde-lec-7/</link>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-7/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/pde/pde-lec-7/</guid>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-7/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;In this lecture we cover &lt;strong&gt;energy methods&lt;/strong&gt; for the boundary-value problem (BVP)
 &lt;/p&gt;
@@ -585,19 +585,19 @@ and among other things, cover &lt;strong&gt;Dirichlet&amp;rsquo;s Principle&lt;/
     
     <item>
       <title>QR Factorization</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-7/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-7/</link>
       <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-7/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-7.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-7/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-7.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Initial-Value Problems for Homogeneous Equations</title>
-      <link>http://localhost:1313/teaching/ode/ode-lec-8/</link>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-8/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/ode/ode-lec-8/</guid>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-8/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We continue our study of second-order linear differential equations
 &lt;/p&gt;
@@ -611,9 +611,9 @@ $$
     
     <item>
       <title>Heat Equation</title>
-      <link>http://localhost:1313/teaching/pde/pde-lec-8/</link>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-8/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/pde/pde-lec-8/</guid>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-8/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;In this lecture we begin our treatment of the &lt;strong&gt;heat equation&lt;/strong&gt;
 &lt;/p&gt;
@@ -646,19 +646,19 @@ satisfies (IVP) and that $u \in C^{\infty}\left(\mathbb{R}^{n} \times(0, \infty)
     
     <item>
       <title>Gram-Schmidt Orthogonalization</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-8/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-8/</link>
       <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-8/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-8.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-8/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-8.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Reduction of Order</title>
-      <link>http://localhost:1313/teaching/ode/ode-lec-9/</link>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-9/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/ode/ode-lec-9/</guid>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-9/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;Suppose we are lucky enough to know a solution $x_{1}(t)$ of the second-order linear homogeneous ODE
 &lt;/p&gt;
@@ -674,9 +674,9 @@ Then we can find another solution of this ODE by solving a first-order different
     
     <item>
       <title>Heat Equation: Properties of Solutions</title>
-      <link>http://localhost:1313/teaching/pde/pde-lec-9/</link>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-9/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/pde/pde-lec-9/</guid>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-9/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We continue the treatment of the heat equation and cover properties of the solutions of the initial-boundary-value problem (IBVP)
 &lt;/p&gt;
@@ -704,10 +704,20 @@ where $U_T:=U \times (0,T]$ is called a &lt;strong&gt;parabolic cylinder&lt;/str
     </item>
     
     <item>
+      <title>Householder Triangularization</title>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-10/</link>
+      <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-10/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-10.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+    View Jupyter Notebook
+&lt;/a&gt;</description>
+    </item>
+    
+    <item>
       <title>Second-Order Homogeneous Linear Constant-Coefficient ODEs</title>
-      <link>http://localhost:1313/teaching/ode/ode-lec-10/</link>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-10/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/ode/ode-lec-10/</guid>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-10/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We consider the general linear, second-order homogeneous and constant-coefficient differential equation
 &lt;/p&gt;
@@ -723,9 +733,9 @@ where the coefficients $a, b$, and $c$ are real constants and $a \neq 0$.&lt;/p&
     
     <item>
       <title>Heat Equation: Energy Methods</title>
-      <link>http://localhost:1313/teaching/pde/pde-lec-10/</link>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-10/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/pde/pde-lec-10/</guid>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-10/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We cover energy methods for the heat equation. In addition to a simple uniqueness argument, they lead to various decay properties for the solutions. See &lt;a href=&#34;https://www.dropbox.com/s/nit8dtvmtn64bly/Math-7006-Sp20-HW5.pdf?dl=0&#34;&gt;Homework 5&lt;/a&gt;, for example.&lt;/p&gt;
 &lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
@@ -737,9 +747,9 @@ where the coefficients $a, b$, and $c$ are real constants and $a \neq 0$.&lt;/p&
     
     <item>
       <title>Mechanical Vibrations I: Free Response</title>
-      <link>http://localhost:1313/teaching/ode/ode-lec-11/</link>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-11/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/ode/ode-lec-11/</guid>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-11/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;This lecture starts the treatment of a horizontal mass-spring system with mass $m&gt;0$ and spring constant $k&gt;0$:
 &lt;/p&gt;
@@ -755,9 +765,9 @@ where the damping parameter $\delta\geq 0$ may or may not be zero. We start with
     
     <item>
       <title>Wave Equation</title>
-      <link>http://localhost:1313/teaching/pde/pde-lec-11/</link>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-11/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/pde/pde-lec-11/</guid>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-11/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;In this lecture we begin the treatment of the wave equation
 &lt;/p&gt;
@@ -819,9 +829,9 @@ $$
     
     <item>
       <title>Method of Undetermined Coefficients</title>
-      <link>http://localhost:1313/teaching/ode/ode-lec-12/</link>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-12/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/ode/ode-lec-12/</guid>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-12/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;The Method of Undetermined Coefficients provides a way to obtain a particular solution of a linear second-order constant-coefficient non-homogeneous ODE
 &lt;/p&gt;
@@ -844,9 +854,9 @@ in case the forcing $f(t)$ is comes from a number of special types of functions 
     
     <item>
       <title>Wave Equation in Higher Dimensions</title>
-      <link>http://localhost:1313/teaching/pde/pde-lec-12/</link>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-12/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/pde/pde-lec-12/</guid>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-12/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We treat the initial-value problem for the wave equation in $\mathbb{R}^n\times (0,\infty)$, for $n\geq 2$. Starting with the case $n=3$, using spherical means, we obtain &lt;strong&gt;Kirchoff&amp;rsquo;s solution formula&lt;/strong&gt; for $u(x,t)$. We then employ &lt;strong&gt;Hadamard&amp;rsquo;s method of descent&lt;/strong&gt; to obtain &lt;strong&gt;Poisson&amp;rsquo;s solution formula&lt;/strong&gt; for $u(x,t)$ for the case $n=2$.&lt;/p&gt;
 &lt;p&gt;We generalize this framework to $\mathbb{R}^n$ for $n\geq 3$.&lt;/p&gt;
@@ -858,9 +868,9 @@ in case the forcing $f(t)$ is comes from a number of special types of functions 
     
     <item>
       <title>Mechanical Vibrations II: Forced Response</title>
-      <link>http://localhost:1313/teaching/ode/ode-lec-13/</link>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-13/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/ode/ode-lec-13/</guid>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-13/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We continue with the solution of ODEs that govern a spring-mass system:
 &lt;/p&gt;
@@ -883,9 +893,9 @@ where $\delta \geqslant 0$ is the damping constant, $m&gt;0$ is the mass of the 
     
     <item>
       <title>Nonhomogeneous Wave Equation</title>
-      <link>http://localhost:1313/teaching/pde/pde-lec-13/</link>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-13/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/pde/pde-lec-13/</guid>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-13/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;This lecture is on &lt;strong&gt;Duhamel&amp;rsquo;s principle&lt;/strong&gt; to solve the nonhomogenous initial-value problem:&lt;/p&gt;
 $$
@@ -904,9 +914,9 @@ where $n\geq 2$ and $f\in C^{[n/2]+1}(\mathbb{R}^n \times [0,\infty))$.&lt;/p&gt
     
     <item>
       <title>Variation of Parameters</title>
-      <link>http://localhost:1313/teaching/ode/ode-lec-14/</link>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-14/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/ode/ode-lec-14/</guid>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-14/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;Our quest on finding a particular solution of
 &lt;/p&gt;
@@ -927,9 +937,9 @@ continues. Earlier, we used the Method of Undetermined Coefficients to do that. 
     
     <item>
       <title>Energy Methods for the Wave Equation</title>
-      <link>http://localhost:1313/teaching/pde/pde-lec-14/</link>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-14/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/pde/pde-lec-14/</guid>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-14/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We introduce the energy for the wave equation and cover&lt;/p&gt;
 &lt;ul&gt;
@@ -948,9 +958,9 @@ continues. Earlier, we used the Method of Undetermined Coefficients to do that. 
     
     <item>
       <title>Laplace Transform</title>
-      <link>http://localhost:1313/teaching/ode/ode-lec-15/</link>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-15/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/ode/ode-lec-15/</guid>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-15/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We introduce the Laplace transform
 &lt;/p&gt;
@@ -966,11 +976,11 @@ of a function $f(t)$ defined for $t\geq 0$. We cover the existence theory and pr
     
     <item>
       <title>Method of Characteristics</title>
-      <link>http://localhost:1313/teaching/pde/pde-lec-15/</link>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-15/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/pde/pde-lec-15/</guid>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-15/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
-&lt;p&gt;The method of characteristics was already employed to construct the solution of the (constant-coefficient) transport equation in &lt;a href=&#34;http://localhost:1313/teaching/pde/pde-lec-2/&#34;&gt;Lecture 2&lt;/a&gt;. We now begin the &lt;strong&gt;general treatment of the method of characteristics&lt;/strong&gt; for general first-order PDEs.&lt;/p&gt;
+&lt;p&gt;The method of characteristics was already employed to construct the solution of the (constant-coefficient) transport equation in &lt;a href=&#34;https://bilman.github.io/teaching/pde/pde-lec-2/&#34;&gt;Lecture 2&lt;/a&gt;. We now begin the &lt;strong&gt;general treatment of the method of characteristics&lt;/strong&gt; for general first-order PDEs.&lt;/p&gt;
 &lt;p&gt;We write a first order PDE for an unknown function $u$ as
 &lt;/p&gt;
 $$
@@ -1002,9 +1012,9 @@ where $\Gamma \subseteq \partial U$, and $g\colon \Gamma \to \mathbb{R}$ is give
     
     <item>
       <title>Inverse Laplace Transform</title>
-      <link>http://localhost:1313/teaching/ode/ode-lec-16/</link>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-16/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/ode/ode-lec-16/</guid>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-16/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We cover the inverse of the Laplace transform.&lt;/p&gt;
 &lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
@@ -1014,11 +1024,11 @@ where $\Gamma \subseteq \partial U$, and $g\colon \Gamma \to \mathbb{R}$ is give
     
     <item>
       <title>Method of Characteristics: Local Theory</title>
-      <link>http://localhost:1313/teaching/pde/pde-lec-16/</link>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-16/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/pde/pde-lec-16/</guid>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-16/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
-&lt;p&gt;We continue the general treatment of the method of characteristics &lt;a href=&#34;http://localhost:1313/teaching/pde/pde-lec-15/&#34;&gt;Lecture 15&lt;/a&gt; to construct solutions of the Cauchy problem
+&lt;p&gt;We continue the general treatment of the method of characteristics &lt;a href=&#34;https://bilman.github.io/teaching/pde/pde-lec-15/&#34;&gt;Lecture 15&lt;/a&gt; to construct solutions of the Cauchy problem
 &lt;/p&gt;
 $$
 \left\{
@@ -1042,9 +1052,9 @@ We cover&lt;/p&gt;
     
     <item>
       <title>Solving an Initial-Value Problem Using Laplace Transform</title>
-      <link>http://localhost:1313/teaching/ode/ode-lec-17/</link>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-17/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/ode/ode-lec-17/</guid>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-17/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We now use Laplace transforms to solve initial-value problems. To do this, we cover how differentiation corresponds to multiplication under the Laplace transform.&lt;/p&gt;
 &lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
@@ -1054,9 +1064,9 @@ We cover&lt;/p&gt;
     
     <item>
       <title>Scalar Conservation Laws</title>
-      <link>http://localhost:1313/teaching/pde/pde-lec-17/</link>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-17/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/pde/pde-lec-17/</guid>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-17/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We being our treatment of &lt;strong&gt;scalar conservation laws&lt;/strong&gt;:&lt;/p&gt;
 $$
@@ -1080,9 +1090,9 @@ $$
     
     <item>
       <title>The Convolution Theorem</title>
-      <link>http://localhost:1313/teaching/ode/ode-lec-18/</link>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-18/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/ode/ode-lec-18/</guid>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-18/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;For given $F(s)$ and $G(s)$, we cover how to compute the inverse Laplace transform
 $
@@ -1095,9 +1105,9 @@ $&lt;/p&gt;
     
     <item>
       <title>Riemann&#39;s Problem &amp; Applications</title>
-      <link>http://localhost:1313/teaching/pde/pde-lec-18/</link>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-18/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/pde/pde-lec-18/</guid>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-18/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We continue our discussion with &lt;strong&gt;Riemann&amp;rsquo;s problem&lt;/strong&gt;, the initial value problem
 &lt;/p&gt;
@@ -1126,9 +1136,9 @@ with $u_L\neq u_R$. Assuming that $F$ is uniformly convex and $C^2$, we give the
     
     <item>
       <title>Systems of Linear Differential Equations</title>
-      <link>http://localhost:1313/teaching/ode/ode-lec-19/</link>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-19/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/ode/ode-lec-19/</guid>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-19/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We cover systems of linear differential equations, introduce the matrix formulation, and cover the relevant matrix theory.&lt;/p&gt;
 &lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
@@ -1154,9 +1164,9 @@ with $u_L\neq u_R$. Assuming that $F$ is uniformly convex and $C^2$, we give the
     
     <item>
       <title>Plane Waves, Traveling Waves, and Solitons</title>
-      <link>http://localhost:1313/teaching/pde/pde-lec-19/</link>
+      <link>https://bilman.github.io/teaching/pde/pde-lec-19/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/pde/pde-lec-19/</guid>
+      <guid>https://bilman.github.io/teaching/pde/pde-lec-19/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We end the semester with some &lt;strong&gt;basic linear wave theory&lt;/strong&gt; and &lt;strong&gt;solitons&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;../img/kdvsolitons2.png&#34; alt=&#34;KdV Solitons&#34;&gt;&lt;/p&gt;
@@ -1190,9 +1200,9 @@ $$
     
     <item>
       <title>Appendix on Surface Integrals</title>
-      <link>http://localhost:1313/teaching/pde/pde-appendix-1/</link>
+      <link>https://bilman.github.io/teaching/pde/pde-appendix-1/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/pde/pde-appendix-1/</guid>
+      <guid>https://bilman.github.io/teaching/pde/pde-appendix-1/</guid>
       <description>&lt;p&gt;This is a review on surface integrals.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/ncwnmk55w18vph5/Appendix-Surface-Integrals.pdf?dl=0&#34;&gt;The notes for this appendix are available here (13 pages).&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -1200,9 +1210,9 @@ $$
     
     <item>
       <title>Phase Plane Analysis</title>
-      <link>http://localhost:1313/teaching/ode/ode-lec-20/</link>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-20/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/ode/ode-lec-20/</guid>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-20/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We continue analyzing solution trajectories for linear systems of first order homogeneous differential equations with constant coefficients:
 &lt;/p&gt;
@@ -1248,9 +1258,9 @@ $$
     
     <item>
       <title>Qualitative Analysis of First-Order ODEs</title>
-      <link>http://localhost:1313/teaching/ode/ode-lec-21/</link>
+      <link>https://bilman.github.io/teaching/ode/ode-lec-21/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/ode/ode-lec-21/</guid>
+      <guid>https://bilman.github.io/teaching/ode/ode-lec-21/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We end the semester with qualitative analysis of first order ODEs that are autonomous:
 &lt;/p&gt;
@@ -1262,9 +1272,9 @@ $$\frac{\mathrm{d} x}{\mathrm{~d} t}=f(x).$$
     
     <item>
       <title>Existence &amp; Uniqueness</title>
-      <link>http://localhost:1313/teaching/ode/appendix-1/</link>
+      <link>https://bilman.github.io/teaching/ode/appendix-1/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/ode/appendix-1/</guid>
+      <guid>https://bilman.github.io/teaching/ode/appendix-1/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;In this appendix we cover existence and uniqueness theory for initial-value problems of the form
 &lt;/p&gt;
@@ -1287,9 +1297,9 @@ $$
     
     <item>
       <title>Some Modeling</title>
-      <link>http://localhost:1313/teaching/ode/appendix-2/</link>
+      <link>https://bilman.github.io/teaching/ode/appendix-2/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/ode/appendix-2/</guid>
+      <guid>https://bilman.github.io/teaching/ode/appendix-2/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;In this appendix we cover modeling certain physical/chemical phenomena by first-order linear ordinary differential equations.&lt;/p&gt;
 &lt;h2 id=&#34;jupyter-notebook&#34;&gt;Jupyter Notebook&lt;/h2&gt;
@@ -1304,18 +1314,18 @@ $$
     
     <item>
       <title>Special session at the IMACS Conference 2025 in Athens, GA</title>
-      <link>http://localhost:1313/post/imacs-session/</link>
+      <link>https://bilman.github.io/post/imacs-session/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/imacs-session/</guid>
+      <guid>https://bilman.github.io/post/imacs-session/</guid>
       <description>&lt;p&gt;Robert Buckingham, Peter Miller, and I are organizing a special session on &amp;ldquo;Singular asymptotics for integrable nonlinear waves and related topics&amp;rdquo;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>General rogue waves of infinite order: exact properties, asymptotic behavior, and effective numerical computation</title>
-      <link>http://localhost:1313/publication/rwio-nls-asymptotics/</link>
+      <link>https://bilman.github.io/publication/rwio-nls-asymptotics/</link>
       <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/rwio-nls-asymptotics/</guid>
+      <guid>https://bilman.github.io/publication/rwio-nls-asymptotics/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -1340,9 +1350,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Extreme superposition: high-order fundamental rogue waves in the far-field regime</title>
-      <link>http://localhost:1313/publication/extreme-far-field/</link>
+      <link>https://bilman.github.io/publication/extreme-far-field/</link>
       <pubDate>Wed, 07 Aug 2024 14:29:12 -0400</pubDate>
-      <guid>http://localhost:1313/publication/extreme-far-field/</guid>
+      <guid>https://bilman.github.io/publication/extreme-far-field/</guid>
       <description>&lt;!-- 
 
 
@@ -1382,27 +1392,27 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>New paper!</title>
-      <link>http://localhost:1313/post/rwionls-jl-post-copy/</link>
+      <link>https://bilman.github.io/post/rwionls-jl-post-copy/</link>
       <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/rwionls-jl-post-copy/</guid>
-      <description>&lt;p&gt;We have just submitted our paper titled &lt;em&gt;General rogue waves of infinite order: Exact properties, asymptotic behavior, and effective computation&lt;/em&gt;. See the &lt;a href=&#34;http://localhost:1313/publication/rwio-nls-asymptotics/&#34;&gt;publication&lt;/a&gt;.&lt;/p&gt;
+      <guid>https://bilman.github.io/post/rwionls-jl-post-copy/</guid>
+      <description>&lt;p&gt;We have just submitted our paper titled &lt;em&gt;General rogue waves of infinite order: Exact properties, asymptotic behavior, and effective computation&lt;/em&gt;. See the &lt;a href=&#34;https://bilman.github.io/publication/rwio-nls-asymptotics/&#34;&gt;publication&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>RogueWaveInfiniteNLS.jl software package for Julia</title>
-      <link>http://localhost:1313/post/rwionls-jl-post/</link>
+      <link>https://bilman.github.io/post/rwionls-jl-post/</link>
       <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/rwionls-jl-post/</guid>
-      <description>&lt;p&gt;We have just made the initial release of a software package for Julia to compute general rogue wave of infinite order solutions of the focusing nonlinear Schrödinger equation. See the &lt;a href=&#34;http://localhost:1313/publication/rwionls-jl/&#34;&gt;publication&lt;/a&gt;.&lt;/p&gt;
+      <guid>https://bilman.github.io/post/rwionls-jl-post/</guid>
+      <description>&lt;p&gt;We have just made the initial release of a software package for Julia to compute general rogue wave of infinite order solutions of the focusing nonlinear Schrödinger equation. See the &lt;a href=&#34;https://bilman.github.io/publication/rwionls-jl/&#34;&gt;publication&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>General rogue waves of infinite order: double-scaling asymptotics</title>
-      <link>http://localhost:1313/ongoing/rwio-nls-elliptic-temp/</link>
+      <link>https://bilman.github.io/ongoing/rwio-nls-elliptic-temp/</link>
       <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ongoing/rwio-nls-elliptic-temp/</guid>
+      <guid>https://bilman.github.io/ongoing/rwio-nls-elliptic-temp/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -1427,9 +1437,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>RogueWaveInfiniteNLS.jl</title>
-      <link>http://localhost:1313/publication/rwionls-jl/</link>
+      <link>https://bilman.github.io/publication/rwionls-jl/</link>
       <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/rwionls-jl/</guid>
+      <guid>https://bilman.github.io/publication/rwionls-jl/</guid>
       <description>&lt;!-- 
 
 
@@ -1466,9 +1476,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Solitons of fractional order: interpolating between coherent structures</title>
-      <link>http://localhost:1313/ongoing/fractional-solitons/</link>
+      <link>https://bilman.github.io/ongoing/fractional-solitons/</link>
       <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ongoing/fractional-solitons/</guid>
+      <guid>https://bilman.github.io/ongoing/fractional-solitons/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -1493,18 +1503,18 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Special session at the AMS Joint Math Meeting 2025 in Seattle, WA</title>
-      <link>http://localhost:1313/post/ams-session/</link>
+      <link>https://bilman.github.io/post/ams-session/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/ams-session/</guid>
+      <guid>https://bilman.github.io/post/ams-session/</guid>
       <description>&lt;p&gt;Cade Ballew, Tom Torgdon, and I are organizing a special session on &amp;ldquo;Recent Advancements in Integrable Systems and Orthogonal Polynomials&amp;rdquo;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Infinite-order solutions of the modified Korteweg-de Vries equation</title>
-      <link>http://localhost:1313/ongoing/rwio-mkdv/</link>
+      <link>https://bilman.github.io/ongoing/rwio-mkdv/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ongoing/rwio-mkdv/</guid>
+      <guid>https://bilman.github.io/ongoing/rwio-mkdv/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -1529,9 +1539,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Asymptotic behavior of large-order soliton solutions of the modified Korteweg-de Vries equation</title>
-      <link>http://localhost:1313/ongoing/kurt-mkdv/</link>
+      <link>https://bilman.github.io/ongoing/kurt-mkdv/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ongoing/kurt-mkdv/</guid>
+      <guid>https://bilman.github.io/ongoing/kurt-mkdv/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -1556,9 +1566,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Far-field symptotics of large-order breathers for the sine-Gordon equation</title>
-      <link>http://localhost:1313/ongoing/sine-gordon/</link>
+      <link>https://bilman.github.io/ongoing/sine-gordon/</link>
       <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ongoing/sine-gordon/</guid>
+      <guid>https://bilman.github.io/ongoing/sine-gordon/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -1583,9 +1593,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Long-time development of initial data with spectral pole singularities</title>
-      <link>http://localhost:1313/ongoing/spec-sing/</link>
+      <link>https://bilman.github.io/ongoing/spec-sing/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ongoing/spec-sing/</guid>
+      <guid>https://bilman.github.io/ongoing/spec-sing/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -1610,9 +1620,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Long-time asymptotics for the Korteweg-de Vries equation</title>
-      <link>http://localhost:1313/ongoing/kdv/</link>
+      <link>https://bilman.github.io/ongoing/kdv/</link>
       <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ongoing/kdv/</guid>
+      <guid>https://bilman.github.io/ongoing/kdv/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -1637,9 +1647,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Computation of large-genus solutions of the Korteweg-de Vries equation</title>
-      <link>http://localhost:1313/publication/kdv-periodic-nist/</link>
+      <link>https://bilman.github.io/publication/kdv-periodic-nist/</link>
       <pubDate>Sat, 01 Jul 2023 14:29:44 -0400</pubDate>
-      <guid>http://localhost:1313/publication/kdv-periodic-nist/</guid>
+      <guid>https://bilman.github.io/publication/kdv-periodic-nist/</guid>
       <description>&lt;!-- 
 
 
@@ -1673,14 +1683,14 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
 &lt;/div&gt; --&gt;
 &lt;!-- Add the publication&#39;s **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --&gt;
 &lt;p&gt;As part of this work, we have constructed a solution of the Korteweg-de Vries equation by densely packing spectral bands inside a fixed interval. An animation of the resulting solution is given below. It seems to exhibit rogue-wave-type behavior on a periodic background.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/kdv-periodic-nist/rogue_hi.gif&#34;
+&lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/publication/kdv-periodic-nist/rogue_hi.gif&#34;
     alt=&#34;Time evolution of the solution constructed via accumulation of bands.&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Time evolution of the solution constructed via accumulation of bands.&lt;/p&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;The contour plot of the same solution approximated by using $g=30$ gaps is given below.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/kdv-periodic-nist/contour-g-30.png&#34;
+&lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/publication/kdv-periodic-nist/contour-g-30.png&#34;
     alt=&#34;Time evolution of the solution constructed via accumulation of bands.&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Time evolution of the solution constructed via accumulation of bands.&lt;/p&gt;
     &lt;/figcaption&gt;
@@ -1692,9 +1702,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Broader universality of rogue waves of infinite order</title>
-      <link>http://localhost:1313/publication/broader-universality-rwio/</link>
+      <link>https://bilman.github.io/publication/broader-universality-rwio/</link>
       <pubDate>Wed, 30 Mar 2022 14:29:12 -0400</pubDate>
-      <guid>http://localhost:1313/publication/broader-universality-rwio/</guid>
+      <guid>https://bilman.github.io/publication/broader-universality-rwio/</guid>
       <description>&lt;!-- 
 
 
@@ -1732,9 +1742,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Far-field asymptotics for multiple-pole solitons in the large-order limit</title>
-      <link>http://localhost:1313/publication/multipole-nls-far-field/</link>
+      <link>https://bilman.github.io/publication/multipole-nls-far-field/</link>
       <pubDate>Thu, 14 Jan 2021 14:29:12 -0400</pubDate>
-      <guid>http://localhost:1313/publication/multipole-nls-far-field/</guid>
+      <guid>https://bilman.github.io/publication/multipole-nls-far-field/</guid>
       <description>&lt;!-- 
 
 
@@ -1773,9 +1783,9 @@ Supplementary notes can be added here, including [code, math, and images](https:
     
     <item>
       <title>On numerical inverse scattering for the Korteweg-de Vries equation with discontinuous step-like data</title>
-      <link>http://localhost:1313/publication/kdv-step-nist/</link>
+      <link>https://bilman.github.io/publication/kdv-step-nist/</link>
       <pubDate>Mon, 16 Mar 2020 14:29:44 -0400</pubDate>
-      <guid>http://localhost:1313/publication/kdv-step-nist/</guid>
+      <guid>https://bilman.github.io/publication/kdv-step-nist/</guid>
       <description>&lt;!-- 
 
 
@@ -1810,7 +1820,7 @@ Supplementary notes can be added here, including [code, math, and images](https:
 
 Add the publication&#39;s **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --&gt;
 &lt;p&gt;Time evolution of step-like initial-data that has a soliton component.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/kdv-step-nist/DSW-sol-slow.gif&#34;
+&lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/publication/kdv-step-nist/DSW-sol-slow.gif&#34;
     alt=&#34;Time evolution of step-like initial-data that has a soliton component.&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Time evolution of step-like initial-data that has a soliton component.&lt;/p&gt;
     &lt;/figcaption&gt;
@@ -1821,9 +1831,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Extreme superposition: rogue waves of infinite order and the Painlevé-III hierarchy</title>
-      <link>http://localhost:1313/publication/extreme-superposition/</link>
+      <link>https://bilman.github.io/publication/extreme-superposition/</link>
       <pubDate>Sun, 15 Mar 2020 00:00:44 -0400</pubDate>
-      <guid>http://localhost:1313/publication/extreme-superposition/</guid>
+      <guid>https://bilman.github.io/publication/extreme-superposition/</guid>
       <description>&lt;!-- 
 
 
@@ -1863,8 +1873,8 @@ $$
 \mathrm{i}\Psi_t + \frac{1}{2}\Psi_{XX}+|\Psi|^2\Psi=0,
 $$
 &lt;p&gt;
-identified in this work. The computational method developed in this work is based on numerical solution of the Riemann-Hilbert problem representation of $\Psi(X,T)$ for each $(X,T)$. While this Mathematica module can be used in code repository linked above, we recommend using the more recent Julia software package &lt;a href=&#34;http://localhost:1313/publication/rwionls-jl/&#34;&gt;RogueWaveInfiniteNLS.jl&lt;/a&gt;&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/extreme-superposition/anim.gif&#34;
+identified in this work. The computational method developed in this work is based on numerical solution of the Riemann-Hilbert problem representation of $\Psi(X,T)$ for each $(X,T)$. While this Mathematica module can be used in code repository linked above, we recommend using the more recent Julia software package &lt;a href=&#34;https://bilman.github.io/publication/rwionls-jl/&#34;&gt;RogueWaveInfiniteNLS.jl&lt;/a&gt;&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/publication/extreme-superposition/anim.gif&#34;
     alt=&#34;Time evolution of the special solution. Blue: the real part, purple: the imaginary part&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Time evolution of the special solution. Blue: the real part, purple: the imaginary part&lt;/p&gt;
     &lt;/figcaption&gt;
@@ -1875,9 +1885,9 @@ identified in this work. The computational method developed in this work is base
     
     <item>
       <title>Large-order asymptotics for multiple-pole solitons of the focusing nonlinear Schrödinger equation</title>
-      <link>http://localhost:1313/publication/multipole-nls/</link>
+      <link>https://bilman.github.io/publication/multipole-nls/</link>
       <pubDate>Tue, 16 Apr 2019 14:28:55 -0400</pubDate>
-      <guid>http://localhost:1313/publication/multipole-nls/</guid>
+      <guid>https://bilman.github.io/publication/multipole-nls/</guid>
       <description>&lt;!-- 
 
 
@@ -1917,18 +1927,18 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Benchmarking numerical methods for lattice equations with the Toda lattice</title>
-      <link>http://localhost:1313/publication/toda-benchmark/</link>
+      <link>https://bilman.github.io/publication/toda-benchmark/</link>
       <pubDate>Fri, 27 Jul 2018 14:31:04 -0400</pubDate>
-      <guid>http://localhost:1313/publication/toda-benchmark/</guid>
+      <guid>https://bilman.github.io/publication/toda-benchmark/</guid>
       <description>&lt;!-- Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). --&gt;
 </description>
     </item>
     
     <item>
       <title>A robust inverse scattering transform for the focusing nonlinear Schrödinger equation</title>
-      <link>http://localhost:1313/publication/robust-ist/</link>
+      <link>https://bilman.github.io/publication/robust-ist/</link>
       <pubDate>Thu, 19 Oct 2017 00:00:44 -0400</pubDate>
-      <guid>http://localhost:1313/publication/robust-ist/</guid>
+      <guid>https://bilman.github.io/publication/robust-ist/</guid>
       <description>&lt;!-- 
 
 
@@ -1967,9 +1977,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Discrete integrable systems, Darboux transformations, and Yang–Baxter maps</title>
-      <link>http://localhost:1313/publication/discrete-integrable-book/</link>
+      <link>https://bilman.github.io/publication/discrete-integrable-book/</link>
       <pubDate>Sat, 01 Jul 2017 14:31:18 -0400</pubDate>
-      <guid>http://localhost:1313/publication/discrete-integrable-book/</guid>
+      <guid>https://bilman.github.io/publication/discrete-integrable-book/</guid>
       <description>&lt;!-- 
 
 
@@ -2008,24 +2018,24 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Numerical inverse scattering for the Toda lattice</title>
-      <link>http://localhost:1313/publication/toda-nist/</link>
+      <link>https://bilman.github.io/publication/toda-nist/</link>
       <pubDate>Mon, 16 Jan 2017 14:29:44 -0400</pubDate>
-      <guid>http://localhost:1313/publication/toda-nist/</guid>
+      <guid>https://bilman.github.io/publication/toda-nist/</guid>
       <description>&lt;p&gt;Time evolution of purely dispersive initial data is computed at $t=10000$ without time-stepping, at least by setting $t=10000$ in the Riemann-Hilbert problem and solving different Riemann-Hilbert problems as $n$ varies. Below are plots of $a_n$ (the off-diagonal of the bi-infinite Jacobi matrix) and $b_n$ (the diagonal of the bi-infinite Jacobi matrix).&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/toda-nist/TodaSolution-NoS-a-10000.png&#34;
+&lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/publication/toda-nist/TodaSolution-NoS-a-10000.png&#34;
     alt=&#34;$a_n(t=10000)$, $-7500\leq n\leq 7500$. There are no solitons.&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;$a_n(t=10000)$, $-7500\leq n\leq 7500$. There are no solitons.&lt;/p&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/toda-nist/TodaSolution-NoS-b-10000.png&#34;
+&lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/publication/toda-nist/TodaSolution-NoS-b-10000.png&#34;
     alt=&#34;$b_n(t=10000)$, $-7500\leq n\leq 7500$. There are no solitons.&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;$b_n(t=10000)$, $-7500\leq n\leq 7500$. There are no solitons.&lt;/p&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Below is the space-evolution of (truncated) contour for the Riemann-Hilbert problem that&amp;rsquo;s solved to compute the time evolution of initial data that generates a soliton to $t=1000$. Here $n$ varies from $n=-1250$ to $n=0$.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/toda-nist/Toda-1000.gif&#34;
+&lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/publication/toda-nist/Toda-1000.gif&#34;
     alt=&#34;Time evolution of pure step (discontinuous) initial data&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Time evolution of pure step (discontinuous) initial data&lt;/p&gt;
     &lt;/figcaption&gt;
@@ -2036,9 +2046,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>On the evolution of scattering data under perturbations of the Toda lattice</title>
-      <link>http://localhost:1313/publication/toda-perturbations/</link>
+      <link>https://bilman.github.io/publication/toda-perturbations/</link>
       <pubDate>Thu, 01 Sep 2016 14:31:34 -0400</pubDate>
-      <guid>http://localhost:1313/publication/toda-perturbations/</guid>
+      <guid>https://bilman.github.io/publication/toda-perturbations/</guid>
       <description>&lt;!-- Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). --&gt;</description>
     </item>
     

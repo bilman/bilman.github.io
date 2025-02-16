@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog | Deniz Bilman</title>
-    <link>http://localhost:1313/post/</link>
-      <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://bilman.github.io/post/</link>
+      <atom:link href="https://bilman.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Blog</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <url>https://bilman.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
       <title>Blog</title>
-      <link>http://localhost:1313/post/</link>
+      <link>https://bilman.github.io/post/</link>
     </image>
     
     <item>
       <title>Special session at the IMACS Conference 2025 in Athens, GA</title>
-      <link>http://localhost:1313/post/imacs-session/</link>
+      <link>https://bilman.github.io/post/imacs-session/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/imacs-session/</guid>
+      <guid>https://bilman.github.io/post/imacs-session/</guid>
       <description>&lt;p&gt;Robert Buckingham, Peter Miller, and I are organizing a special session on &amp;ldquo;Singular asymptotics for integrable nonlinear waves and related topics&amp;rdquo;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>New paper!</title>
-      <link>http://localhost:1313/post/rwionls-jl-post-copy/</link>
+      <link>https://bilman.github.io/post/rwionls-jl-post-copy/</link>
       <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/rwionls-jl-post-copy/</guid>
-      <description>&lt;p&gt;We have just submitted our paper titled &lt;em&gt;General rogue waves of infinite order: Exact properties, asymptotic behavior, and effective computation&lt;/em&gt;. See the &lt;a href=&#34;http://localhost:1313/publication/rwio-nls-asymptotics/&#34;&gt;publication&lt;/a&gt;.&lt;/p&gt;
+      <guid>https://bilman.github.io/post/rwionls-jl-post-copy/</guid>
+      <description>&lt;p&gt;We have just submitted our paper titled &lt;em&gt;General rogue waves of infinite order: Exact properties, asymptotic behavior, and effective computation&lt;/em&gt;. See the &lt;a href=&#34;https://bilman.github.io/publication/rwio-nls-asymptotics/&#34;&gt;publication&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>RogueWaveInfiniteNLS.jl software package for Julia</title>
-      <link>http://localhost:1313/post/rwionls-jl-post/</link>
+      <link>https://bilman.github.io/post/rwionls-jl-post/</link>
       <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/rwionls-jl-post/</guid>
-      <description>&lt;p&gt;We have just made the initial release of a software package for Julia to compute general rogue wave of infinite order solutions of the focusing nonlinear Schrödinger equation. See the &lt;a href=&#34;http://localhost:1313/publication/rwionls-jl/&#34;&gt;publication&lt;/a&gt;.&lt;/p&gt;
+      <guid>https://bilman.github.io/post/rwionls-jl-post/</guid>
+      <description>&lt;p&gt;We have just made the initial release of a software package for Julia to compute general rogue wave of infinite order solutions of the focusing nonlinear Schrödinger equation. See the &lt;a href=&#34;https://bilman.github.io/publication/rwionls-jl/&#34;&gt;publication&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Special session at the AMS Joint Math Meeting 2025 in Seattle, WA</title>
-      <link>http://localhost:1313/post/ams-session/</link>
+      <link>https://bilman.github.io/post/ams-session/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/ams-session/</guid>
+      <guid>https://bilman.github.io/post/ams-session/</guid>
       <description>&lt;p&gt;Cade Ballew, Tom Torgdon, and I are organizing a special session on &amp;ldquo;Recent Advancements in Integrable Systems and Orthogonal Polynomials&amp;rdquo;.&lt;/p&gt;
 </description>
     </item>

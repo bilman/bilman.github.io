@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>In preparation | Deniz Bilman</title>
-    <link>http://localhost:1313/ongoing/</link>
-      <atom:link href="http://localhost:1313/ongoing/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://bilman.github.io/ongoing/</link>
+      <atom:link href="https://bilman.github.io/ongoing/index.xml" rel="self" type="application/rss+xml" />
     <description>In preparation</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 05 Jul 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <url>https://bilman.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
       <title>In preparation</title>
-      <link>http://localhost:1313/ongoing/</link>
+      <link>https://bilman.github.io/ongoing/</link>
     </image>
     
     <item>
       <title>General rogue waves of infinite order: double-scaling asymptotics</title>
-      <link>http://localhost:1313/ongoing/rwio-nls-elliptic-temp/</link>
+      <link>https://bilman.github.io/ongoing/rwio-nls-elliptic-temp/</link>
       <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ongoing/rwio-nls-elliptic-temp/</guid>
+      <guid>https://bilman.github.io/ongoing/rwio-nls-elliptic-temp/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -41,9 +41,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Solitons of fractional order: interpolating between coherent structures</title>
-      <link>http://localhost:1313/ongoing/fractional-solitons/</link>
+      <link>https://bilman.github.io/ongoing/fractional-solitons/</link>
       <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ongoing/fractional-solitons/</guid>
+      <guid>https://bilman.github.io/ongoing/fractional-solitons/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -68,9 +68,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Infinite-order solutions of the modified Korteweg-de Vries equation</title>
-      <link>http://localhost:1313/ongoing/rwio-mkdv/</link>
+      <link>https://bilman.github.io/ongoing/rwio-mkdv/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ongoing/rwio-mkdv/</guid>
+      <guid>https://bilman.github.io/ongoing/rwio-mkdv/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -95,9 +95,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Asymptotic behavior of large-order soliton solutions of the modified Korteweg-de Vries equation</title>
-      <link>http://localhost:1313/ongoing/kurt-mkdv/</link>
+      <link>https://bilman.github.io/ongoing/kurt-mkdv/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ongoing/kurt-mkdv/</guid>
+      <guid>https://bilman.github.io/ongoing/kurt-mkdv/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -122,9 +122,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Far-field symptotics of large-order breathers for the sine-Gordon equation</title>
-      <link>http://localhost:1313/ongoing/sine-gordon/</link>
+      <link>https://bilman.github.io/ongoing/sine-gordon/</link>
       <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ongoing/sine-gordon/</guid>
+      <guid>https://bilman.github.io/ongoing/sine-gordon/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -149,9 +149,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Long-time development of initial data with spectral pole singularities</title>
-      <link>http://localhost:1313/ongoing/spec-sing/</link>
+      <link>https://bilman.github.io/ongoing/spec-sing/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ongoing/spec-sing/</guid>
+      <guid>https://bilman.github.io/ongoing/spec-sing/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -176,9 +176,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Long-time asymptotics for the Korteweg-de Vries equation</title>
-      <link>http://localhost:1313/ongoing/kdv/</link>
+      <link>https://bilman.github.io/ongoing/kdv/</link>
       <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ongoing/kdv/</guid>
+      <guid>https://bilman.github.io/ongoing/kdv/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 

@@ -1,9 +1,9 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: February 15, 2025 --><html lang="en-us" dir="ltr"
+<!-- Last Published: February 16, 2025 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="light">
   
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -44,7 +44,7 @@
   <meta name="description" content="Undergraduate-level course on the qualitative study of ordinary differential equations. Taught at the University of Michigan (Math 216: Differential Equations) in Winter 2017, Fall 2017, Winter 2018, and Spring 2018, and taught at the University of Cincinnati (Math 2074: Dynamical Systems) in Fall 2021. Full set of lecture notes and Jupyter notebooks are available." />
 
   
-  <link rel="alternate" hreflang="en-us" href="http://localhost:1313/teaching/ode/" />
+  <link rel="alternate" hreflang="en-us" href="https://bilman.github.io/teaching/ode/" />
 
   
   
@@ -133,6 +133,45 @@
 
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45852984-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-45852984-4', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+
 
 
 
@@ -166,7 +205,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="http://localhost:1313/teaching/ode/" />
+  <link rel="canonical" href="https://bilman.github.io/teaching/ode/" />
 
   
   
@@ -191,10 +230,10 @@
     <meta property="twitter:creator" content="@denizbilman" />
   
   <meta property="og:site_name" content="Deniz Bilman" />
-  <meta property="og:url" content="http://localhost:1313/teaching/ode/" />
+  <meta property="og:url" content="https://bilman.github.io/teaching/ode/" />
   <meta property="og:title" content="Ordinary Differential Equations | Deniz Bilman" />
-  <meta property="og:description" content="Undergraduate-level course on the qualitative study of ordinary differential equations. Taught at the University of Michigan (Math 216: Differential Equations) in Winter 2017, Fall 2017, Winter 2018, and Spring 2018, and taught at the University of Cincinnati (Math 2074: Dynamical Systems) in Fall 2021. Full set of lecture notes and Jupyter notebooks are available." /><meta property="og:image" content="http://localhost:1313/teaching/ode/featured.png" />
-    <meta property="twitter:image" content="http://localhost:1313/teaching/ode/featured.png" /><meta property="og:locale" content="en-us" />
+  <meta property="og:description" content="Undergraduate-level course on the qualitative study of ordinary differential equations. Taught at the University of Michigan (Math 216: Differential Equations) in Winter 2017, Fall 2017, Winter 2018, and Spring 2018, and taught at the University of Cincinnati (Math 2074: Dynamical Systems) in Fall 2021. Full set of lecture notes and Jupyter notebooks are available." /><meta property="og:image" content="https://bilman.github.io/teaching/ode/featured.png" />
+    <meta property="twitter:image" content="https://bilman.github.io/teaching/ode/featured.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta property="og:updated_time" content="2023-10-24T00:00:00&#43;00:00" />
@@ -233,6 +272,7 @@
   
 
 
+  
   
   
   
@@ -611,8 +651,8 @@
   
   <script
     defer
-    src="/js/hugo-blox-en.min.js"
-    integrity=""
+    src="/js/hugo-blox-en.min.e5fa931947cac2d947732ea37a770aae2b5bd4a50b6048060cd129b46159a06d.js"
+    integrity="sha256-5fqTGUfKwtlHcy6jencKritb1KULYEgGDNEptGFZoG0="
   ></script>
 
   
@@ -874,6 +914,14 @@
     href="/teaching/nla/nla-lec-8/"
     
   >Lecture 8
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/teaching/nla/nla-lec-10/"
+    
+  >Lecture 10
     </a>
               
             </li></ul>
@@ -1601,6 +1649,14 @@
   >Lecture 8
     </a>
               
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/teaching/nla/nla-lec-10/"
+    
+  >Lecture 10
+    </a>
+              
             </li></ul>
       </div></li>
         <li class="open"><a
@@ -2026,7 +2082,7 @@
       <div class="mb-1">
         <div class="mt-1.5 flex items-center gap-1 overflow-hidden text-sm text-gray-500 dark:text-gray-400">
       <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
-        <a href="http://localhost:1313/teaching/">Teaching</a>
+        <a href="https://bilman.github.io/teaching/">Teaching</a>
       </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg><div class="whitespace-nowrap font-medium text-gray-700 dark:text-gray-100">Ordinary Differential Equations</div>
 </div>
 
