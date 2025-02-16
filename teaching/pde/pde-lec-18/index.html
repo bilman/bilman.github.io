@@ -3,7 +3,7 @@
 <!-- Last Published: February 15, 2025 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="light">
   
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -44,7 +44,7 @@
   <meta name="description" content="Summary We continue our discussion with Riemann&rsquo;s problem, the initial value problem $$ \left\{ \begin{alignedat}{2} u_t &#43; (F(u))_x &= 0 \quad&&\text{in}~\mathbb{R}\times(0,\infty)\\ u&=g \quad &&\text{on}~\mathbb{R}\times\{t=0\} \end{alignedat} \right. $$ where $g$ is a piecewise-constant function $$ g(x)=\begin{cases} u_L,& x&lt;0 \\ u_R,& x&gt;0 \end{cases} $$ with $u_L\neq u_R$." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://bilman.github.io/teaching/pde/pde-lec-18/" />
+  <link rel="alternate" hreflang="en-us" href="http://localhost:1313/teaching/pde/pde-lec-18/" />
 
   
   
@@ -133,45 +133,6 @@
 
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45852984-4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-45852984-4', {});
-  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
-
 
 
 
@@ -203,7 +164,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://bilman.github.io/teaching/pde/pde-lec-18/" />
+  <link rel="canonical" href="http://localhost:1313/teaching/pde/pde-lec-18/" />
 
   
   
@@ -229,10 +190,10 @@
     <meta property="twitter:creator" content="@denizbilman" />
   
   <meta property="og:site_name" content="Deniz Bilman" />
-  <meta property="og:url" content="https://bilman.github.io/teaching/pde/pde-lec-18/" />
+  <meta property="og:url" content="http://localhost:1313/teaching/pde/pde-lec-18/" />
   <meta property="og:title" content="Riemann&#39;s Problem &amp; Applications | Deniz Bilman" />
-  <meta property="og:description" content="Summary We continue our discussion with Riemann&rsquo;s problem, the initial value problem $$ \left\{ \begin{alignedat}{2} u_t &#43; (F(u))_x &= 0 \quad&&\text{in}~\mathbb{R}\times(0,\infty)\\ u&=g \quad &&\text{on}~\mathbb{R}\times\{t=0\} \end{alignedat} \right. $$ where $g$ is a piecewise-constant function $$ g(x)=\begin{cases} u_L,& x&lt;0 \\ u_R,& x&gt;0 \end{cases} $$ with $u_L\neq u_R$." /><meta property="og:image" content="https://bilman.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png" />
-    <meta property="twitter:image" content="https://bilman.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  <meta property="og:description" content="Summary We continue our discussion with Riemann&rsquo;s problem, the initial value problem $$ \left\{ \begin{alignedat}{2} u_t &#43; (F(u))_x &= 0 \quad&&\text{in}~\mathbb{R}\times(0,\infty)\\ u&=g \quad &&\text{on}~\mathbb{R}\times\{t=0\} \end{alignedat} \right. $$ where $g$ is a piecewise-constant function $$ g(x)=\begin{cases} u_L,& x&lt;0 \\ u_R,& x&gt;0 \end{cases} $$ with $u_L\neq u_R$." /><meta property="og:image" content="http://localhost:1313/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="http://localhost:1313/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
@@ -655,8 +616,8 @@
   
   <script
     defer
-    src="/js/hugo-blox-en.min.e5fa931947cac2d947732ea37a770aae2b5bd4a50b6048060cd129b46159a06d.js"
-    integrity="sha256-5fqTGUfKwtlHcy6jencKritb1KULYEgGDNEptGFZoG0="
+    src="/js/hugo-blox-en.min.js"
+    integrity=""
   ></script>
 
   
@@ -1625,10 +1586,10 @@
       <div class="mb-4">
         <div class="mt-1.5 flex items-center gap-1 overflow-hidden text-sm text-gray-500 dark:text-gray-400">
       <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
-        <a href="https://bilman.github.io/teaching/">Teaching</a>
+        <a href="http://localhost:1313/teaching/">Teaching</a>
       </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg>
       <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
-        <a href="https://bilman.github.io/teaching/pde/">Partial Differential Equations</a>
+        <a href="http://localhost:1313/teaching/pde/">Partial Differential Equations</a>
       </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg><div class="whitespace-nowrap font-medium text-gray-700 dark:text-gray-100">Lecture 18</div>
 </div>
 
@@ -1722,7 +1683,7 @@ with $u_L\neq u_R$. Assuming that $F$ is uniformly convex and $C^2$, we give the
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbilman.github.io%2Fteaching%2Fpde%2Fpde-lec-18%2F&amp;text=Riemann%27s&#43;Problem&#43;%26&#43;Applications"
+    href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fteaching%2Fpde%2Fpde-lec-18%2F&amp;text=Riemann%27s&#43;Problem&#43;%26&#43;Applications"
     title="X"
     aria-label="X"
     id="share-link-x"
@@ -1740,7 +1701,7 @@ with $u_L\neq u_R$. Assuming that $F$ is uniformly convex and $C^2$, we give the
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fbilman.github.io%2Fteaching%2Fpde%2Fpde-lec-18%2F&amp;t=Riemann%27s&#43;Problem&#43;%26&#43;Applications"
+    href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fteaching%2Fpde%2Fpde-lec-18%2F&amp;t=Riemann%27s&#43;Problem&#43;%26&#43;Applications"
     title="Facebook"
     aria-label="Facebook"
     id="share-link-facebook"
@@ -1760,7 +1721,7 @@ with $u_L\neq u_R$. Assuming that $F$ is uniformly convex and $C^2$, we give the
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="mailto:?subject=Riemann%27s%20Problem%20%26%20Applications&amp;body=https%3A%2F%2Fbilman.github.io%2Fteaching%2Fpde%2Fpde-lec-18%2F"
+    href="mailto:?subject=Riemann%27s%20Problem%20%26%20Applications&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fteaching%2Fpde%2Fpde-lec-18%2F"
     title="Email"
     aria-label="Email"
     id="share-link-email"
@@ -1778,7 +1739,7 @@ with $u_L\neq u_R$. Assuming that $F$ is uniformly convex and $C^2$, we give the
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fbilman.github.io%2Fteaching%2Fpde%2Fpde-lec-18%2F&amp;title=Riemann%27s&#43;Problem&#43;%26&#43;Applications"
+    href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fteaching%2Fpde%2Fpde-lec-18%2F&amp;title=Riemann%27s&#43;Problem&#43;%26&#43;Applications"
     title="LinkedIn"
     aria-label="LinkedIn"
     id="share-link-linkedin"
@@ -1796,7 +1757,7 @@ with $u_L\neq u_R$. Assuming that $F$ is uniformly convex and $C^2$, we give the
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="whatsapp://send?text=Riemann%27s&#43;Problem&#43;%26&#43;Applications%20https%3A%2F%2Fbilman.github.io%2Fteaching%2Fpde%2Fpde-lec-18%2F"
+    href="whatsapp://send?text=Riemann%27s&#43;Problem&#43;%26&#43;Applications%20http%3A%2F%2Flocalhost%3A1313%2Fteaching%2Fpde%2Fpde-lec-18%2F"
     title="WhatsApp"
     aria-label="WhatsApp"
     id="share-link-whatsapp"
@@ -1846,7 +1807,7 @@ with $u_L\neq u_R$. Assuming that $F$ is uniformly convex and $C^2$, we give the
       Authors
     </div>
     <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
-      <a href="https://bilman.github.io/" class="no-underline">
+      <a href="http://localhost:1313/" class="no-underline">
       Deniz Bilman
       </a>
     </div>

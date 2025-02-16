@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Journal-Article | Deniz Bilman</title>
-    <link>https://bilman.github.io/publication_types/journal-article/</link>
-      <atom:link href="https://bilman.github.io/publication_types/journal-article/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/publication_types/journal-article/</link>
+      <atom:link href="http://localhost:1313/publication_types/journal-article/index.xml" rel="self" type="application/rss+xml" />
     <description>Journal-Article</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 14 Jan 2021 14:29:12 -0400</lastBuildDate>
     <image>
-      <url>https://bilman.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:1313/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
       <title>Journal-Article</title>
-      <link>https://bilman.github.io/publication_types/journal-article/</link>
+      <link>http://localhost:1313/publication_types/journal-article/</link>
     </image>
     
     <item>
       <title>Far-field asymptotics for multiple-pole solitons in the large-order limit</title>
-      <link>https://bilman.github.io/publication/multipole-nls-far-field/</link>
+      <link>http://localhost:1313/publication/multipole-nls-far-field/</link>
       <pubDate>Thu, 14 Jan 2021 14:29:12 -0400</pubDate>
-      <guid>https://bilman.github.io/publication/multipole-nls-far-field/</guid>
+      <guid>http://localhost:1313/publication/multipole-nls-far-field/</guid>
       <description>&lt;!-- 
 
 
