@@ -41,11 +41,10 @@
   
     
   
-  <meta name="description" content="Summary In this appendix we cover modeling certain physical/chemical phenomena by first-order linear ordinary differential equations.
-Jupyter Notebook " />
+  <meta name="description" content=" View Jupyter Notebook " />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://bilman.github.io/teaching/ode/appendix-2/" />
+  <link rel="alternate" hreflang="en-us" href="https://bilman.github.io/teaching/nla/nla-lec-14/" />
 
   
   
@@ -204,7 +203,7 @@ Jupyter Notebook " />
   <link rel="icon" type="image/png" href="/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://bilman.github.io/teaching/ode/appendix-2/" />
+  <link rel="canonical" href="https://bilman.github.io/teaching/nla/nla-lec-14/" />
 
   
   
@@ -230,19 +229,18 @@ Jupyter Notebook " />
     <meta property="twitter:creator" content="@denizbilman" />
   
   <meta property="og:site_name" content="Deniz Bilman" />
-  <meta property="og:url" content="https://bilman.github.io/teaching/ode/appendix-2/" />
-  <meta property="og:title" content="Some Modeling | Deniz Bilman" />
-  <meta property="og:description" content="Summary In this appendix we cover modeling certain physical/chemical phenomena by first-order linear ordinary differential equations.
-Jupyter Notebook " /><meta property="og:image" content="https://bilman.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:url" content="https://bilman.github.io/teaching/nla/nla-lec-14/" />
+  <meta property="og:title" content="Floating Point Arithmetic | Deniz Bilman" />
+  <meta property="og:description" content=" View Jupyter Notebook " /><meta property="og:image" content="https://bilman.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://bilman.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2021-01-01T00:00:00&#43;00:00"
+        content="2025-03-03T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2021-01-01T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2025-03-03T00:00:00&#43;00:00">
   
 
   
@@ -252,7 +250,7 @@ Jupyter Notebook " /><meta property="og:image" content="https://bilman.github.io
   
 
 
-  <title>Some Modeling | Deniz Bilman</title>
+  <title>Floating Point Arithmetic | Deniz Bilman</title>
 
   
   
@@ -847,7 +845,7 @@ Jupyter Notebook " /><meta property="og:image" content="https://bilman.github.io
             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
         </span>
     </a><div class="ltr:pr-0 overflow-hidden">
-        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+        <ul class="hb-sidebar-list"><li class="flex flex-col open"><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/teaching/nla/"
@@ -962,17 +960,18 @@ Jupyter Notebook " /><meta property="og:image" content="https://bilman.github.io
   >Lecture 13
     </a>
               
-            </li><li class="flex flex-col "><a
+            </li><li class="flex flex-col open"><a
     class="hb-sidebar-custom-link
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
     href="/teaching/nla/nla-lec-14/"
     
   >Lecture 14
     </a>
+  
               
             </li></ul>
       </div>
-            </li><li class="flex flex-col open"><a
+            </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/teaching/ode/"
@@ -1159,28 +1158,13 @@ Jupyter Notebook " /><meta property="og:image" content="https://bilman.github.io
   >Appendix 1
     </a>
               
-            </li><li class="flex flex-col open"><a
+            </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
-      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/teaching/ode/appendix-2/"
     
   >Appendix 2
     </a>
-  
-    <ul class="hb-sidebar-mobile-toc"><li>
-              <a
-                href="#summary"
-                class="hb-docs-link"
-              >Summary</a>
-            </li>
-          <li>
-              <a
-                href="#jupyter-notebook"
-                class="hb-docs-link"
-              >Jupyter Notebook</a>
-            </li>
-          </ul>
-  
               
             </li></ul>
       </div>
@@ -1635,13 +1619,7 @@ Jupyter Notebook " /><meta property="og:image" content="https://bilman.github.io
 
 
 
-  <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-4 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-4 rtl:-ml-4"><p class="mb-4 font-semibold tracking-tight">On this page</p><ul>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#summary">Summary</a>
-      </li>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#jupyter-notebook">Jupyter Notebook</a>
-      </li></ul>
+  <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-4 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-4 rtl:-ml-4">
 
   
   
@@ -1675,17 +1653,17 @@ Jupyter Notebook " /><meta property="og:image" content="https://bilman.github.io
         <a href="https://bilman.github.io/teaching/">Teaching</a>
       </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg>
       <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
-        <a href="https://bilman.github.io/teaching/ode/">Ordinary Differential Equations</a>
-      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg><div class="whitespace-nowrap font-medium text-gray-700 dark:text-gray-100">Appendix 2</div>
+        <a href="https://bilman.github.io/teaching/nla/">Numerical Linear Algebra</a>
+      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg><div class="whitespace-nowrap font-medium text-gray-700 dark:text-gray-100">Lecture 14</div>
 </div>
 
       </div>
       
 
-      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Some Modeling</h1>
+      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Floating Point Arithmetic</h1>
 
       <div class="mt-4 mb-16">
-      <div class="text-gray-500 dark:text-gray-300 text-sm flex items-center flex-wrap gap-y-2"><span class="mr-1">Jan 1, 2021</span>
+      <div class="text-gray-500 dark:text-gray-300 text-sm flex items-center flex-wrap gap-y-2"><span class="mr-1">Mar 3, 2025</span>
         
 
         
@@ -1716,22 +1694,15 @@ Jupyter Notebook " /><meta property="og:image" content="https://bilman.github.io
       
 
       <div class="prose prose-slate lg:prose-xl dark:prose-invert">
-        <h2 id="summary">Summary</h2>
-<p>In this appendix we cover modeling certain physical/chemical phenomena by first-order linear ordinary differential equations.</p>
-<h2 id="jupyter-notebook">Jupyter Notebook</h2>
-<iframe
-      src="http://nbviewer.jupyter.org/url/github.com/bilman/Math216ODE/blob/master/216Lecture4.ipynb?flush_cache=true"
-      width="100%"
-      height="1000px"
-      style="border:none;">
-</iframe>
-
+        <a href="/Lecture-14.html" class="text-blue-500 hover:underline">
+    View Jupyter Notebook
+</a>
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2021-01-01T00:00:00.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2025-03-03T00:00:00.000Z">
     <span>Last updated on</span>
-    Jan 1, 2021</time>
+    Mar 3, 2025</time>
 
       <div class="container mx-auto prose prose-slate lg:prose-xl dark:prose-invert mt-5">
         
@@ -1755,7 +1726,7 @@ Jupyter Notebook " /><meta property="og:image" content="https://bilman.github.io
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbilman.github.io%2Fteaching%2Fode%2Fappendix-2%2F&amp;text=Some&#43;Modeling"
+    href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbilman.github.io%2Fteaching%2Fnla%2Fnla-lec-14%2F&amp;text=Floating&#43;Point&#43;Arithmetic"
     title="X"
     aria-label="X"
     id="share-link-x"
@@ -1773,7 +1744,7 @@ Jupyter Notebook " /><meta property="og:image" content="https://bilman.github.io
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fbilman.github.io%2Fteaching%2Fode%2Fappendix-2%2F&amp;t=Some&#43;Modeling"
+    href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fbilman.github.io%2Fteaching%2Fnla%2Fnla-lec-14%2F&amp;t=Floating&#43;Point&#43;Arithmetic"
     title="Facebook"
     aria-label="Facebook"
     id="share-link-facebook"
@@ -1793,7 +1764,7 @@ Jupyter Notebook " /><meta property="og:image" content="https://bilman.github.io
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="mailto:?subject=Some%20Modeling&amp;body=https%3A%2F%2Fbilman.github.io%2Fteaching%2Fode%2Fappendix-2%2F"
+    href="mailto:?subject=Floating%20Point%20Arithmetic&amp;body=https%3A%2F%2Fbilman.github.io%2Fteaching%2Fnla%2Fnla-lec-14%2F"
     title="Email"
     aria-label="Email"
     id="share-link-email"
@@ -1811,7 +1782,7 @@ Jupyter Notebook " /><meta property="og:image" content="https://bilman.github.io
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fbilman.github.io%2Fteaching%2Fode%2Fappendix-2%2F&amp;title=Some&#43;Modeling"
+    href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fbilman.github.io%2Fteaching%2Fnla%2Fnla-lec-14%2F&amp;title=Floating&#43;Point&#43;Arithmetic"
     title="LinkedIn"
     aria-label="LinkedIn"
     id="share-link-linkedin"
@@ -1829,7 +1800,7 @@ Jupyter Notebook " /><meta property="og:image" content="https://bilman.github.io
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="whatsapp://send?text=Some&#43;Modeling%20https%3A%2F%2Fbilman.github.io%2Fteaching%2Fode%2Fappendix-2%2F"
+    href="whatsapp://send?text=Floating&#43;Point&#43;Arithmetic%20https%3A%2F%2Fbilman.github.io%2Fteaching%2Fnla%2Fnla-lec-14%2F"
     title="WhatsApp"
     aria-label="WhatsApp"
     id="share-link-whatsapp"
@@ -1993,17 +1964,17 @@ Jupyter Notebook " /><meta property="og:image" content="https://bilman.github.io
   <div class="flex flex-col md:flex-row flex-nowrap justify-between gap-5 pt-2">
     <div class="">
       
-        <a class="group flex no-underline" href="/teaching/ode/appendix-1/">
+        <a class="group flex no-underline" href="/teaching/nla/nla-lec-13/">
           <span
             class="mt-[-0.3rem] me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
           ><span class="ltr:inline rtl:hidden">&larr;</span></span>
           <span class="flex flex-col">
             <span
               class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-            >Existence &amp; Uniqueness</span>
+            >Floating Point Arithmetic</span>
             <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
               
-                Jan 1, 2021
+                Feb 24, 2025
               
             </span>
           </span>

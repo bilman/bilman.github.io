@@ -142,5 +142,15 @@
 &lt;/a&gt;</description>
     </item>
     
+    <item>
+      <title>Floating Point Arithmetic</title>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-14/</link>
+      <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-14/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-14.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+    View Jupyter Notebook
+&lt;/a&gt;</description>
+    </item>
+    
   </channel>
 </rss>

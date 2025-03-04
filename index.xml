@@ -943,6 +943,16 @@ where $n\geq 2$ and $f\in C^{[n/2]+1}(\mathbb{R}^n \times [0,\infty))$.&lt;/p&gt
     </item>
     
     <item>
+      <title>Floating Point Arithmetic</title>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-14/</link>
+      <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-14/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-14.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+    View Jupyter Notebook
+&lt;/a&gt;</description>
+    </item>
+    
+    <item>
       <title>Variation of Parameters</title>
       <link>https://bilman.github.io/teaching/ode/ode-lec-14/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
