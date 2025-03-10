@@ -943,11 +943,11 @@ where $n\geq 2$ and $f\in C^{[n/2]+1}(\mathbb{R}^n \times [0,\infty))$.&lt;/p&gt
     </item>
     
     <item>
-      <title>Floating Point Arithmetic</title>
+      <title>Stability</title>
       <link>https://bilman.github.io/teaching/nla/nla-lec-14/</link>
       <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://bilman.github.io/teaching/nla/nla-lec-14/</guid>
-      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-14.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-14-15.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
@@ -1048,6 +1048,16 @@ where $\Gamma \subseteq \partial U$, and $g\colon \Gamma \to \mathbb{R}$ is give
 &lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/x7kr85ic4q43brr/Math7006-Lec-15-Characteristics.pdf?dl=0&#34;&gt;The notes for this lecture are available here (24 pages).&lt;/a&gt;&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Stability of Householder Triangularization</title>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-16/</link>
+      <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-16/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-16.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+    View Jupyter Notebook
+&lt;/a&gt;</description>
     </item>
     
     <item>
