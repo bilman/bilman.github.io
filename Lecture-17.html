@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Lecture-14-15</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Lecture-17</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7494,242 +7494,51 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lectures-14%E2%80%9315:-Stability">Lectures 14–15: Stability<a class="anchor-link" href="#Lectures-14%E2%80%9315:-Stability">¶</a></h1><p>Recall the convention in lecture notes: $\frac{1}{2}\epsilon_\text{M}$ in these notes corresponds to the machine epsilon $\epsilon_{\text{machine}}$ in Trefethen &amp; Bau.</p>
-<p>We denoted a problem by $f\colon X \to Y$.</p>
-<p>We denote an algorithm to solve this problem by $\tilde{f}\colon X \to Y$.</p>
-<p>Suppose that a computer has the property:</p>
-<p>For all $x, y \in \mathbb{F}$, there exists $\epsilon$ with $|\epsilon| \leq \frac{1}{2}\epsilon_{\text{M}}$ such that</p>
+<h1 id="Lecture-17:-Stability-of-Backward-Substitution">Lecture 17: Stability of Backward Substitution<a class="anchor-link" href="#Lecture-17:-Stability-of-Backward-Substitution">¶</a></h1><p>Recall the convention in lecture notes: $\frac{1}{2}\epsilon_\text{M}$ in these notes corresponds to the machine epsilon $\epsilon_{\text{machine}}$ in Trefethen &amp; Bau.</p>
+<h2 id="Triangular-Systems">Triangular Systems<a class="anchor-link" href="#Triangular-Systems">¶</a></h2><p>We have seen that a system of equations $Ax=b$ can be reduced to an upper triangular system $R x = y$ by QR factorization. And such an upper triangular system can be easily solved by <em>backward substitution</em> (or <em>back substitution</em>).</p>
+<p>The situation at hand looks like</p>
 $$
-x \circledast y=(x * y)(1+\epsilon) .
-$$<p>In words, every operation of floating point arithmetic is exact up to a relative error of size at most $\frac{1}{2}\epsilon_{\text{M}}$.</p>
-<p>Given data $x \in X$, let this data be rounded to floating point and then supplied as input to the computer program. Now, run the program. The result is a collection of floating point numbers that belong to the vector space $Y$. Let this computed result be called $\tilde{f}(x)$.</p>
-<p>There are a number of things that may introduce errors in $\tilde{f}(x)$.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Big-Oh-Notation">Big-Oh Notation<a class="anchor-link" href="#Big-Oh-Notation">¶</a></h2><p>We say $g(z)=O(h(z))$ as $z\to z_0$ if there exists constants $M&gt;0$ and $\delta&gt;0$ such that for all $z$ satisfying $0&lt;|z-z_0|&lt;\delta$, we have
-$$
-|g(z)| \leq M |h(z)|.
-$$</p>
-<p><strong>Example:</strong> As $\epsilon \to 0$, we have $\sin(\epsilon) = O(1)$. We also have $\sin(\epsilon) = O(\epsilon)$. But $\sin(\epsilon) \neq O(\epsilon^2)$, for example.</p>
-<h2 id="Accuracy">Accuracy<a class="anchor-link" href="#Accuracy">¶</a></h2><p>In general $\tilde{f}$ cannot be continuous. But we expect a good algorithm to approximate the associated problem $f$.</p>
-<p>We define the <strong>absolute error</strong> of a computation by</p>
-$$
-\| \tilde{f}(x) - f(x) \|.
-$$<p>We define the <strong>relative error</strong> of a computation by</p>
-$$
-\frac{\| \tilde{f}(x) - f(x) \|}{\|f(x)\|}.
-$$<p>As mentioned in the previous lecture, our main concern will be the relative quantities. So we will work with the relative error.</p>
-<p>We may say that an algorithm $\tilde{f}$ for a problem $f$ is <strong>accurate</strong> if for each $x\in X$,</p>
-$$
-\frac{\| \tilde{f}(x) - f(x) \|}{\|f(x)\|} = O(\epsilon_{\text{M}}).
-$$<p>If $f(x)=0$, then we use</p>
-$$
-\| \tilde{f}(x) - f(x) \| = O(\epsilon_{\text{M}}) \| f(x)\|.
-$$<p>If the problem $f$ at hand is ill-conditined it is unreasonable to expect a property like above holding for all $x\in X$.  Rounding of the input data is unavoidable on a digital computer, and even if all the subsequent computations could be carried out perfectly, this perturbation alone might lead to a significant change in the result. Instead of aiming for accuracy in all cases, we introduce the following notion, which is the appropriate aim in these situations.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Stability">Stability<a class="anchor-link" href="#Stability">¶</a></h2><p>We say that an algorithm $\tilde{f}$ for a problem $f$ is <strong>(forward) stable</strong> if for fixed each $x\in X$,</p>
-$$
-\frac{\|\tilde{f}(x)-f(\tilde{x})\|}{\|f(\tilde{x})\|}=O(\epsilon_\text{M})
-$$<p>for some $\tilde{x}$ with</p>
-$$
-\frac{\|\tilde{x}-x\|}{\|x\|}= O(\epsilon_\text{M}).
-$$<p>A stable algorithm gives nearly the right answer $\tilde{f}(x)$ to nearly the right question $f(\tilde{x})$.</p>
-<p>In problems arising in different contexts (such as solving PDEs), $O(\epsilon_\text{M})$ may be too restrictive.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We say that an algorithm $\tilde{f}$ for a problem $f$ is <strong>backward stable</strong> if for each $x$</p>
-$$
-\tilde{f}(x)= f(\tilde{x})
-$$<p>for some $\tilde{x}$ with $\dfrac{\|x-\tilde{x}\|}{\|x\|}=O(\epsilon_\text{M})$.</p>
-<p>A backward stable algorithm gives exactly the right answer to nearly the right question.</p>
-<p>This means that there is a perturbation of the input of the problem $f$ that results in <em>exactly</em> the output of $\tilde{f}$.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Recall that in our finite dimensional setting all norms are equivalent. Therefore, the definitions above involving $O(\epsilon_\text{M})$ are independent of the choice of norm --- the constants produced by the equivalency of the norms are absorbed in the big-Oh.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Example: Backward Stability of Subtraction</strong></p>
-<p>The problem of subtraction is computing $f(x_1, x_2)=x_1-x_2$. The algorithm we consider can be written as</p>
-$$
-\tilde{f}(x_1, x_2)=\mathrm{fl}(x_1) \ominus \mathrm{fl}(x_2).
-$$<p>From Lecture 13, we know that</p>
-$$
-\mathrm{fl}(x_1)=x_1(1+\epsilon_1), \quad \mathrm{fl}(x_2)=x_2(1+\epsilon_2)
-$$<p>for some $\left|\epsilon_1\right|,\left|\epsilon_2\right| \leq \frac{1}{2}\epsilon_{\text{M}}$. We also have that</p>
-$$
-\mathrm{fl}\left(x_1\right) \ominus \mathrm{fl}\left(x_2\right)=\left(\mathrm{fl}\left(x_1\right)-\mathrm{fl}\left(x_2\right)\right)\left(1+\epsilon_3\right)
-$$<p>for some $|\epsilon_3| \leq \frac{1}{2}\epsilon_{\text{M}}$. Combining these result in</p>
+\begin{bmatrix}
+r_{11} &amp; r_{12} &amp; \cdots &amp; r_{1 m} \\
+&amp; r_{22} &amp; &amp; \\
+&amp; &amp; \ddots &amp; \vdots \\
+&amp; &amp; &amp; r_{m m}
+\end{bmatrix}
+\begin{bmatrix}
+x_1 \\
+x_2 \\
+\vdots \\
+x_m
+\end{bmatrix}
+=
+\begin{bmatrix}
+b_1 \\
+b_2 \\
+\vdots \\
+b_m
+\end{bmatrix}
+$$<p>for $r_{jj}\neq 0$, $j=1,\ldots,m$, and $x\in\mathbb{C}^m$ is unknown.</p>
+<p>We can solve this by starting at the bottom, solve for $x_m$, and substitute that in the next equation from the bottom to solve for $x_{m-1}$, and work our way up until we find $x_1$.</p>
+<p><strong>Algorithm 17.1: Back Substitution</strong></p>
 $$
 \begin{aligned}
-\mathrm{fl}\left(x_1\right) \ominus \mathrm{fl}\left(x_2\right) &amp; =\left[x_1\left(1+\epsilon_1\right)-x_2\left(1+\epsilon_2\right)\right]\left(1+\epsilon_3\right) \\
-&amp; =x_1\left(1+\epsilon_1\right)\left(1+\epsilon_3\right)-x_2\left(1+\epsilon_2\right)\left(1+\epsilon_3\right) \\
-&amp; =x_1\left(1+\epsilon_4\right)-x_2\left(1+\epsilon_5\right)
+x_m &amp; =b_m / r_{m m} \\
+x_{m-1} &amp; =\left(b_{m-1}-x_m r_{m-1, m}\right) / r_{m-1, m-1} \\
+x_{m-2} &amp; =\left(b_{m-2}-x_{m-1} r_{m-2, m-1}-x_m r_{m-2, m}\right) / r_{m-2, m-2} \\
+&amp; \vdots \\
+x_j &amp; =\left(b_j-\sum_{k=j+1}^m x_k r_{j k}\right) / r_{j j}
 \end{aligned}
-$$<p>for some $|\epsilon_4|, |\epsilon_5| \leq 2 \epsilon_\text{M}+ O(\epsilon_\text{M}^2)$.</p>
-<p>Now, observe that there exists $\tilde{x}_1 = x_1\left(1+\epsilon_4\right)$ and $\tilde{x}_2 = x_2\left(1+\epsilon_5\right)$ such that</p>
+$$<p>Each step consists of subtraction and multiplication. The operation count is roughly $m^2$ flops.</p>
+<p>We assume that the subtractions are carried out from left to right.</p>
+<h4 id="Theorem:">Theorem:<a class="anchor-link" href="#Theorem:">¶</a></h4><p>Let Algorithm 17.1 be applied to a nonsingular upper-triangular problem $Rx = b$ consisting of floating point numbers on a computer satisfying the Axiom (13.7) (<strong>Axiom B</strong> in our Lecture 14-15). This algorithm is backward stable in the sense that the computed solution $\tilde{x} \in \mathbb{C}^m$ satisfies</p>
 $$
-\frac{\| x - \tilde{x} \|}{\|x\|} = \frac{\| (\epsilon_4 x_1, \epsilon_5 x_2)\|}{\| x\|} \leq \max\{\epsilon_4,\epsilon_5\} \frac{\|x\|}{\|x\|} \leq \frac{1}{2}\epsilon_\text{M}.
-$$<p>You see? The computed result $\tilde{f}(x_1,x_2)=\mathrm{fl}\left(x_1\right) \ominus \mathrm{fl}\left(x_2\right)$ is exactly equal to the difference $f(\tilde{x}_1,\tilde{x}_2) = \tilde{x}_1- \tilde{x}_2$.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Importantly, the axioms we stated in Lecture 13 for floating point arithmetic imply that all of the floating point operations $\oplus$, $\ominus$, $\otimes$, and $\oslash$ are backward stable.</p>
-<p><strong>Example: Backward Stability of Division</strong></p>
-<p>We can proceed similarly:</p>
+(R+\delta R) \tilde{x}=b
+$$<p>for some upper-triangular $\delta R \in \mathbb{C}^{m \times m}$ with</p>
 $$
-\mathrm{fl}(x_1) \oslash \mathrm{fl}(x_2) = \frac{x_1(1+\epsilon_1)}{x_2(1+\epsilon_2)}(1+\epsilon_3) = \frac{x_1(1+\epsilon_1)(1+\epsilon_3)}{x_2(1+\epsilon_2)} = \frac{x_1(1+\epsilon_1 + \epsilon_3 + \epsilon_1 \epsilon_3)}{x_2(1+\epsilon_2)}
-$$<p>for some $|\epsilon_1|,|\epsilon_2|,|\epsilon_3|\leq \frac{1}{2}\epsilon_\text{M}$.</p>
-<p>Then for</p>
+\frac{\|\delta R\|}{\|R\|}=O\left(\epsilon_{\text{M}}\right) .
+$$<p>Specifically, for each $i$, $j$,</p>
 $$
-\tilde{x} = \begin{bmatrix} x_1(1+\epsilon_1 + \epsilon_3 + \epsilon_1 \epsilon_3) \\ x_2(1+\epsilon_2)\end{bmatrix},
-$$<p>we see that</p>
-$$
-\tilde{x} - x = \begin{bmatrix} x_1 (\epsilon_1 + \epsilon_3 + \epsilon_1 \epsilon_3) \\ x_2 \epsilon_2 \end{bmatrix}
-$$<p>and we have</p>
-$$
-\frac{\|\vec{x}-x\|}{\|x\|}=O(\epsilon_{\text {M}})
-$$<p>such that $\tilde{f}(x) = f(\tilde{x})$.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Further-Examples">Further Examples<a class="anchor-link" href="#Further-Examples">¶</a></h3><p><strong>Inner Product.</strong> Backward stable.</p>
-<p><strong>Outer Product.</strong> Forget it. The goal is to compute $A=x y^*$ for vectors $x\in\mathbb{C}^m$ and $y\in\mathbb{C}^n$. The obvious algorithm is to compute the pairwise products with $\otimes$ and collect them into a matrix $\tilde{A}$. This algorithm is (forward) stable, but it is not backward stable.</p>
-<p>The reason is that the matrix $\tilde{A}$ is very unlikely to have rank exactly 1.
-Therefore, it cannot generally be written in the form $(x+\delta x)(y+\delta y)^*$.</p>
-<p><strong>Adding $1$ to a Number.</strong> Given $x\in\mathbb{C}$, consider the problem of computing $x+1$ with $\oplus$. This algorithm is stable, but not backward stable.</p>
-<p>Note that $1$ is exactly represented in the floating point system. Therefore,</p>
-$$
-\tilde{f}(x) = \mathrm{fl}(x)\oplus 1 = \left (x(1+\epsilon_1)+1 \right)(1+\epsilon_2)
-$$<p>for some $|\epsilon_1|, |\epsilon_2|\leq \frac{1}{2}\epsilon_\text{M}$. Then</p>
-$$
-\tilde{f}(x) = \mathrm{fl}(x)\oplus 1 = x(1+\epsilon_1 + \epsilon_2 + \epsilon_1 \epsilon_2) +\epsilon_2 + 1
-$$<p>For $\tilde{x}=x(1+\epsilon_1 + \epsilon_2 + \epsilon_1 \epsilon_2) +\epsilon_2$, one would have $\tilde{f}(x) = f(\tilde{x})$.</p>
-<p>However,</p>
-$$
-\frac{\|\tilde{x}-x\|}{\|x\|}=\frac{\left\|x\left(\varepsilon_1+\varepsilon_2+\varepsilon_1 \varepsilon_2\right)+\varepsilon_2\right\|}{\|x\|}
-$$<p>and this becomes large for $x\approx 0$ ($\epsilon_2$ is fixed).</p>
-<p>This example indicates that backward stability is a rather special property.</p>
-<p>Note that if the problem had been to compute $x+y$ for data $x$ and $y$, then the algorithm would have been backward stable.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Example: Another Failure of Backward Stability</strong></p>
-<p>Let $h\colon \mathbb{C}\to \mathbb{C}$ be a function and suppose that $h'(z)=0$ for some $z$. Consider the problem of evaluating (computing) $h(z)$.</p>
-<p>Show that this is not backward stable (use the Mean Value Theorem).</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="An-Unstable-Algorithm">An Unstable Algorithm<a class="anchor-link" href="#An-Unstable-Algorithm">¶</a></h3><p>We leave the toy examples above aside.</p>
-<p>Consider the problem of computing the eigenvalues of a given square matrix $A$. Since eigenvalues are the roots of the characteristic polynomial $p(z) = \det(z\mathbb{I}-A)$, it seems like one can try to find the roots of this polynomial to obtain the eigenvalues. This suggests the following method for computing the eigenvalues:</p>
-<ol>
-<li><p>Find the coefficients of the characteristic polynomial,</p>
-</li>
-<li><p>Find its roots.</p>
-</li>
-</ol>
-<p>This algorithm is not only backward unstable, but unstable. It should not be used. 
-Even in cases where extracting eigenvalues is a well-conditioned problem, it may produce answers that have relative errors vastly larger than $\epsilon_{\text{M}}$.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="When-Does-Backward-Stability-Imply-Accuracy?-Does-It?">When Does Backward Stability Imply Accuracy? Does It?<a class="anchor-link" href="#When-Does-Backward-Stability-Imply-Accuracy?-Does-It?">¶</a></h2><h4 id="Theorem:">Theorem:<a class="anchor-link" href="#Theorem:">¶</a></h4><p>Suppose a backward stable algorithm is applied to solve a problem $f: X \rightarrow Y$ with condition number $\kappa$ on a computer satisfying the axioms in Lecture 13 (See (13.5) and (13.7) from the book). Then the relative errors satisfy</p>
-$$
-\frac{\|\tilde{f}(x)-f(x)\|}{\|f(x)\|}=O\left(\kappa(x) \epsilon_{\text{M}}\right).
-$$<h4 id="Proof:">Proof:<a class="anchor-link" href="#Proof:">¶</a></h4><p>Since the algorithm is backward stable, we know that $\tilde{f}(x)=f(\tilde{x})$ for some $\tilde{x}\in X$ satisfying</p>
-$$
-\frac{\|\tilde{x}-x\|}{\|x\|}=O\left(\epsilon_{\text{M}}\right) .
-$$<p>On the other hand, by definition of the (relative) condition number:</p>
-$$
-\kappa(x) \geq \displaystyle
-\frac{\displaystyle\frac{\|f(x+\delta x)-f(x)\|}{\|f(x)\|}}{\displaystyle\frac{\|\delta x\|}{\| x\|}}.
-$$<p>More precisely,</p>
-$$
-\displaystyle
-\frac{\displaystyle\frac{\|f(x+\delta x)-f(x)\|}{\|f(x)\|}}{\displaystyle\frac{\|\delta x\|}{\| x\|}} \leq \kappa(x) + o(1),
-$$<p>where $o(1)$ denotes a quantity that converges to zero as $\epsilon_\text{M}\to 0$.</p>
-<p>Or, with $\delta x$ chosen such that $\tilde{x}=x+\delta x$,</p>
-$$
-\displaystyle
-\frac{\displaystyle\frac{\|f(\tilde{x})-f(x)\|}{\|f(x)\|}}{\displaystyle\frac{\|x-\tilde{x}\|}{\| x\|}} \leq \kappa(x) + o(1)
-$$<p>and this implies that</p>
-$$
-\frac{\|\tilde{f}(x)-f(x)\|}{\|f(x)\|} \leq(\kappa(x)+o(1)) \frac{\|\tilde{x}-x\|}{\|x\|} = O\left(\kappa(x) \epsilon_{\text{M}}\right).
+\frac{\left|\delta r_{i j}\right|}{\left|r_{i j}\right|} \leq m \frac{1}{2}\epsilon_{\text{M}}+O(\epsilon_{\text{M}}^2).
 $$
 </div>
 </div>
@@ -7741,16 +7550,186 @@ $$
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>This shows the following. Suppose we have a backward stable algorithm $\tilde{f}$ for a problem $f$ that has a condition number $\kappa(x)$. If $\kappa(x)$ is small, the results will be accurate in the relative sense. But if $\kappa(x)$ is large, the accuracy will suffer proportionately.</p>
-<p>So a well-conditioned problem with a backward stable algorithm implies accuracy!</p>
-<h3 id="Concluding-Remarks-from-Trefethen-&amp;-Bau">Concluding Remarks from Trefethen &amp; Bau<a class="anchor-link" href="#Concluding-Remarks-from-Trefethen-&amp;-Bau">¶</a></h3><p>The process we have just carried out in proving the Theorem abive is known as backward error analysis.</p>
-<p>We obtained an accuracy estimate by two steps.</p>
-<p>One step was to investigate the condition of the problem.</p>
-<p>The other step was to investigate the stability of the algorithm.</p>
-<p>Our conclusion was that if the algorithm is stable, then the final accuracy reflects that condition number.</p>
-<p>In general, the first idea that comes to mind in analyzing an algorithm would be <em>forward error analysis</em>.  The first idea would be forward error analysis. Here, the rounding errors introduced at each step of the calculation are estimated, and somehow, a total is maintained of how they may compound from step to step.</p>
-<p>This is in practice harder to carry out.</p>
-<p>In short, it is an established fact that the best algorithms for most problems do no better, in general, than to compute exact solutions for slightly perturbed data. Backward error analysis is a method of reasoning fitted neatly to this backward reality.</p>
+<h4 id="Proof:">Proof:<a class="anchor-link" href="#Proof:">¶</a></h4><p>We prove this theorem by induction on $m$.</p>
+<p>When $m=1$ we have</p>
+$$
+x_1 = b_1 \oslash r_1 = \frac{b_1}{r_1}(1+\epsilon)
+$$<p>for some $\epsilon$ with $|\epsilon|\leq \frac{1}{2}\epsilon_\text{M}$. Next,</p>
+$$
+\frac{b_1}{r_1}(1+\epsilon) = \frac{b_1}{r_1 (1+\epsilon)^{-1}}.
+$$<p>Since</p>
+$$
+\frac{1}{1-s} = 1 + s + O(s^2),\quad s\to 0,
+$$<p>we have</p>
+$$
+r_1 (1+\epsilon)^{-1} = r_1(1 + O(\epsilon)) = r_1(1 + O(\epsilon_\text{M})) =: R+ \delta R.
+$$<p>This completes the basis step for the induction.</p>
+<p>Now, suppose that $R$ is $m\times m$ nonsingular and upper-triangular, and we have</p>
+$$
+(R+\delta R)\tilde{x} = b
+$$<p>for some $\delta R\in\mathbb{C}^m$ satisfying $\frac{\|\delta R\|}{\|R\|}=O(\epsilon_{\text {M }})$. This is the bottom of an $(m+1)\times (m+1)$ system and we want to solve</p>
+$$
+\begin{bmatrix}
+r_{11} &amp; \mathbf{r}^* \\
+0 &amp; R
+\end{bmatrix}
+\begin{bmatrix}
+x_1 \\
+\mathbf{x}
+\end{bmatrix}
+=
+\begin{bmatrix}
+b_1 \\
+\mathbf{b}
+\end{bmatrix},
+$$<p>where</p>
+$$
+\mathbf{x} = \begin{bmatrix} x_2 \\ x_3 \\ x_4 \\ \vdots\\ x_m \end{bmatrix}
+\quad\text{and} \quad
+\mathbf{b} = \begin{bmatrix} b_2 \\ b_3 \\ b_4 \\ \vdots\\ b_m \end{bmatrix}
+$$<p>and the row vector $\mathbf{r}^*$ is given:
+$$
+\mathbf{r}^* = 
+\begin{bmatrix}
+r_{12} &amp; r_{13} &amp; \cdots &amp; r_{1 m}
+\end{bmatrix}.
+$$</p>
+<p>So here $\tilde{x}$ is the computed solution for $\mathbf{x}$.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>At this stage, we employ the final step of the backward substituion to obtain</p>
+$$
+\tilde{x}_1 =\left[ ( b_1 \ominus (\tilde{x}_2 \otimes r_{12}) ) \ominus (\tilde{x}_3 \otimes r_{13}) \ominus \cdots \ominus (\tilde{x}_m \otimes r_{1m}))\right] \oslash r_{11}.
+$$
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We convert the $\otimes$ operations into mathematical subtractions by introducing perturbations and obtain</p>
+$$
+\tilde{x}_1 =\left[ ( b_1 \ominus \tilde{x}_2 r_{12}(1+\epsilon_2) ) \ominus \tilde{x}_3  r_{13}(1+\epsilon_3) \ominus \cdots \ominus \tilde{x}_m r_{1m}(1+\epsilon_m)\right] \oslash r_{11}
+$$<p>for some $\epsilon_j$ with $|\epsilon_j|\leq \frac{1}{2}\epsilon_\text{M}$, for $j=2,\ldots,m$.</p>
+<p>Now note the simple identity:</p>
+$$
+1 + \frac{-\epsilon}{1+\epsilon} = \frac{1}{1+\epsilon}.
+$$<p>Taking reciprocals, we have</p>
+$$
+1+\epsilon = \frac{1}{1+\hat{\epsilon}},\qquad\text{with}~\hat{\epsilon} := \frac{-\epsilon}{1+\epsilon}
+$$<p>and we note that as $\epsilon\to 0$, we have</p>
+$$
+\hat{\epsilon} = -\epsilon(1 + O(\epsilon)) = O(\epsilon),
+$$<p>which implies that</p>
+$$
+\frac{1}{1+\hat{\epsilon}} = 1 + O(\epsilon)
+$$<p>as well.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Next, we convert the $\ominus$ operations into mathematical subtractions (successively) by introducing relative perturbations of size less than $\frac{1}{2}\epsilon_\text{M}$ and then shift them to the denominator using the identity above:</p>
+$$
+b_1 \ominus \tilde{x}_2 r_{12}(1+\epsilon_2) = \left(b_1 - \tilde{x}_2 r_{12}(1+\epsilon_2)\right)(1+\epsilon_2') = 
+\frac{b_1 - \tilde{x}_2 r_{12}(1+\epsilon_2)}{1+\hat{\epsilon}_2}=:\frac{b_1 - d_2}{1+\hat{\epsilon}_2},
+$$$$
+\frac{b_1 - d_2}{1+\hat{\epsilon}_2} \ominus \tilde{x}_3  r_{13}(1+\epsilon_3) = 
+\left[\frac{b_1 - d_2 - \tilde{x}_3  r_{13}(1+\hat{\epsilon}_2)(1+\epsilon_3)}{1+\hat{\epsilon}_2}\right](1+\epsilon_3')=
+\frac{b_1 - d_2 - \tilde{x}_3  r_{13}(1+\hat{\epsilon}_2)(1+\epsilon_3)}{(1+\hat{\epsilon}_2)(1+\hat{\epsilon}_3)}=:\frac{b_1 - d_2 - d_3}{(1+\hat{\epsilon}_2)(1+\hat{\epsilon}_3)}
+$$$$
+\vdots
+$$$$
+\begin{aligned}
+\frac{b_1 - d_2 - d_3 - \cdots - d_{m-1}}{(1+\hat{\epsilon}_2)(1+\hat{\epsilon}_3)\cdots (1+\hat{\epsilon}_{m-1})} \ominus \tilde{x}_m r_{1m}(1+\epsilon_m) 
+&amp;= 
+\left(\frac{b_1 - d_2 - d_3 - \cdots - d_{m-1} - \tilde{x}_m r_{1m}(1+\hat{\epsilon}_2)(1+\hat{\epsilon}_3)\cdots (1+\hat{\epsilon}_{m-1})(1+\epsilon_m) }{(1+\hat{\epsilon}_2)(1+\hat{\epsilon}_3)\cdots (1+\hat{\epsilon}_{m-1})} \right)(1+\epsilon_m') \\
+&amp;=
+\frac{b_1 - d_2 - d_3 - \cdots - d_{m-1} - \tilde{x}_m r_{1m}(1+\hat{\epsilon}_2)(1+\hat{\epsilon}_3)\cdots (1+\hat{\epsilon}_{m-1})(1+\epsilon_m) }{(1+\hat{\epsilon}_2)(1+\hat{\epsilon}_3)\cdots (1+\hat{\epsilon}_{m-1})(1+\hat{\epsilon}_m)}\\
+&amp;=:\frac{b_1 - d_2 - d_3 - \cdots - d_{m-1} -  d_{m} }{(1+\hat{\epsilon}_2)(1+\hat{\epsilon}_3)\cdots (1+\hat{\epsilon}_{m-1})(1+\hat{\epsilon}_m)}
+\end{aligned}
+$$
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Note that these calculations result in</p>
+$$
+\tilde{x}_1 = \left[ \frac{b_1 - d_2 - d_3 - \cdots - d_{m-1} -  d_{m} }{(1+\hat{\epsilon}_2)(1+\hat{\epsilon}_3)\cdots (1+\hat{\epsilon}_{m-1})(1+\hat{\epsilon}_m)} \right]\oslash r_{11}
+$$<p>We now convert the flop $\oslash$ to mathematical division by introducing a relative perturbation of size less than $\frac{1}{2}\epsilon_\text{M}$ and obtain</p>
+$$
+\begin{aligned}
+\tilde{x}_1 
+&amp;= \left[ \frac{b_1 - d_2 - d_3 - \cdots - d_{m-1} -  d_{m} }{(1+\hat{\epsilon}_2)(1+\hat{\epsilon}_3)\cdots (1+\hat{\epsilon}_{m-1})(1+\hat{\epsilon}_m)r_{11}} \right](1+\epsilon_{m+1}')\\
+&amp;= \left[ \frac{b_1 - d_2 - d_3 - \cdots - d_{m-1} -  d_{m} }{(1+\hat{\epsilon}_2)(1+\hat{\epsilon}_3)\cdots (1+\hat{\epsilon}_{m-1})(1+\hat{\epsilon}_m)(1+\hat{\epsilon}_{m+1})r_{11}} \right]
+\end{aligned}
+$$
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Finally, we observe that for each intermediate quantity $d_k$ we have introduced, we have</p>
+$$
+d_k  = \tilde{x}_k r_{1k}(1+\hat{\epsilon}_2)(1+\hat{\epsilon}_3)\cdots (1+\hat{\epsilon}_{k-1})(1+\epsilon_k) = \tilde{x}_k r_{1k}(1+ O(\epsilon_\text{M}))
+$$<p>and also the quantity we ended up with in the denominator</p>
+$$
+(1+\hat{\epsilon}_2)(1+\hat{\epsilon}_3)\cdots (1+\hat{\epsilon}_{m-1})(1+\hat{\epsilon}_m)(1+\hat{\epsilon}_{m+1})r_{11} = r_{11}(1+ O(\epsilon_\text{M})).
+$$<p>Therefore,</p>
+$$
+\tilde{x}_1 = \frac{\left[b_1 - \tilde{x}_2 r_{12}(1+ O(\epsilon_\text{M})) -  \tilde{x}_3 r_{13}(1+ O(\epsilon_\text{M})) - \cdots -  \tilde{x}_m r_{1m}(1+ O(\epsilon_\text{M}))\right]}{r_{11}(1+ O(\epsilon_\text{M}))}.
+$$
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We see that all perturbations land on $r_{1k}$, so we see that for some perturbation $\delta\mathbf{r}^*$ of size $\dfrac{\|\delta \mathbf{r}^*\|}{\| \mathbf{r}^*\|} = O(\epsilon_\text{M})$, the entries of the perturbed row vector</p>
+$$
+\tilde{\mathbf{r}}^* = \mathbf{r}^* + \delta \mathbf{r}^* = [\tilde{r}_{12} \quad \tilde{r}_{13}\quad \cdots \quad \tilde{r}_{1m}]
+$$<p>exactly satisfy</p>
+$$
+\tilde{x}_1 = \frac{b_1 - \tilde{x}_2 \tilde{r}_{12} -  \tilde{x}_3 \tilde{r}_{13} - \cdots -  \tilde{x}_m \tilde{r}_{1m}}{\tilde{r}_{11}}.
+$$<p>Since we have the assumption</p>
+$$
+(R+\delta R) \begin{bmatrix} \tilde{x}_2 \\ \tilde{x}_3 \\ \vdots \\ \tilde{x}_m \end{bmatrix}= \begin{bmatrix} b_2 \\ b_3 \\ \vdots \\ b_m \end{bmatrix}
+$$<p>for $\delta R$ satisfying $\frac{\|\delta R\|}{\| R\|} = O(\epsilon_\text{M})$, we arrive at the fact that</p>
+$$
+\begin{bmatrix} r_{11} + \delta r_{11} &amp; \mathbf{r}^* + \delta \tilde{\mathbf{r}}^* \\ 0 &amp; R+\delta R \end{bmatrix} \begin{bmatrix} \tilde{x}_1 \\ \tilde{x}_2 \\ \tilde{x}_3 \\ \vdots \\ \tilde{x}_m \end{bmatrix} = \begin{bmatrix} b_1 \\ b_2 \\ b_3 \\ \vdots \\ b_m \end{bmatrix}
+$$<p>holds exactly. This finishes the proof.</p>
 </div>
 </div>
 </div>

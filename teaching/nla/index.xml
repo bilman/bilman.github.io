@@ -162,5 +162,15 @@
 &lt;/a&gt;</description>
     </item>
     
+    <item>
+      <title>Stability of Backward Substitution</title>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-17/</link>
+      <pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-17/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-17.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+    View Jupyter Notebook
+&lt;/a&gt;</description>
+    </item>
+    
   </channel>
 </rss>

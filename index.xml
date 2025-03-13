@@ -1101,6 +1101,16 @@ We cover&lt;/p&gt;
     </item>
     
     <item>
+      <title>Stability of Backward Substitution</title>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-17/</link>
+      <pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-17/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-17.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+    View Jupyter Notebook
+&lt;/a&gt;</description>
+    </item>
+    
+    <item>
       <title>Solving an Initial-Value Problem Using Laplace Transform</title>
       <link>https://bilman.github.io/teaching/ode/ode-lec-17/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
