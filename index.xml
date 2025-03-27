@@ -1259,6 +1259,16 @@ $$
     </item>
     
     <item>
+      <title>Gaussian Elimination (LU Factorization)</title>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-20/</link>
+      <pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-20/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-20.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+    View Jupyter Notebook
+&lt;/a&gt;</description>
+    </item>
+    
+    <item>
       <title>Appendix on Surface Integrals</title>
       <link>https://bilman.github.io/teaching/pde/pde-appendix-1/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
