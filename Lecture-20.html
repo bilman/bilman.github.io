@@ -7661,7 +7661,14 @@ $$<p><strong>Important implementation detail:</strong> In practical Gaussian eli
 <p>Clearly, we will have issues if $U_{kk}$ is close to zero. This will be addressed later.</p>
 <h2 id="Operation-Count">Operation Count<a class="anchor-link" href="#Operation-Count">¶</a></h2><p>The operation count for LU factorization (Gaussian Elimination) on an $m\times m$ matrix: $\sim \frac{2}{3}m^2$ flops.</p>
 <p>The operation count for QR factorization with Householder triangularization on an $m\times m$ matrix: $\sim \frac{4}{3}m^2$ flops.</p>
-<h2 id="Solving-$Ax=b$-by-LU-Factorization">Solving $Ax=b$ by LU Factorization<a class="anchor-link" href="#Solving-$Ax=b$-by-LU-Factorization">¶</a></h2>
+<h2 id="Solving-$Ax=b$-by-LU-Factorization">Solving $Ax=b$ by LU Factorization<a class="anchor-link" href="#Solving-$Ax=b$-by-LU-Factorization">¶</a></h2><p>Once $A=LU$, then $Ax=b$ reduces to $LU x = b$. Thus, $Ax=b$ can be solved by solving two triangular systems:</p>
+<ul>
+<li>LU factorization requires $\sim \frac{2}{3}m^3$.</li>
+<li>$L y = b$ for the unknown $y$. This is forward substitution since $L$ is lower-triangular. It requires $\sim m^2$ flops.</li>
+<li>$U x = y$ for the unknown $x$. This is back substitution since $U$ is upper-triangular. It requires $\sim m^2$ flops.</li>
+</ul>
+<p>The total work is $\sim \frac{2}{3}m^3$. This is half the total work $\sim \frac{4}{3}m^3$ required by solving $Ax=b$ via Householder triangularization.</p>
+<p>Why is Gaussian elimination usually used rather than QR factorization to solve square systems of equations? The factor of 2 is certainly one reason. Also, Gaussian elimination has been known for centuries, whereas QR factorization of matrices did not come along until after the invention of computers.</p>
 </div>
 </div>
 </div>
@@ -7672,7 +7679,155 @@ $$<p><strong>Important implementation detail:</strong> In practical Gaussian eli
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><em>Incomplete lecture. I will complete it before the next class.</em></p>
+<h2 id="Instability-of-Gaussian-Elimination-without-Pivoting">Instability of Gaussian Elimination without Pivoting<a class="anchor-link" href="#Instability-of-Gaussian-Elimination-without-Pivoting">¶</a></h2><p>The algorithm presented in this lecture (no pivoting) may attempt to divide by zero. That's a serious issue.</p>
+<p>Consider</p>
+$$
+A=\begin{bmatrix} 0 &amp; 1 \\ 1 &amp; 1\end{bmatrix}.
+$$<p>This matrix has full rank and $\kappa(A)=(3+\sqrt{5})/2\approx 2.618$ in the $2$-norm. But the Gaussian elimination fails at the first step.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-julia"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="n">LinearAlgebra</span>
+
+<span class="n">A</span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">0.</span><span class="w"> </span><span class="mf">1.</span><span class="p">;</span><span class="w"> </span><span class="mf">1.</span><span class="w"> </span><span class="mf">1.</span><span class="p">]</span>
+<span class="n">cond</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>2.6180339887498953</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Consider the slightly perturbed matrix now to realize a more general problem.</p>
+$$
+A=\begin{bmatrix} 10^{-20} &amp; 1 \\ 1 &amp; 1\end{bmatrix}.
+$$<p>Now the Gaussian elimination goes through: $10^{20}\times\mathrm{1st row}$ is subtracted from the second row and we obtain the factors:</p>
+$$
+L=\begin{bmatrix}
+1 &amp; 0 \\
+10^{20} &amp; 1
+\end{bmatrix}, \qquad U=\begin{bmatrix}
+10^{-20} &amp; 1 \\
+0 &amp; 1-10^{20}
+\end{bmatrix}
+$$
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-julia"><pre><span></span><span class="n">A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="mf">1e-20</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">]</span>
+<span class="n">L</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="mf">1e20</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">]</span>
+<span class="n">U</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="mf">1e-20</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">-</span><span class="mf">1e20</span><span class="w"> </span><span class="p">]</span>
+<span class="n">display</span><span class="p">(</span><span class="n">A</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">L</span><span class="o">*</span><span class="n">U</span><span class="p">)</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">cond</span><span class="p">(</span><span class="n">L</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>2×2 Matrix{Float64}:
+ 0.0  0.0
+ 0.0  0.0</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Inf</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>The factos $L$ and $U$ have huge condition numbers (larger than $10^{20}$).</p>
+<p>OK... these factors are exact though. But suppose these computations are being performed in floating point arithmetic with $\varepsilon_{\text{M}}\approx 10^{-16}$. Then the number $1-10^{20}$ in $U_{22}$ will not be represented exactly and it will be rounded to the nearest floating point. For simplicity, suppose this floating point representation is $-10^{20}$. So the floating point matrices produced would be:</p>
+$$
+\tilde{L}=\begin{bmatrix}
+1 &amp; 0 \\
+10^{20} &amp; 1
+\end{bmatrix}, \qquad \tilde{U}=\begin{bmatrix}
+10^{-20} &amp; 1 \\
+0 &amp; -10^{20}
+\end{bmatrix}
+$$
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>This much of rounding error seems reasonable at first sight. After all, $\|U-\tilde{U}\|/\|U\|$ is pretty small. But now compute:</p>
+$$
+\tilde{L} \tilde{U} = 
+\begin{bmatrix}
+10^{-20} &amp; 1 \\
+1 &amp; 0
+\end{bmatrix}.
+$$<p>This matrix is not at all close to $A$!!! So, if we were to solve</p>
+$$\tilde{L} \tilde{U} x = b$$<p>the result will be nothing like the solution to $Ax=b$. For concreteness, take $b=\begin{bmatrix} 1 \\ 0 \end{bmatrix}$. Then</p>
+$$
+\tilde{L} \tilde{U} \tilde{x} = \begin{bmatrix} 1 \\ 0 \end{bmatrix} \implies \tilde{x}=\begin{bmatrix} 0 \\ 1 \end{bmatrix},
+$$<p>whereas the correct solution is</p>
+$$
+A x = \begin{bmatrix} 1 \\ 0 \end{bmatrix} \implies x\approx \begin{bmatrix} -1 \\ 1 \end{bmatrix},
+$$<p><strong>What is going on?</strong></p>
+<p>Gaussian elimination has computed the LU factorization stably: $\tilde{L}$ and $\tilde{U}$ are close to the exact factors for a matrix close to $A$ (in fact, for the matrix $A$ itself).</p>
+<p>Yet, it has not solved $Ax=b$ stably.</p>
+<p>The explanation is that LU factorization, though stable, \emph{was not backward stable}.</p>
+<p>If one step of an algorithm is stable but \emph{not backward stable} for solving a subproblem, the stability of the overall calculation may be in jeopardy.</p>
+<p>In fact, for general $m \times m$ matrices $A$, the situation is worse than this.</p>
+<p>Gaussian elimination without pivoting is neither backward stable nor stable as a general algorithm for LU factorization.</p>
+<p>Additionally, the triangular matrices it generates have condition numbers that may be arbitrarily greater than those of $A$ itself, leading to additional sources of instability in the forward and back substitution phases of the solution of $A x=b$.</p>
 </div>
 </div>
 </div>

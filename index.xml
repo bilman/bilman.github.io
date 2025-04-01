@@ -1261,7 +1261,7 @@ $$
     <item>
       <title>Gaussian Elimination (LU Factorization)</title>
       <link>https://bilman.github.io/teaching/nla/nla-lec-20/</link>
-      <pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://bilman.github.io/teaching/nla/nla-lec-20/</guid>
       <description>&lt;a href=&#34;https://bilman.github.io/Lecture-20.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
@@ -1327,6 +1327,16 @@ $$
     </item>
     
     <item>
+      <title>Pivoting</title>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-21/</link>
+      <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-21/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-21.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+    View Jupyter Notebook
+&lt;/a&gt;</description>
+    </item>
+    
+    <item>
       <title>Qualitative Analysis of First-Order ODEs</title>
       <link>https://bilman.github.io/teaching/ode/ode-lec-21/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
@@ -1338,6 +1348,16 @@ $$\frac{\mathrm{d} x}{\mathrm{~d} t}=f(x).$$
 &lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/tl1pt2n4083su7r/uc-2074-Lec-5-1-2-3-revised.pdf?dl=0&#34;&gt;The notes for this lecture are available here.&lt;/a&gt;&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Stability of Gaussian Elimination</title>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-22/</link>
+      <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-22/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-22.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+    View Jupyter Notebook
+&lt;/a&gt;</description>
     </item>
     
     <item>

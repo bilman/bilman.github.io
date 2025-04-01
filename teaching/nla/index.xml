@@ -175,9 +175,29 @@
     <item>
       <title>Gaussian Elimination (LU Factorization)</title>
       <link>https://bilman.github.io/teaching/nla/nla-lec-20/</link>
-      <pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://bilman.github.io/teaching/nla/nla-lec-20/</guid>
       <description>&lt;a href=&#34;https://bilman.github.io/Lecture-20.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+    View Jupyter Notebook
+&lt;/a&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pivoting</title>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-21/</link>
+      <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-21/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-21.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+    View Jupyter Notebook
+&lt;/a&gt;</description>
+    </item>
+    
+    <item>
+      <title>Stability of Gaussian Elimination</title>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-22/</link>
+      <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-22/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-22.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
