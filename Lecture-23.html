@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Lecture-22</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Lecture-23</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7494,8 +7494,20 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lecture-22:-Stability-of-Gaussian-Elimination">Lecture 22: Stability of Gaussian Elimination<a class="anchor-link" href="#Lecture-22:-Stability-of-Gaussian-Elimination">¶</a></h1><p>Quoting Trefethen &amp; Bau: "Gaussian elimination with partial pivoting is <em>explosively</em> unstable for certain matrices, yet stable in practice."</p>
-<p>This seemingly strange situation has a statistical explanation.</p>
+<h1 id="Lecture-23:-Cholesky-Factorization">Lecture 23: Cholesky Factorization<a class="anchor-link" href="#Lecture-23:-Cholesky-Factorization">¶</a></h1><p>It is a minor delight when we are dealing with a system $Ax =b$, where $A$ is a Hermitian (or symmetric, if real) positive definite matrix $A$.</p>
+<p>Hermitian positive definite matrices can be decomposed into triangular factors twice as quickly as general matrices. The standard algorithm for this is <em>Cholesky factorization</em>. It operates on the matrix both from left and right at once, making use of the symmetry.</p>
+<h2 id="Hermitian-Positive-Definite-Matrices">Hermitian Positive Definite Matrices<a class="anchor-link" href="#Hermitian-Positive-Definite-Matrices">¶</a></h2><p>We list a bunch of important and useful properties.</p>
+<p>A real matrix $A \in \mathbb{R}^{m \times m}$ is symmetric if $A_{i j}=A_{j i}$ for all $i, j$, hence $A=A^T$. Such a matrix satisfies $x^T A y=y^T A x$ for all vectors $x, y \in \mathbb{R}^m$.</p>
+<p>For a complex matrix $A \in \mathbb{C}^{m \times m}$, the analogous property is that $A$ is Hermitian: $A=A^*$.</p>
+<p>A Hermitian matrix $A$ satisfies $x^* A y=\overline{y^* A x}$ for all $x, y \in \mathbb{C}^m$. This means in particular that for any $x \in \mathbb{C}^m, x^* A x$ is real. If in addition $x^* A x&gt;0$ for all $x \neq 0$, then $A$ is said to be <strong>Hermitian positive definite</strong> (or sometimes just positive definite). Many matrices that arise in physical systems are Hermitian positive definite because of fundamental physical laws.</p>
+<p>If $A$ is an $m \times m$ Hermitian positive definite matrix and $X$ is an $m \times n$ matrix of full rank with $m \geq n$, then the matrix $X^* A X$ is also Hermitian positive definite.</p>
+<p><strong>Exercise:</strong> Show that X^* A X$ defined in this way is indeed positive definite.</p>
+<p><strong>Fact:</strong> A Hermimitian matrix is postivie definite if and only if all of its eigenvalues are positive.</p>
+<p>Eigenvectors that correspond to distinct eigenvalues of a Hermitian matrix are orthogonal. (Hermitian matrices are normal.)</p>
+<p>To see this, suppose $A x_1=\lambda_1 x_1$ and $A x_2=\lambda_2 x_2$ with $\lambda_1 \neq \lambda_2$. Then</p>
+$$
+\lambda_2 x_1^* x_2=x_1^* A x_2=\overline{x_2^* A x_1}=\overline{\lambda_1 x_2^* x_1}=\lambda_1 x_1^* x_2
+$$<p>so $\left(\lambda_1-\lambda_2\right) x_1^* x_2=0$. Since $\lambda_1 \neq \lambda_2$, we have $x_1^* x_2=0$.</p>
 </div>
 </div>
 </div>
@@ -7506,21 +7518,228 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>The main idea is the following. By a textbook definition, Gaussian elimination with partial pivoting (PALU factorization, $PA=LU$) is backward stable. However, there is a growth factor $\rho$ involved, which may be huge, on the order of 2^{m-1} for an $m\times m$ matrix. Although one has a uniform bound, $O(\varepsilon_{\mathrm{M}})$ in the backward stability result, the constant depends on $\rho$, which may overwhelm the machine epsilon and the actual quantity can easily get out of hand.</p>
-<p>Where is $\rho$ coming from?</p>
-<p>Each pivot selection involves maximization over a column, this algorithm produces a matrix $L$ with entries of absolute value $\leq 1$ everywhere below the diagonal. 
-This implies $\|L\|=O(1)$ in any norm. Therefore, for Gaussian elimination with partial pivoting reduces to the condition $\|\delta A\| /\|U\|=O(\epsilon_{\text {M}})$. We conclude that the algorithm is backward stable provided $\|U\|=O(\|A\|)$.</p>
-<p>There is a standard reformulation of this conclusion that is perhaps more vivid.</p>
-<p>Gaussian elimination reduces a full matrix $A$ to an upper-triangular matrix $U$. We have just seen that the key question for stability is whether amplification of the entries takes place during this reduction. In particular, let the growth factor for $A$ be defined as the ratio</p>
+<h2 id="Symmetric-Gaussian-Elimination">Symmetric Gaussian Elimination<a class="anchor-link" href="#Symmetric-Gaussian-Elimination">¶</a></h2><p>Again the goal is to factor a HPD (Hermitian positive definite) matrix into triangular factors.</p>
+<p><strong>Idea:</strong> When the subdiagonal of column $k$ is transformed to zeros at step $k$, also transform the $k$th row's remaining entries to zeros to <em>preserve the symmetry</em>.</p>
+<p>Applying Gaussian elimination to the following Hermitian matrix:</p>
 $$
-\rho=\dfrac{\max_{i, j}\left|U_{i j}\right|}{\max_{i, j}\left|A_{i j}\right|}.
-$$<p>If $\rho$ is of order 1 , not much growth has taken place, and the elimination process is stable. If $\rho$ is bigger than this, we must expect instability. Specifically, since $\|L\|=O(1)$, and then $\|U\|=O(\rho\|A\|)$.</p>
-<p>We have the following theorem.</p>
-<h4 id="Theorem">Theorem<a class="anchor-link" href="#Theorem">¶</a></h4><p>Let the factorization $P A=L U$ of a matrix $A \in \mathbb{C}^{m \times m}$ be computed by Gaussian elimination with partial pivoting (Algorithm 21.1) on a computer satisfying the axioms <strong>A</strong> and <strong>B</strong> from Lecture 13. Then the computed matrices $\tilde{P}, \tilde{L}$, and $\tilde{U}$ satisfy</p>
+A=\begin{bmatrix}
+1 &amp; w^* \\
+w &amp; K
+\end{bmatrix}.
+$$<p>We obtain</p>
 $$
-\tilde{L} \tilde{U}=\tilde{P} A+\delta A, \quad \frac{\|\delta A\|}{\|A\|}=O(\rho \epsilon_{\text {M }})
-$$<p>for some $\delta A \in \mathbb{C}^{m \times n}$, where $\rho$ is the growth factor for $A$. If $\left|\ell_{i j}\right|&lt;1$ for each $i&gt;j$, implying that there are no ties in the selection of pivots in exact arithmetic, then $\tilde{P}=P$ for all sufficiently small $\epsilon_{\text {M }}$.</p>
-<h2 id="A-Worst-Case">A Worst Case<a class="anchor-link" href="#A-Worst-Case">¶</a></h2>
+A=\begin{bmatrix}
+1 &amp; w^* \\
+w &amp; K
+\end{bmatrix}
+=\begin{bmatrix}
+1 &amp; 0 \\
+w &amp; I
+\end{bmatrix}\begin{bmatrix}
+1 &amp; w^* \\
+0 &amp; K-w w^*
+\end{bmatrix}
+$$<p>Before proceeding, Cholesky factorization now introduces zeros in the first row to match the zeros just introduced in the first column. We can do this by a right upper-triangular operation that subtracts multiples of the first column from the subsequent ones:</p>
+$$
+\begin{bmatrix}
+1 &amp; w^* \\
+0 &amp; K-w w^*
+\end{bmatrix}
+\begin{bmatrix}
+1 &amp; -w^* \\
+0 &amp; I
+\end{bmatrix}
+=\begin{bmatrix}
+1 &amp; 0 \\
+0 &amp; K-w w^*
+\end{bmatrix}\implies
+\begin{bmatrix}
+1 &amp; w^* \\
+0 &amp; K-w w^*
+\end{bmatrix}=\begin{bmatrix}
+1 &amp; 0 \\
+0 &amp; K-w w^*
+\end{bmatrix}\begin{bmatrix}
+1 &amp; w^* \\
+0 &amp; I
+\end{bmatrix}
+$$<p>Thus, we arrive at a three-factor factorization:</p>
+$$
+A=
+\begin{bmatrix}
+1 &amp; w^* \\
+w &amp; K
+\end{bmatrix}
+\begin{bmatrix}
+1 &amp; 0 \\
+w &amp; I
+\end{bmatrix}
+\begin{bmatrix}
+1 &amp; 0 \\
+0 &amp; K-w w^*
+\end{bmatrix}
+\begin{bmatrix}
+1 &amp; w^* \\
+0 &amp; I
+\end{bmatrix} .
+$$<h2 id="Cholesky-Factorization">Cholesky Factorization<a class="anchor-link" href="#Cholesky-Factorization">¶</a></h2><p>In general, we proceed as</p>
+\begin{aligned}
+A &amp; =\left[\begin{array}{cc}
+a_{11} &amp; w^* \\
+w &amp; K
+\end{array}\right] \\
+&amp; =\left[\begin{array}{cc}
+\alpha &amp; 0 \\
+w / \alpha &amp; I
+\end{array}\right]\left[\begin{array}{cc}
+1 &amp; 0 \\
+0 &amp; K-w w^* / a_{11}
+\end{array}\right]\left[\begin{array}{cc}
+\alpha &amp; w^* / \alpha \\
+0 &amp; I
+\end{array}\right]=R_1^* A_1 R_1
+\end{aligned}
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We repeat this step until the diagonal in the rentral factor is exhausted --- becomes the identity. If the upper-left entry of the submatrix $K-w w^* / a_{11}$ is positive, the same formula can be used to factor it; we then have $A_1=R_2^* A_2 R_2$ and thus $A=$ $R_1^* R_2^* A_2 R_2 R_1$. The process is continued down to the bottom-right corner. At the end, we arrive at</p>
+$$
+A=\underbrace{R_1^* R_2^* \cdots R_m^*}_{R^*} \underbrace{R_m \cdots R_2 R_1}_R .
+$$<p>This equation has the form</p>
+$$
+A=R^* R, \qquad r_{j j}&gt;0,
+$$<p>and $R$ is upper-triangular (so $R^*$ is lower-triangular).</p>
+<p>This type of a reduction of a HPD matrix is called <em>Cholesky factorization</em>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>OK, but how do we know whether the upper-left entry of the submatrix $K-w w^* / a_{11}$ is positive?</p>
+<p>It must be positive because $K-w w^* / a_{11}$ is positive definite, since it is the $(m-1) \times(m-1)$ lower-right principal submatrix of the positive definite matrix $R_1^{-*} A R_1^{-1}$.</p>
+<p>By induction, the process doesn't break down.</p>
+<h4 id="Theorem">Theorem<a class="anchor-link" href="#Theorem">¶</a></h4><p>Every hermitian positive definite matrix $A \in \mathbb{C}^{m \times m}$ has a unique Cholesky factorization.</p>
+<h4 id="Algorithm-23.1-Cholesky-Factorization">Algorithm 23.1 Cholesky Factorization<a class="anchor-link" href="#Algorithm-23.1-Cholesky-Factorization">¶</a></h4><ul>
+<li>$R=A$</li>
+<li>for $k=1$ to $m$<ul>
+<li>for $j=k+1$ to $m$<ul>
+<li>$R_{j, j: m}=R_{j, j: m}-R_{k, j: m} \bar{R}_{k j} / R_{k k}$</li>
+</ul>
+</li>
+<li>$R_{k, k: m}=R_{k, k: m} / \sqrt{R_{k k}}$</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Operation-Count">Operation Count<a class="anchor-link" href="#Operation-Count">¶</a></h2><p>The arithmetic done in Cholesky factorization is dominated by the inner loop.</p>
+<p>A single execution of the line</p>
+$$R_{j, j: m}=R_{j, j: m}-R_{k, j: m} \bar{R}_{k j} / R_{k k}$$<p>requires one division, $m-j+1$ multiplications, and $m-j+1$ subtractions, for a total of $\sim 2(m-j)$ flops.</p>
+<p>This calculation is repeated once for each $j$ from $k+1$ to $m$, and that loop is repeated for each $k$ from 1 to $m$. So the total is:</p>
+$$
+\sum_{k=1}^m \sum_{j=k+1}^m 2(m-j) \sim 2 \sum_{k=1}^m \sum_{j=1}^k j \sim \sum_{k=1}^m k^2 \sim \frac{1}{3} m^3 \text { flops } .
+$$
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Cholesky factorization requires only haf as many operations as Gaussian elimination.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-julia"><pre><span></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Stability">Stability<a class="anchor-link" href="#Stability">¶</a></h2><p>All of the subtleties of the stability analysis of Gaussian elimination vanish for Cholesky factorization. This algorithm is always stable!</p>
+<p>The reason is that the factors $R$ can never grow large. In the 2-norm, for example, we have $\|R\|=\left\|R^*\right\|=\|A\|^{1 / 2}$ (proof: SVD), and in other $p$-norms with $1 \leq p \leq \infty,\|R\|$ cannot differ from $\|A\|^{1 / 2}$ by more than a factor of $\sqrt{m}$.</p>
+<h4 id="Theorem-(Backward-Stability)">Theorem (Backward Stability)<a class="anchor-link" href="#Theorem-(Backward-Stability)">¶</a></h4><p>Let $A \in \mathbb{C}^{m \times m}$ be hermitian positive definite, and let a Cholesky factorization of $A$ be computed by Algorithm 23.1 on a computer satisfying (13.5) and (13.7). For all sufficiently small $\epsilon_{\text {machine }}$, this process is guaranteed to run to completion (i.e., no zero or negative corner entries $r_{k k}$ will arise), generating a computed factor $\tilde{R}$ that satisfies</p>
+$$
+\tilde{R}^* \tilde{R}=A+\delta A, \quad \frac{\|\delta A\|}{\|A\|}=O\left(\epsilon_{\text {M }}\right)
+$$<p>for some $\delta A \in \mathbb{C}^{m \times m}$.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Solution-of-$Ax=b$-for-Hermitian-Positive-Definite-$A$">Solution of $Ax=b$ for Hermitian Positive Definite $A$<a class="anchor-link" href="#Solution-of-$Ax=b$-for-Hermitian-Positive-Definite-$A$">¶</a></h2><p>If $A$ is hermitian positive definite, the standard way to solve a system of equations $A x=b$ is by Cholesky factorization. Algorithm 23.1 reduces the system to</p>
+$$R^* R x=b.$$<p>We then solve two triangular systems in succession: first</p>
+$$R^* y=b$$<p>for the unknown $y$, then</p>
+$$ R x=y $$<p>for the unknown $x$.</p>
+<p>Each triangular solution requires just $\sim m^2$ flops, so the total work is again $\sim \frac{1}{3} m^3$ flops.</p>
+<h4 id="Theorem">Theorem<a class="anchor-link" href="#Theorem">¶</a></h4><p>The solution of hermitian positive definite systems $A x=b$ via Cholesky factorization (Algorithm 23.1) is backward stable, generating a computed solution $\tilde{x}$ that satisfies</p>
+$$
+(A+\Delta A) \tilde{x}=b, \quad \frac{\|\Delta A\|}{\|A\|}=O\left(\epsilon_{\text {machine }}\right)
+$$<p>for some $\Delta A \in \mathbb{C}^{m \times m}$.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Implementation-and-Examples">Implementation and Examples<a class="anchor-link" href="#Implementation-and-Examples">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7529,14 +7748,28 @@ $$<p>for some $\delta A \in \mathbb{C}^{m \times n}$, where $\rho$ is the growth
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-julia"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="n">LinearAlgebra</span>
-<span class="n">m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span>
-<span class="n">A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tril</span><span class="p">(</span><span class="o">-</span><span class="n">ones</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">m</span><span class="p">),</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="kt">Matrix</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}(</span><span class="n">I</span><span class="p">,</span><span class="w"> </span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="n">m</span><span class="p">);</span>
-<span class="n">A</span><span class="p">[</span><span class="o">:</span><span class="p">,</span><span class="n">m</span><span class="p">]</span><span class="w"> </span><span class="o">.=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
-<span class="n">A</span>
+<span class="c"># Start with some symmetric matrix.</span>
+<span class="n">A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="w"> </span>
+<span class="w">    </span><span class="mi">24</span><span class="w">     </span><span class="mi">18</span><span class="w">    </span><span class="mi">4</span><span class="w">    </span><span class="mi">12</span>
+<span class="w">    </span><span class="mi">18</span><span class="w">    </span><span class="o">-</span><span class="mi">33</span><span class="w">    </span><span class="mi">17</span><span class="w">    </span><span class="mi">13</span>
+<span class="w">    </span><span class="mi">4</span><span class="w">    </span><span class="mi">17</span><span class="w">    </span><span class="mi">51</span><span class="w">    </span><span class="mi">9</span>
+<span class="w">    </span><span class="mi">12</span><span class="w">    </span><span class="mi">13</span><span class="w">    </span><span class="mi">9</span><span class="w">     </span><span class="mi">13</span>
+<span class="p">];</span>
+
+<span class="n">norm</span><span class="p">(</span><span class="n">A</span><span class="o">-</span><span class="n">A</span><span class="o">'</span><span class="p">)</span><span class="o">|&gt;</span><span class="n">display</span>
+<span class="n">eigvals</span><span class="p">(</span><span class="n">A</span><span class="p">)</span><span class="o">|&gt;</span><span class="n">display</span>
+
+<span class="n">m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">size</span><span class="p">(</span><span class="n">A</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">L1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">Matrix</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}(</span><span class="n">I</span><span class="p">,</span><span class="w"> </span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="n">m</span><span class="p">);</span><span class="w">  </span>
+<span class="n">L1</span><span class="p">[</span><span class="mi">2</span><span class="o">:</span><span class="n">m</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="o">:</span><span class="n">m</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">];</span>
+<span class="n">A1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">L1</span><span class="o">*</span><span class="n">A</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">A1</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7549,61 +7782,27 @@ $$<p>for some $\delta A \in \mathbb{C}^{m \times n}$, where $\rho$ is the growth
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>8×8 Matrix{Float64}:
-  1.0   0.0   0.0   0.0   0.0   0.0   0.0  1.0
- -1.0   1.0   0.0   0.0   0.0   0.0   0.0  1.0
- -1.0  -1.0   1.0   0.0   0.0   0.0   0.0  1.0
- -1.0  -1.0  -1.0   1.0   0.0   0.0   0.0  1.0
- -1.0  -1.0  -1.0  -1.0   1.0   0.0   0.0  1.0
- -1.0  -1.0  -1.0  -1.0  -1.0   1.0   0.0  1.0
- -1.0  -1.0  -1.0  -1.0  -1.0  -1.0   1.0  1.0
- -1.0  -1.0  -1.0  -1.0  -1.0  -1.0  -1.0  1.0</pre>
+<pre>0.0</pre>
 </div>
 </div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-julia"><pre><span></span><span class="p">(</span><span class="n">L</span><span class="p">,</span><span class="n">U</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lu</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>LU{Float64, Matrix{Float64}, Vector{Int64}}
-L factor:
-8×8 Matrix{Float64}:
-  1.0   0.0   0.0   0.0   0.0   0.0   0.0  0.0
- -1.0   1.0   0.0   0.0   0.0   0.0   0.0  0.0
- -1.0  -1.0   1.0   0.0   0.0   0.0   0.0  0.0
- -1.0  -1.0  -1.0   1.0   0.0   0.0   0.0  0.0
- -1.0  -1.0  -1.0  -1.0   1.0   0.0   0.0  0.0
- -1.0  -1.0  -1.0  -1.0  -1.0   1.0   0.0  0.0
- -1.0  -1.0  -1.0  -1.0  -1.0  -1.0   1.0  0.0
- -1.0  -1.0  -1.0  -1.0  -1.0  -1.0  -1.0  1.0
-U factor:
-8×8 Matrix{Float64}:
- 1.0  0.0  0.0  0.0  0.0  0.0  0.0    1.0
- 0.0  1.0  0.0  0.0  0.0  0.0  0.0    2.0
- 0.0  0.0  1.0  0.0  0.0  0.0  0.0    4.0
- 0.0  0.0  0.0  1.0  0.0  0.0  0.0    8.0
- 0.0  0.0  0.0  0.0  1.0  0.0  0.0   16.0
- 0.0  0.0  0.0  0.0  0.0  1.0  0.0   32.0
- 0.0  0.0  0.0  0.0  0.0  0.0  1.0   64.0
- 0.0  0.0  0.0  0.0  0.0  0.0  0.0  128.0</pre>
+<pre>4-element Vector{Float64}:
+ -41.966645637229355
+   4.631407078287072
+  31.41206807719446
+  60.92317048174786</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>4×4 Matrix{Float64}:
+ 24.0   18.0   4.0     12.0
+  0.0  -46.5  14.0      4.0
+  0.0   14.0  50.3333   7.0
+  0.0    4.0   7.0      7.0</pre>
 </div>
 </div>
 </div>
@@ -7615,12 +7814,566 @@ U factor:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Since $m=8$, we see the factor $2^{m-1}= 2^7 = 128$ of amplification for an entry of $U$.</p>
-<p>Now, the machine epsilon is $2^{-52}$. So, if $m&gt;50$, solving $Ax=b$ via PALU factorization (Gaussian elimination with partial pivoting) will be quite problematic!</p>
+<p>This didn't change the first row of $A$. But we can transpose (take the Hermitian) $A$ an the apply the same matrix on the left again, it would effectively zero the row of $A$.</p>
 </div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-julia"><pre><span></span><span class="n">L1</span><span class="o">*</span><span class="n">A1</span><span class="o">'</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>4×4 Matrix{Float64}:
+ 24.0    0.0   0.0     0.0
+  0.0  -46.5  14.0     4.0
+  0.0   14.0  50.3333  7.0
+  0.0    4.0   7.0     7.0</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-julia"><pre><span></span><span class="c"># We could have simply done</span>
+
+<span class="n">A1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">L1</span><span class="o">*</span><span class="n">A</span><span class="o">*</span><span class="n">L1</span><span class="o">'</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>4×4 Matrix{Float64}:
+ 24.0    0.0   0.0     0.0
+  0.0  -46.5  14.0     4.0
+  0.0   14.0  50.3333  7.0
+  0.0    4.0   7.0     7.0</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-julia"><pre><span></span><span class="c"># Go on:</span>
+<span class="n">L2</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="kt">Matrix</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}(</span><span class="n">I</span><span class="p">,</span><span class="w"> </span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="n">m</span><span class="p">);</span><span class="w"> </span>
+<span class="n">L2</span><span class="p">[</span><span class="mi">3</span><span class="o">:</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="n">A1</span><span class="p">[</span><span class="mi">3</span><span class="o">:</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="n">A1</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">];</span>
+<span class="n">A2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">L2</span><span class="o">*</span><span class="n">A1</span><span class="o">*</span><span class="n">L2</span><span class="o">'</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>4×4 Matrix{Float64}:
+ 24.0    0.0   0.0     0.0
+  0.0  -46.5   0.0     0.0
+  0.0    0.0  54.5484  8.2043
+  0.0    0.0   8.2043  7.34409</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-julia"><pre><span></span><span class="n">L3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">Matrix</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}(</span><span class="n">I</span><span class="p">,</span><span class="w"> </span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="n">m</span><span class="p">);</span><span class="w">  </span>
+<span class="n">L3</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="n">A2</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="o">/</span><span class="n">A2</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">];</span>
+<span class="n">A3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">L3</span><span class="o">*</span><span class="n">A2</span><span class="o">*</span><span class="n">L3</span><span class="o">'</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>4×4 Matrix{Float64}:
+ 24.0    0.0   0.0     0.0
+  0.0  -46.5   0.0     0.0
+  0.0    0.0  54.5484  0.0
+  0.0    0.0   0.0     6.11013</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-julia"><pre><span></span><span class="n">L</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">inv</span><span class="p">(</span><span class="n">L1</span><span class="p">)</span><span class="o">*</span><span class="n">inv</span><span class="p">(</span><span class="n">L2</span><span class="p">)</span><span class="o">*</span><span class="n">inv</span><span class="p">(</span><span class="n">L3</span><span class="p">)</span>
+<span class="n">L</span><span class="o">|&gt;</span><span class="n">display</span>
+<span class="n">D</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">diagm</span><span class="p">(</span><span class="n">diag</span><span class="p">(</span><span class="n">A3</span><span class="p">))</span>
+<span class="n">D</span><span class="o">|&gt;</span><span class="n">display</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>4×4 Matrix{Float64}:
+ 1.0        0.0        0.0       0.0
+ 0.75       1.0        0.0       0.0
+ 0.166667  -0.301075   1.0       0.0
+ 0.5       -0.0860215  0.150404  1.0</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>4×4 Matrix{Float64}:
+ 24.0    0.0   0.0     0.0
+  0.0  -46.5   0.0     0.0
+  0.0    0.0  54.5484  0.0
+  0.0    0.0   0.0     6.11013</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-julia"><pre><span></span><span class="n">norm</span><span class="p">(</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">L</span><span class="o">*</span><span class="n">D</span><span class="o">*</span><span class="n">L</span><span class="o">'</span><span class="w"> </span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>1.7763568394002505e-15</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We haven't used a positive definite matrix in the example above. And in the end, we did not get our diagonal matrix to be $\mathbb{I}$. Cholesky factorization algorithm also distributes the terms on the diagonals symmetrically to the offdiagonal. See below.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-julia"><pre><span></span><span class="c"># Work with a positive definite Hermitian Matrix</span>
+
+<span class="n">B</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A</span><span class="o">'*</span><span class="n">A</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>4×4 Matrix{Int64}:
+ 1060    62   714  714
+   62  1871   495  109
+  714   495  2987  845
+  714   109   845  563</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-julia"><pre><span></span><span class="c"># Maybe normalize for sanity.</span>
+
+<span class="n">B</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">B</span><span class="o">/</span><span class="mi">100</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>4×4 Matrix{Float64}:
+ 10.6    0.62   7.14  7.14
+  0.62  18.71   4.95  1.09
+  7.14   4.95  29.87  8.45
+  7.14   1.09   8.45  5.63</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-julia"><pre><span></span><span class="n">eigvals</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>4-element Vector{Float64}:
+  0.21449931524807814
+  9.867180208862997
+ 17.611993460407803
+ 37.11632701548113</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-julia"><pre><span></span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sqrt</span><span class="p">(</span><span class="n">B</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]);</span>
+<span class="n">L1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">Matrix</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}(</span><span class="n">I</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">m</span><span class="p">)</span>
+<span class="n">L1</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="o">/</span><span class="n">r</span><span class="p">;</span>
+<span class="n">L1</span><span class="p">[</span><span class="mi">2</span><span class="o">:</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="n">B</span><span class="p">[</span><span class="mi">2</span><span class="o">:</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="n">r</span><span class="o">^</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>3-element Vector{Float64}:
+ -0.05849056603773585
+ -0.6735849056603773
+ -0.6735849056603773</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-julia"><pre><span></span><span class="n">B1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">L1</span><span class="o">*</span><span class="n">B</span><span class="o">*</span><span class="n">L1</span><span class="o">'</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>4×4 Matrix{Float64}:
+ 1.0   2.77556e-17   4.44089e-16  4.44089e-16
+ 0.0  18.6737        4.53238      0.672377
+ 0.0   4.53238      25.0606       3.6406
+ 0.0   0.672377      3.6406       0.820604</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-julia"><pre><span></span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sqrt</span><span class="p">(</span><span class="n">B1</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]);</span>
+<span class="n">L2</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="kt">Matrix</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}(</span><span class="n">I</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">m</span><span class="p">);</span><span class="w">  </span>
+<span class="n">L2</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="o">/</span><span class="n">r</span><span class="p">;</span>
+<span class="n">L2</span><span class="p">[</span><span class="mi">3</span><span class="o">:</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="n">B1</span><span class="p">[</span><span class="mi">3</span><span class="o">:</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="n">r</span><span class="o">^</span><span class="mi">2</span><span class="p">;</span>
+
+<span class="n">B2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">L2</span><span class="o">*</span><span class="n">B1</span><span class="o">*</span><span class="n">L2</span><span class="o">'</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>4×4 Matrix{Float64}:
+ 1.0  6.42295e-18   4.37353e-16   4.4309e-16
+ 0.0  1.0           0.0          -2.77556e-17
+ 0.0  0.0          23.9605        3.47741
+ 0.0  0.0           3.47741       0.796394</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-julia"><pre><span></span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sqrt</span><span class="p">(</span><span class="n">B2</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">]);</span>
+<span class="n">L3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">Matrix</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}(</span><span class="n">I</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">m</span><span class="p">);</span><span class="w"> </span>
+<span class="n">L3</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="o">/</span><span class="n">r</span><span class="p">;</span>
+<span class="n">L3</span><span class="p">[</span><span class="mi">4</span><span class="o">:</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="n">B2</span><span class="p">[</span><span class="mi">4</span><span class="o">:</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="o">/</span><span class="n">r</span><span class="o">^</span><span class="mi">2</span><span class="p">;</span>
+
+<span class="n">B3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">L3</span><span class="o">*</span><span class="n">B2</span><span class="o">*</span><span class="n">L3</span><span class="o">'</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>4×4 Matrix{Float64}:
+ 1.0  6.42295e-18  8.93477e-17   3.79617e-16
+ 0.0  1.0          0.0          -2.77556e-17
+ 0.0  0.0          1.0           1.11022e-16
+ 0.0  0.0          9.0724e-17    0.291715</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-julia"><pre><span></span><span class="n">L4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">Matrix</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}(</span><span class="n">I</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">m</span><span class="p">);</span><span class="w">  </span>
+<span class="n">L4</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="o">/</span><span class="n">sqrt</span><span class="p">(</span><span class="n">B3</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">]);</span>
+<span class="n">B4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">L4</span><span class="o">*</span><span class="n">B3</span><span class="o">*</span><span class="n">L4</span><span class="o">'</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>4×4 Matrix{Float64}:
+ 1.0  6.42295e-18  8.93477e-17   7.02855e-16
+ 0.0  1.0          0.0          -5.13891e-17
+ 0.0  0.0          1.0           2.05556e-16
+ 0.0  0.0          1.67974e-16   1.0</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [54]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-julia"><pre><span></span><span class="n">inv</span><span class="p">(</span><span class="n">L1</span><span class="p">)</span><span class="o">*</span><span class="n">inv</span><span class="p">(</span><span class="n">L2</span><span class="p">)</span><span class="o">*</span><span class="n">inv</span><span class="p">(</span><span class="n">L3</span><span class="p">)</span><span class="o">*</span><span class="n">inv</span><span class="p">(</span><span class="n">L4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>4×4 Matrix{Float64}:
+ 3.25576   0.0       0.0       0.0
+ 0.190431  4.32131   0.0       0.0
+ 2.19303   1.04884   4.89495   0.0
+ 2.19303   0.155596  0.710407  0.540107</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-julia"><pre><span></span><span class="n">L1</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>4×4 Matrix{Float64}:
+  0.307148   0.0  0.0  0.0
+ -0.0584906  1.0  0.0  0.0
+ -0.673585   0.0  1.0  0.0
+ -0.673585   0.0  0.0  1.0</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-julia"><pre><span></span><span class="n">inv</span><span class="p">(</span><span class="n">L1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>4×4 Matrix{Float64}:
+ 3.25576   0.0  0.0  0.0
+ 0.190431  1.0  0.0  0.0
+ 2.19303   0.0  1.0  0.0
+ 2.19303   0.0  0.0  1.0</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7628,190 +8381,9 @@ U factor:
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-julia"><pre><span></span><span class="c"># Let's try!</span>
-<span class="n">m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">53</span>
-<span class="n">A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tril</span><span class="p">(</span><span class="o">-</span><span class="n">ones</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">m</span><span class="p">),</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="kt">Matrix</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}(</span><span class="n">I</span><span class="p">,</span><span class="w"> </span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="n">m</span><span class="p">);</span>
-<span class="n">A</span><span class="p">[</span><span class="o">:</span><span class="p">,</span><span class="n">m</span><span class="p">]</span><span class="w"> </span><span class="o">.=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
-<span class="c"># Define the true solution</span>
-<span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="o">:</span><span class="n">m</span><span class="p">)</span><span class="o">/</span><span class="n">m</span>
-<span class="c"># x = collect((1:m)/m)</span>
-<span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A</span><span class="o">*</span><span class="n">x</span>
-<span class="n">norm</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">A</span><span class="o">\</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="n">norm</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<div class="highlight hl-julia"><pre><span></span>
 </pre></div>
 </div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0.01686801433899681</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>This is computation is performed with 16 digits arithmetic and the resulting error is 1%! Here we remind ourselves that the default backslash <code>\</code> operator used Gaussian elimination with partial pivoting.</p>
-<p>What happens for larger $m$?</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-julia"><pre><span></span><span class="c"># Let's try!</span>
-<span class="n">m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">56</span>
-<span class="n">A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tril</span><span class="p">(</span><span class="o">-</span><span class="n">ones</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">m</span><span class="p">),</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="kt">Matrix</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}(</span><span class="n">I</span><span class="p">,</span><span class="w"> </span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="n">m</span><span class="p">);</span>
-<span class="n">A</span><span class="p">[</span><span class="o">:</span><span class="p">,</span><span class="n">m</span><span class="p">]</span><span class="w"> </span><span class="o">.=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
-<span class="c"># Define the true solution</span>
-<span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="o">:</span><span class="n">m</span><span class="p">)</span><span class="o">/</span><span class="n">m</span>
-<span class="c"># x = collect((1:m)/m)</span>
-<span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A</span><span class="o">*</span><span class="n">x</span>
-<span class="n">norm</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">A</span><span class="o">\</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="n">norm</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0.3157400680202919</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>30% error! There is nothing wrong with the condition number of the matrix, by the way:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-julia"><pre><span></span><span class="n">cond</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>25.00425603327097</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Accordingly, the QR factorization (with Householder by default) perfectly takes care of $Ax=b$.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-julia"><pre><span></span><span class="p">(</span><span class="n">Q</span><span class="p">,</span><span class="n">R</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">qr</span><span class="p">(</span><span class="n">A</span><span class="p">);</span>
-<span class="c"># QR = A --&gt; QR x = b is  being solved.</span>
-<span class="c"># Solve Rx = (Q^*)b</span>
-<span class="n">norm</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">R</span><span class="o">\</span><span class="p">(</span><span class="n">Q</span><span class="o">'*</span><span class="n">b</span><span class="p">))</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">norm</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>5.46420983563484e-15</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Natural question is why PALU algorithm is chosen as the default for solving linear systems while the QR algorithm is fully reliable and waiting in line...</p>
-<p>The matrices that cause this type of worst-case scenarios are known to be rare. So there is "Stability in Practice". Trefethen &amp; Bau states:</p>
-<blockquote>
-<p>In fifty years of computing, no matrix problems that excite an explosive instability are known to have arisen under natural circumstances.</p>
-</blockquote>
-<p>The factor of 2 in the number of flops involved in QR vs PALU factorization is certainly a reason.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Thinking more about it, since</p>
-$$
-P A = LU \implies U = L^{-1} P A
-$$<p>and $P$ and $A$ have moderate entries, $U$ having very large entries (such as exponentially large) imply that $L^{-1}$ has very large entries.</p>
-<p>We know that $L$ has a diagonal of $1$s and all the subdiagonal entries of with absolute values $\leq 1$. Interestingly, random triangular matrices have huge inverses. Moreover, random matrices of the form delivered by Gaussian elimination are known to have inverses that may have very large entries.</p>
-<p>So, how come $L^{-1}$ is very rarely large? There must be a correlation that's induced by the Gaussian elimination so that $L$ is no longer random even when we apply PALU to a random matrix $A$.</p>
-<p>More will be said on this soon!</p>
-<p>From Trefethen &amp; Bau:</p>
-<blockquote>
-<p>The answer lies in the consideration of column spaces. Since $U$ is uppertriangular and $P A=L U$, the column spaces of $P A$ and $L$ are the same. By this we mean that the first column of $P A$ spans the same space as the first column of $L$, the first two columns of $P A$ span the same space as the first two columns of $L$, and so on. If $A$ is random, its column spaces are randomly oriented, and it follows that the same must be true of the column spaces of $P^{-1} L$. However, this condition is incompatible with $L^{-1}$ being large. It can be shown that if $L^{-1}$ is large, then the column spaces of $L$, or of any permutation $P^{-1} L$, must be skewed in a fashion that is very far from random.</p>
-</blockquote>
-<p><strong>Read the numerical evidence for this from Lecture 23 in the book.</strong></p>
 </div>
 </div>
 </div>

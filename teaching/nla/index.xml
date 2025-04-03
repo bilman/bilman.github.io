@@ -202,5 +202,15 @@
 &lt;/a&gt;</description>
     </item>
     
+    <item>
+      <title>Cholesky Decomposition</title>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-23/</link>
+      <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-23/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-23.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+    View Jupyter Notebook
+&lt;/a&gt;</description>
+    </item>
+    
   </channel>
 </rss>
