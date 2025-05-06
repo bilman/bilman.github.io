@@ -277,12 +277,52 @@
     <lastmod>2025-04-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://bilman.github.io/teaching/</loc>
-    <lastmod>2025-04-17T00:00:00+00:00</lastmod>
+    <loc>https://bilman.github.io/publication_types/article/</loc>
+    <lastmod>2025-05-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://bilman.github.io/post/</loc>
-    <lastmod>2025-01-15T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/publication/soliton-gas-kdv/</loc>
+    <lastmod>2025-05-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/tags/korteweg-de-vries-equation/</loc>
+    <lastmod>2025-05-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/post/soliton-gas-post/</loc>
+    <lastmod>2025-05-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/tags/numerical-inverse-scattering/</loc>
+    <lastmod>2025-05-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/tags/primitive-potentials/</loc>
+    <lastmod>2025-05-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/publication_types/</loc>
+    <lastmod>2025-05-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/publication/</loc>
+    <lastmod>2025-05-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/tags/soliton-gas/</loc>
+    <lastmod>2025-05-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/tags/</loc>
+    <lastmod>2025-05-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/teaching/</loc>
+    <lastmod>2025-04-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://bilman.github.io/post/imacs-session/</loc>
@@ -297,10 +337,6 @@
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://bilman.github.io/publication_types/article/</loc>
-    <lastmod>2024-08-11T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://bilman.github.io/publication/rwio-nls-asymptotics/</loc>
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -309,23 +345,11 @@
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://bilman.github.io/publication_types/</loc>
-    <lastmod>2024-08-11T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://bilman.github.io/publication/</loc>
-    <lastmod>2024-08-11T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://bilman.github.io/tags/rogue-waves-of-infinite-order/</loc>
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://bilman.github.io/tags/spectral-singularities/</loc>
-    <lastmod>2024-08-11T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://bilman.github.io/tags/</loc>
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -426,14 +450,6 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://bilman.github.io/tags/finite-gap-solutions/</loc>
-    <lastmod>2023-07-01T14:29:44-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://bilman.github.io/tags/korteweg-de-vries-equation/</loc>
-    <lastmod>2023-07-01T14:29:44-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://bilman.github.io/tags/numerical-inverse-scattering/</loc>
     <lastmod>2023-07-01T14:29:44-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
