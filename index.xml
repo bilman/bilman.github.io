@@ -5,12 +5,32 @@
     <link>https://bilman.github.io/</link>
       <atom:link href="https://bilman.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Deniz Bilman</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 24 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jul 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://bilman.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
       <title>Deniz Bilman</title>
       <link>https://bilman.github.io/</link>
     </image>
+    
+    <item>
+      <title>Member of the Organizing Committee, UC Math Bowl Competition (since Fall 2019)</title>
+      <link>https://bilman.github.io/outreach/outreach2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/outreach/outreach2/</guid>
+      <description>&lt;p&gt;Math Bowl is a high school/junior high school math contest held annually in March at the University of Cincinnati for the past 40 years. It is a popular event in Greater Cincinnati, offered in 3 levels of math curriculum, and it is attended by a large and diverse group of students — about 80 teams of 2–5 students from 27 schools in 2019, for example.&lt;/p&gt;
+&lt;p&gt;My role involves coming up with problems, evaluating the work submitted by the teams, and showing up on the day of competition to interact with the students.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Curriculum Developer and Instructor, CHANCE Program, UIC (2014, 2015, 2016)</title>
+      <link>https://bilman.github.io/outreach/outreach1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/outreach/outreach1/</guid>
+      <description>&lt;p&gt;CHANCE is a program at the University of Illinois at Chicago that supports underrepresented and under-resourced students by fostering meaningful academic engagement and promoting student success. It plays a key role in UIC’s efforts to recruit, support, and retain these students through partnerships with Chicago Public Schools, City Colleges of Chicago, community organizations, and regional school districts. By offering mentoring, academic support, and access to college and career resources, CHANCE helps students navigate the path to higher education and graduation.&lt;/p&gt;
+&lt;p&gt;I have designed their mathematics curriculum and taught at their summer camps.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Contact</title>
@@ -1463,6 +1483,54 @@ $$
     </item>
     
     <item>
+      <title>Departmental Seminar, University of Oregon, Eugene, OR</title>
+      <link>https://bilman.github.io/talks/talk2025_9/</link>
+      <pubDate>Sat, 03 Jan 2099 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/talks/talk2025_9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Departmental Seminar, University of California Santa Cruz, Santa Cruz, CA</title>
+      <link>https://bilman.github.io/talks/talk2025_8/</link>
+      <pubDate>Fri, 02 Jan 2099 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/talks/talk2025_8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Departmental Seminar, University of Wisconsin-Madison, Wisconsin, MI</title>
+      <link>https://bilman.github.io/talks/talk2025_7/</link>
+      <pubDate>Thu, 01 Jan 2099 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/talks/talk2025_7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AMS Fall Sectional Meeting, Special Session &#39;Integrability and Randomness&#39;, Tulane University, New Orleans, GA</title>
+      <link>https://bilman.github.io/talks/talk2025_6/</link>
+      <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/talks/talk2025_6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WaDIB: Wave Dynamics, Integrability, and Beyond, Santa Margherita di Pula, Sardinia, Italy</title>
+      <link>https://bilman.github.io/talks/talk2025_5/</link>
+      <pubDate>Sun, 25 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/talks/talk2025_5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Universality, Nonlinearity, and Integrability: In Honor of Percy Deift&#39;s 80th Birthday, KIAS, Seoul, Korea</title>
+      <link>https://bilman.github.io/talks/talk2025_4/</link>
+      <pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/talks/talk2025_4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Efficient computation of soliton gas primitive potentials</title>
       <link>https://bilman.github.io/publication/soliton-gas-kdv/</link>
       <pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate>
@@ -1506,12 +1574,68 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     </item>
     
     <item>
+      <title>Conference on &#39;Dispersive Integrable Equations: Pathfinders in Infinite-Dimensional Hamiltonian Systems&#39;, CIRM, Luminy, France</title>
+      <link>https://bilman.github.io/talks/talk2025_3/</link>
+      <pubDate>Mon, 28 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/talks/talk2025_3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IMACS Nonlinear Wave Conference, Special Session &#39;Advances in Integrable Systems and Inverse Scattering&#39; Athens, GA</title>
+      <link>https://bilman.github.io/talks/talk2025_2/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/talks/talk2025_2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AMS Spring Sectional Meeting, Special Session &#39;Analysis of Nonlinear Wave Models&#39;, University of Kansas, Lawrence, KS</title>
+      <link>https://bilman.github.io/talks/talk2025_1/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/talks/talk2025_1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AMS Spring Sectional Meeting, Special Session &#39;Recent Advances in the Analysis of Integrable Systems&#39;, University of Kansas, Lawrence, KS</title>
+      <link>https://bilman.github.io/talks/talk2025_10/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/talks/talk2025_10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Special session at the IMACS Conference 2025 in Athens, GA</title>
       <link>https://bilman.github.io/post/imacs-session/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://bilman.github.io/post/imacs-session/</guid>
       <description>&lt;p&gt;Robert Buckingham, Peter Miller, and I are organizing a special session on &amp;ldquo;Singular asymptotics for integrable nonlinear waves and related topics&amp;rdquo;.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Departmental Seminar, SUNY University at Buffalo, Buffalo, NY</title>
+      <link>https://bilman.github.io/talks/talk2024_1/</link>
+      <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/talks/talk2024_1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Departmental Seminar, University Washington, Seattle, WA</title>
+      <link>https://bilman.github.io/talks/talk2024_2/</link>
+      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/talks/talk2024_2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seminar, &#39;Emergent phenomena in Nonlinear Dispersive Waves&#39; Programme of Isaac Newton Institute, Northumbria University, Newcastle Upon Tyne, UK</title>
+      <link>https://bilman.github.io/talks/talk2024_3/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/talks/talk2024_3/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -1665,6 +1789,14 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
 &lt;/div&gt; --&gt;
 &lt;!-- Add the publication&#39;s **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>SIAM Nonlinear Waves and Coherent Structures Conference 2024, Special Session &#39;Recent Developments in Dispersive Partial Differential Equations&#39;, Baltimore, MD</title>
+      <link>https://bilman.github.io/talks/talk2024_4/</link>
+      <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/talks/talk2024_4/</guid>
+      <description></description>
     </item>
     
     <item>

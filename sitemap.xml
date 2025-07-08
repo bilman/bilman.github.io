@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://bilman.github.io/outreach/outreach2/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/outreach/outreach1/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://bilman.github.io/contact/contact/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -277,6 +283,38 @@
     <lastmod>2025-04-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://bilman.github.io/talks/talk2025_9/</loc>
+    <lastmod>2099-01-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/talks/</loc>
+    <lastmod>2099-01-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/talks/talk2025_8/</loc>
+    <lastmod>2099-01-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/talks/talk2025_7/</loc>
+    <lastmod>2099-01-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/talks/talk2025_6/</loc>
+    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/</loc>
+    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/talks/talk2025_5/</loc>
+    <lastmod>2025-05-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/talks/talk2025_4/</loc>
+    <lastmod>2025-05-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://bilman.github.io/publication_types/article/</loc>
     <lastmod>2025-05-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -321,8 +359,24 @@
     <lastmod>2025-05-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://bilman.github.io/talks/talk2025_3/</loc>
+    <lastmod>2025-04-28T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://bilman.github.io/teaching/</loc>
     <lastmod>2025-04-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/talks/talk2025_2/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/talks/talk2025_1/</loc>
+    <lastmod>2025-03-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/talks/talk2025_10/</loc>
+    <lastmod>2025-03-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://bilman.github.io/post/imacs-session/</loc>
@@ -331,6 +385,18 @@
   </url><url>
     <loc>https://bilman.github.io/teaching/nla/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/talks/talk2024_1/</loc>
+    <lastmod>2024-10-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/talks/talk2024_2/</loc>
+    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/talks/talk2024_3/</loc>
+    <lastmod>2024-08-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://bilman.github.io/tags/anomalous-temporal-decay/</loc>
@@ -377,10 +443,6 @@
     <lastmod>2024-08-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://bilman.github.io/</loc>
-    <lastmod>2024-07-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://bilman.github.io/post/rwionls-jl-post/</loc>
     <lastmod>2024-07-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -403,6 +465,10 @@
   </url><url>
     <loc>https://bilman.github.io/publication/rwionls-jl/</loc>
     <lastmod>2024-07-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/talks/talk2024_4/</loc>
+    <lastmod>2024-06-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://bilman.github.io/ongoing/fractional-solitons/</loc>
@@ -566,6 +632,15 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://bilman.github.io/contact/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/portfolio/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/outreach/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/activities/</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
