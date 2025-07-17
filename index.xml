@@ -1483,7 +1483,7 @@ $$
     </item>
     
     <item>
-      <title>Departmental Seminar, University of Oregon, Eugene, OR</title>
+      <title>Seminar, University of Oregon, Eugene, OR</title>
       <link>https://bilman.github.io/talks/talk2025_9/</link>
       <pubDate>Sat, 03 Jan 2099 00:00:00 +0000</pubDate>
       <guid>https://bilman.github.io/talks/talk2025_9/</guid>
@@ -1491,7 +1491,7 @@ $$
     </item>
     
     <item>
-      <title>Departmental Seminar, University of California Santa Cruz, Santa Cruz, CA</title>
+      <title>Seminar, University of California Santa Cruz, Santa Cruz, CA</title>
       <link>https://bilman.github.io/talks/talk2025_8/</link>
       <pubDate>Fri, 02 Jan 2099 00:00:00 +0000</pubDate>
       <guid>https://bilman.github.io/talks/talk2025_8/</guid>
@@ -1499,10 +1499,18 @@ $$
     </item>
     
     <item>
-      <title>Departmental Seminar, University of Wisconsin-Madison, Wisconsin, MI</title>
+      <title>Seminar, University of Wisconsin-Madison, Wisconsin, MI</title>
       <link>https://bilman.github.io/talks/talk2025_7/</link>
       <pubDate>Thu, 01 Jan 2099 00:00:00 +0000</pubDate>
       <guid>https://bilman.github.io/talks/talk2025_7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seminar, Institut de Recherche Mathématique de Rennes, Rennes, France</title>
+      <link>https://bilman.github.io/talks/talk2025_11/</link>
+      <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/talks/talk2025_11/</guid>
       <description></description>
     </item>
     
@@ -1615,7 +1623,7 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     </item>
     
     <item>
-      <title>Departmental Seminar, SUNY University at Buffalo, Buffalo, NY</title>
+      <title>Seminar, SUNY University at Buffalo, Buffalo, NY</title>
       <link>https://bilman.github.io/talks/talk2024_1/</link>
       <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://bilman.github.io/talks/talk2024_1/</guid>
@@ -1623,7 +1631,7 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     </item>
     
     <item>
-      <title>Departmental Seminar, University Washington, Seattle, WA</title>
+      <title>Seminar, University Washington, Seattle, WA</title>
       <link>https://bilman.github.io/talks/talk2024_2/</link>
       <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://bilman.github.io/talks/talk2024_2/</guid>
@@ -1863,6 +1871,22 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     </item>
     
     <item>
+      <title>AMS Spring Sectional Meeting, Special Session &#39;Nonlinear Hamiltonian PDEs&#39;, Washington, DC</title>
+      <link>https://bilman.github.io/talks/talk2024_5/</link>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/talks/talk2024_5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seminar, University of Kansas, Lawrence, KS</title>
+      <link>https://bilman.github.io/talks/talk2024_6/</link>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/talks/talk2024_6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Asymptotic behavior of large-order soliton solutions of the modified Korteweg-de Vries equation</title>
       <link>https://bilman.github.io/ongoing/kurt-mkdv/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
@@ -1914,6 +1938,14 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
 
 Add the publication&#39;s **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Departmental Colloquium, University of Indiana-Purdue University at Indianapolis, Indianapolis, IN</title>
+      <link>https://bilman.github.io/talks/talk2024_7/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/talks/talk2024_7/</guid>
+      <description></description>
     </item>
     
     <item>
