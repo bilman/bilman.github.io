@@ -307,8 +307,36 @@
     <lastmod>2025-10-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://bilman.github.io/publication_types/article/</loc>
+    <lastmod>2025-07-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/publication/rwio-elliptic-spread/</loc>
+    <lastmod>2025-07-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/tags/nonlinear-schrodinger-equation/</loc>
+    <lastmod>2025-07-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/publication_types/</loc>
+    <lastmod>2025-07-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/publication/</loc>
+    <lastmod>2025-07-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/tags/rogue-waves-of-infinite-order/</loc>
+    <lastmod>2025-07-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/tags/</loc>
+    <lastmod>2025-07-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://bilman.github.io/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://bilman.github.io/talks/talk2025_5/</loc>
@@ -317,10 +345,6 @@
   </url><url>
     <loc>https://bilman.github.io/talks/talk2025_4/</loc>
     <lastmod>2025-05-15T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://bilman.github.io/publication_types/article/</loc>
-    <lastmod>2025-05-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://bilman.github.io/post/</loc>
@@ -347,19 +371,7 @@
     <lastmod>2025-05-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://bilman.github.io/publication_types/</loc>
-    <lastmod>2025-05-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://bilman.github.io/publication/</loc>
-    <lastmod>2025-05-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://bilman.github.io/tags/soliton-gas/</loc>
-    <lastmod>2025-05-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://bilman.github.io/tags/</loc>
     <lastmod>2025-05-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -411,14 +423,6 @@
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://bilman.github.io/tags/nonlinear-schrodinger-equation/</loc>
-    <lastmod>2024-08-11T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://bilman.github.io/tags/rogue-waves-of-infinite-order/</loc>
-    <lastmod>2024-08-11T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://bilman.github.io/tags/spectral-singularities/</loc>
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -451,14 +455,6 @@
     <lastmod>2024-07-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://bilman.github.io/ongoing/rwio-nls-elliptic-temp/</loc>
-    <lastmod>2024-07-05T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://bilman.github.io/ongoing/</loc>
-    <lastmod>2024-07-05T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://bilman.github.io/publication_types/computer/</loc>
     <lastmod>2024-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -469,6 +465,10 @@
   </url><url>
     <loc>https://bilman.github.io/publication/rwionls-jl/</loc>
     <lastmod>2024-07-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/ongoing/</loc>
+    <lastmod>2024-06-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://bilman.github.io/talks/talk2024_4/</loc>
