@@ -2,165 +2,165 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Talks | Deniz Bilman</title>
-    <link>https://bilman.github.io/talks/</link>
-      <atom:link href="https://bilman.github.io/talks/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://example.com/talks/</link>
+      <atom:link href="https://example.com/talks/index.xml" rel="self" type="application/rss+xml" />
     <description>Talks</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 03 Jan 2099 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://bilman.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <url>https://example.com/media/icon_hu7729264130191091259.png</url>
       <title>Talks</title>
-      <link>https://bilman.github.io/talks/</link>
+      <link>https://example.com/talks/</link>
     </image>
     
     <item>
       <title>Seminar, University of Oregon, Eugene, OR</title>
-      <link>https://bilman.github.io/talks/talk2025_9/</link>
+      <link>https://example.com/talks/talk2025_9/</link>
       <pubDate>Sat, 03 Jan 2099 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2025_9/</guid>
+      <guid>https://example.com/talks/talk2025_9/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Seminar, University of California Santa Cruz, Santa Cruz, CA</title>
-      <link>https://bilman.github.io/talks/talk2025_8/</link>
+      <link>https://example.com/talks/talk2025_8/</link>
       <pubDate>Fri, 02 Jan 2099 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2025_8/</guid>
+      <guid>https://example.com/talks/talk2025_8/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Seminar, University of Wisconsin-Madison, Wisconsin, MI</title>
-      <link>https://bilman.github.io/talks/talk2025_7/</link>
+      <link>https://example.com/talks/talk2025_7/</link>
       <pubDate>Thu, 01 Jan 2099 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2025_7/</guid>
+      <guid>https://example.com/talks/talk2025_7/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Seminar, Institut de Recherche Mathématique de Rennes, Rennes, France</title>
-      <link>https://bilman.github.io/talks/talk2025_11/</link>
+      <link>https://example.com/talks/talk2025_11/</link>
       <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2025_11/</guid>
+      <guid>https://example.com/talks/talk2025_11/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AMS Fall Sectional Meeting, Special Session &#39;Integrability and Randomness&#39;, Tulane University, New Orleans, GA</title>
-      <link>https://bilman.github.io/talks/talk2025_6/</link>
+      <link>https://example.com/talks/talk2025_6/</link>
       <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2025_6/</guid>
+      <guid>https://example.com/talks/talk2025_6/</guid>
       <description></description>
     </item>
     
     <item>
       <title>WaDIB: Wave Dynamics, Integrability, and Beyond, Santa Margherita di Pula, Sardinia, Italy</title>
-      <link>https://bilman.github.io/talks/talk2025_5/</link>
+      <link>https://example.com/talks/talk2025_5/</link>
       <pubDate>Sun, 25 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2025_5/</guid>
+      <guid>https://example.com/talks/talk2025_5/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Universality, Nonlinearity, and Integrability: In Honor of Percy Deift&#39;s 80th Birthday, KIAS, Seoul, Korea</title>
-      <link>https://bilman.github.io/talks/talk2025_4/</link>
+      <link>https://example.com/talks/talk2025_4/</link>
       <pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2025_4/</guid>
+      <guid>https://example.com/talks/talk2025_4/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Conference on &#39;Dispersive Integrable Equations: Pathfinders in Infinite-Dimensional Hamiltonian Systems&#39;, CIRM, Luminy, France</title>
-      <link>https://bilman.github.io/talks/talk2025_3/</link>
+      <link>https://example.com/talks/talk2025_3/</link>
       <pubDate>Mon, 28 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2025_3/</guid>
+      <guid>https://example.com/talks/talk2025_3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Seminar, Virginia Tech, Blacksburg, VA</title>
-      <link>https://bilman.github.io/talks/talk2025_12/</link>
+      <link>https://example.com/talks/talk2025_12/</link>
       <pubDate>Thu, 27 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2025_12/</guid>
+      <guid>https://example.com/talks/talk2025_12/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IMACS Nonlinear Wave Conference, Special Session &#39;Advances in Integrable Systems and Inverse Scattering&#39;, Athens, GA</title>
-      <link>https://bilman.github.io/talks/talk2025_2/</link>
+      <link>https://example.com/talks/talk2025_2/</link>
       <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2025_2/</guid>
+      <guid>https://example.com/talks/talk2025_2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AMS Spring Sectional Meeting, Special Session &#39;Analysis of Nonlinear Wave Models&#39;, University of Kansas, Lawrence, KS</title>
-      <link>https://bilman.github.io/talks/talk2025_1/</link>
+      <link>https://example.com/talks/talk2025_1/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2025_1/</guid>
+      <guid>https://example.com/talks/talk2025_1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AMS Spring Sectional Meeting, Special Session &#39;Recent Advances in the Analysis of Integrable Systems&#39;, University of Kansas, Lawrence, KS</title>
-      <link>https://bilman.github.io/talks/talk2025_10/</link>
+      <link>https://example.com/talks/talk2025_10/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2025_10/</guid>
+      <guid>https://example.com/talks/talk2025_10/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Seminar, SUNY University at Buffalo, Buffalo, NY</title>
-      <link>https://bilman.github.io/talks/talk2024_1/</link>
+      <link>https://example.com/talks/talk2024_1/</link>
       <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2024_1/</guid>
+      <guid>https://example.com/talks/talk2024_1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Seminar, University Washington, Seattle, WA</title>
-      <link>https://bilman.github.io/talks/talk2024_2/</link>
+      <link>https://example.com/talks/talk2024_2/</link>
       <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2024_2/</guid>
+      <guid>https://example.com/talks/talk2024_2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Seminar, &#39;Emergent phenomena in Nonlinear Dispersive Waves&#39; Programme of Isaac Newton Institute, Northumbria University, Newcastle Upon Tyne, UK</title>
-      <link>https://bilman.github.io/talks/talk2024_3/</link>
+      <link>https://example.com/talks/talk2024_3/</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2024_3/</guid>
+      <guid>https://example.com/talks/talk2024_3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SIAM Nonlinear Waves and Coherent Structures Conference 2024, Special Session &#39;Recent Developments in Dispersive Partial Differential Equations&#39;, Baltimore, MD</title>
-      <link>https://bilman.github.io/talks/talk2024_4/</link>
+      <link>https://example.com/talks/talk2024_4/</link>
       <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2024_4/</guid>
+      <guid>https://example.com/talks/talk2024_4/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AMS Spring Sectional Meeting, Special Session &#39;Nonlinear Hamiltonian PDEs&#39;, Washington, DC</title>
-      <link>https://bilman.github.io/talks/talk2024_5/</link>
+      <link>https://example.com/talks/talk2024_5/</link>
       <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2024_5/</guid>
+      <guid>https://example.com/talks/talk2024_5/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Seminar, University of Kansas, Lawrence, KS</title>
-      <link>https://bilman.github.io/talks/talk2024_6/</link>
+      <link>https://example.com/talks/talk2024_6/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2024_6/</guid>
+      <guid>https://example.com/talks/talk2024_6/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Colloquium, University of Indiana-Purdue University at Indianapolis, Indianapolis, IN</title>
-      <link>https://bilman.github.io/talks/talk2024_7/</link>
+      <link>https://example.com/talks/talk2024_7/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2024_7/</guid>
+      <guid>https://example.com/talks/talk2024_7/</guid>
       <description></description>
     </item>
     

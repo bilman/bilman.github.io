@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rogue Waves of Infinite Order | Deniz Bilman</title>
-    <link>https://bilman.github.io/tags/rogue-waves-of-infinite-order/</link>
-      <atom:link href="https://bilman.github.io/tags/rogue-waves-of-infinite-order/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://example.com/tags/rogue-waves-of-infinite-order/</link>
+      <atom:link href="https://example.com/tags/rogue-waves-of-infinite-order/index.xml" rel="self" type="application/rss+xml" />
     <description>Rogue Waves of Infinite Order</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 31 Jul 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://bilman.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <url>https://example.com/media/icon_hu7729264130191091259.png</url>
       <title>Rogue Waves of Infinite Order</title>
-      <link>https://bilman.github.io/tags/rogue-waves-of-infinite-order/</link>
+      <link>https://example.com/tags/rogue-waves-of-infinite-order/</link>
     </image>
     
     <item>
       <title>Infinite-order rogue waves that are small (but not small in $L^2$)</title>
-      <link>https://bilman.github.io/publication/rwio-elliptic-spread/</link>
+      <link>https://example.com/publication/rwio-elliptic-spread/</link>
       <pubDate>Thu, 31 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/publication/rwio-elliptic-spread/</guid>
+      <guid>https://example.com/publication/rwio-elliptic-spread/</guid>
       <description>&lt;!-- ![Infinite-order rogue wave in the elliptic spread asymptotic regime](./header.png ) --&gt;
-&lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/publication/rwio-elliptic-spread/header.png&#34;
-    alt=&#34;Infinite-order rogue wave in the &amp;amp;rsquo;elliptic spread&amp;amp;rsquo; asymptotic regime.&#34;&gt;&lt;figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://example.com/publication/rwio-elliptic-spread/header.png&#34;
+    alt=&#34;Infinite-order rogue wave in the &amp;rsquo;elliptic spread&amp;rsquo; asymptotic regime.&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Infinite-order rogue wave in the &amp;rsquo;elliptic spread&amp;rsquo; asymptotic regime.&lt;/p&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/publication/rwio-elliptic-spread/densityplot-RWIO-overlayed.png&#34;
-    alt=&#34;Infinite-order rogue wave in the &amp;amp;rsquo;elliptic spread&amp;amp;rsquo; asymptotic regime.&#34;&gt;&lt;figcaption&gt;
+&lt;!-- &lt;figure&gt;&lt;img src=&#34;densityplot-RWIO-overlayed.png&#34;
+    alt=&#34;Infinite-order rogue wave in the &amp;rsquo;elliptic spread&amp;rsquo; asymptotic regime.&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Infinite-order rogue wave in the &amp;rsquo;elliptic spread&amp;rsquo; asymptotic regime.&lt;/p&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
-
+ --&gt;
 &lt;!-- 
 I thank [Baudry Greene on Endell Street in London](https://www.instagram.com/baudrygreene/) for their hospitality and providing me with excellent coffee during the last stages in the preparation of this article. --&gt;
-&lt;p&gt;I thank the kind team at &lt;a href=&#34;https://www.instagram.com/baudrygreene/&#34;&gt;Baudry Greene on Endell Street in London&lt;/a&gt; for their hospitality and the excellent coffee they provided during the final stages of preparing this article.&lt;/p&gt;
+&lt;p&gt;I thank the kind team at &lt;a href=&#34;https://www.instagram.com/baudrygreene/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Baudry Greene on Endell Street in London&lt;/a&gt; for their hospitality and the excellent coffee they provided during the final stages of preparing this article.&lt;/p&gt;
 &lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -56,10 +56,10 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>General rogue waves of infinite order: exact properties, asymptotic behavior, and effective numerical computation</title>
-      <link>https://bilman.github.io/publication/rwio-nls-asymptotics/</link>
+      <link>https://example.com/publication/rwio-nls-asymptotics/</link>
       <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/publication/rwio-nls-asymptotics/</guid>
-      <description>&lt;p&gt;This work has also resulted in the software package &lt;a href=&#34;https://bilman.github.io/publication/rwioNLS-jl/&#34;&gt;RogueWaveInfiniteNLS.jl&lt;/a&gt; for Julia. Visit the &lt;a href=&#34;https://zenodo.org/records/13283788&#34;&gt;official release here&lt;/a&gt;.&lt;/p&gt;
+      <guid>https://example.com/publication/rwio-nls-asymptotics/</guid>
+      <description>&lt;p&gt;This work has also resulted in the software package &lt;a href=&#34;https://example.com/publication/rwioNLS-jl/&#34;&gt;RogueWaveInfiniteNLS.jl&lt;/a&gt; for Julia. Visit the &lt;a href=&#34;https://zenodo.org/records/13283788&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;official release here&lt;/a&gt;.&lt;/p&gt;
 &lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -84,9 +84,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>RogueWaveInfiniteNLS.jl</title>
-      <link>https://bilman.github.io/publication/rwionls-jl/</link>
+      <link>https://example.com/publication/rwionls-jl/</link>
       <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/publication/rwionls-jl/</guid>
+      <guid>https://example.com/publication/rwionls-jl/</guid>
       <description>&lt;!-- 
 
 
@@ -123,9 +123,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Broader universality of rogue waves of infinite order</title>
-      <link>https://bilman.github.io/publication/broader-universality-rwio/</link>
+      <link>https://example.com/publication/broader-universality-rwio/</link>
       <pubDate>Wed, 30 Mar 2022 14:29:12 -0400</pubDate>
-      <guid>https://bilman.github.io/publication/broader-universality-rwio/</guid>
+      <guid>https://example.com/publication/broader-universality-rwio/</guid>
       <description>&lt;!-- 
 
 
@@ -163,9 +163,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Extreme superposition: rogue waves of infinite order and the Painlevé-III hierarchy</title>
-      <link>https://bilman.github.io/publication/extreme-superposition/</link>
+      <link>https://example.com/publication/extreme-superposition/</link>
       <pubDate>Sun, 15 Mar 2020 00:00:44 -0400</pubDate>
-      <guid>https://bilman.github.io/publication/extreme-superposition/</guid>
+      <guid>https://example.com/publication/extreme-superposition/</guid>
       <description>&lt;!-- 
 
 
@@ -203,10 +203,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
 &lt;/p&gt;
 $$
 \mathrm{i}\Psi_t + \frac{1}{2}\Psi_{XX}+|\Psi|^2\Psi=0,
-$$
-&lt;p&gt;
-identified in this work. The computational method developed in this work is based on numerical solution of the Riemann-Hilbert problem representation of $\Psi(X,T)$ for each $(X,T)$. While this Mathematica module can be used in code repository linked above, we recommend using the more recent Julia software package &lt;a href=&#34;https://bilman.github.io/publication/rwionls-jl/&#34;&gt;RogueWaveInfiniteNLS.jl&lt;/a&gt;&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/publication/extreme-superposition/anim.gif&#34;
+$$&lt;p&gt;
+identified in this work. The computational method developed in this work is based on numerical solution of the Riemann-Hilbert problem representation of $\Psi(X,T)$ for each $(X,T)$. While this Mathematica module can be used in code repository linked above, we recommend using the more recent Julia software package &lt;a href=&#34;https://example.com/publication/rwionls-jl/&#34;&gt;RogueWaveInfiniteNLS.jl&lt;/a&gt;&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://example.com/publication/extreme-superposition/anim.gif&#34;
     alt=&#34;Time evolution of the special solution. Blue: the real part, purple: the imaginary part&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Time evolution of the special solution. Blue: the real part, purple: the imaginary part&lt;/p&gt;
     &lt;/figcaption&gt;
@@ -217,9 +216,9 @@ identified in this work. The computational method developed in this work is base
     
     <item>
       <title>Large-order asymptotics for multiple-pole solitons of the focusing nonlinear Schrödinger equation</title>
-      <link>https://bilman.github.io/publication/multipole-nls/</link>
+      <link>https://example.com/publication/multipole-nls/</link>
       <pubDate>Tue, 16 Apr 2019 14:28:55 -0400</pubDate>
-      <guid>https://bilman.github.io/publication/multipole-nls/</guid>
+      <guid>https://example.com/publication/multipole-nls/</guid>
       <description>&lt;!-- 
 
 
