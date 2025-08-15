@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Yang-Baxter Maps | Deniz Bilman</title>
-    <link>https://example.com/tags/yang-baxter-maps/</link>
-      <atom:link href="https://example.com/tags/yang-baxter-maps/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/tags/yang-baxter-maps/</link>
+      <atom:link href="http://localhost:1313/tags/yang-baxter-maps/index.xml" rel="self" type="application/rss+xml" />
     <description>Yang-Baxter Maps</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jul 2017 14:31:18 -0400</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu7729264130191091259.png</url>
+      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
       <title>Yang-Baxter Maps</title>
-      <link>https://example.com/tags/yang-baxter-maps/</link>
+      <link>http://localhost:1313/tags/yang-baxter-maps/</link>
     </image>
     
     <item>
       <title>Discrete integrable systems, Darboux transformations, and Yang–Baxter maps</title>
-      <link>https://example.com/publication/discrete-integrable-book/</link>
+      <link>http://localhost:1313/publication/discrete-integrable-book/</link>
       <pubDate>Sat, 01 Jul 2017 14:31:18 -0400</pubDate>
-      <guid>https://example.com/publication/discrete-integrable-book/</guid>
+      <guid>http://localhost:1313/publication/discrete-integrable-book/</guid>
       <description>&lt;!-- 
 
 

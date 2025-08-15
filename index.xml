@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Deniz Bilman</title>
-    <link>https://example.com/</link>
-      <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/</link>
+      <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <description>Deniz Bilman</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 19 Jul 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu7729264130191091259.png</url>
+      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
       <title>Deniz Bilman</title>
-      <link>https://example.com/</link>
+      <link>http://localhost:1313/</link>
     </image>
     
     <item>
       <title>Member of the Organizing Committee, UC Math Bowl Competition (since Fall 2019)</title>
-      <link>https://example.com/outreach/outreach2/</link>
+      <link>http://localhost:1313/outreach/outreach2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.com/outreach/outreach2/</guid>
+      <guid>http://localhost:1313/outreach/outreach2/</guid>
       <description>&lt;p&gt;Math Bowl is a high school/junior high school math contest held annually in March at the University of Cincinnati for the past 40 years. It is a popular event in Greater Cincinnati, offered in 3 levels of math curriculum, and it is attended by a large and diverse group of students — about 80 teams of 2–5 students from 27 schools in 2019, for example.&lt;/p&gt;
 &lt;p&gt;My role involves coming up with problems, evaluating the work submitted by the teams, and showing up on the day of competition to interact with the students.&lt;/p&gt;
 </description>
@@ -24,9 +24,9 @@
     
     <item>
       <title>Curriculum Developer and Instructor, CHANCE Program, UIC (2014, 2015, 2016)</title>
-      <link>https://example.com/outreach/outreach1/</link>
+      <link>http://localhost:1313/outreach/outreach1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.com/outreach/outreach1/</guid>
+      <guid>http://localhost:1313/outreach/outreach1/</guid>
       <description>&lt;p&gt;CHANCE is a program at the University of Illinois at Chicago that supports underrepresented and under-resourced students by fostering meaningful academic engagement and promoting student success. It plays a key role in UIC’s efforts to recruit, support, and retain these students through partnerships with Chicago Public Schools, City Colleges of Chicago, community organizations, and regional school districts. By offering mentoring, academic support, and access to college and career resources, CHANCE helps students navigate the path to higher education and graduation.&lt;/p&gt;
 &lt;p&gt;I have designed their mathematics curriculum and taught at their summer camps.&lt;/p&gt;
 </description>
@@ -34,19 +34,19 @@
     
     <item>
       <title>Matrix Vector Multiplication</title>
-      <link>https://example.com/teaching/nla/nla-lec-1/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-1/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-1/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-1.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-1/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-1.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Introduction</title>
-      <link>https://example.com/teaching/ode/ode-lec-1/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-1/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/ode/ode-lec-1/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-1/</guid>
       <description>&lt;h2 id=&#34;what-are-differential-equations-anyway&#34;&gt;What Are Differential Equations Anyway?&lt;/h2&gt;
 &lt;p&gt;This lecture introduces the subject with Newton&amp;rsquo;s Law of Cooling
 &lt;/p&gt;
@@ -68,9 +68,9 @@ where $u=u(t)$ denotes the temperature of an object at time $t$ in an environmen
     
     <item>
       <title>Introduction</title>
-      <link>https://example.com/teaching/pde/pde-lec-1/</link>
+      <link>http://localhost:1313/teaching/pde/pde-lec-1/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/pde/pde-lec-1/</guid>
+      <guid>http://localhost:1313/teaching/pde/pde-lec-1/</guid>
       <description>&lt;p&gt;Let $u$ be a function of several variables $u(x_1,x_2,\ldots,x_n)$. We say $u$ is &lt;strong&gt;smooth&lt;/strong&gt; provided $u$ is infinitely differentiable with respect to all of the variables. We denote partial derivative of $u$ with respect to $x_k$ by
 &lt;/p&gt;
 $$
@@ -239,19 +239,19 @@ where $g\colon \mathbb{R}\to \mathbb{R}$ is a given function. This is an initial
     
     <item>
       <title>Orthogonal Vectors and Matrices</title>
-      <link>https://example.com/teaching/nla/nla-lec-2/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-2/</link>
       <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-2/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-2.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-2/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-2.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>The Initial-Value Problem and the Definite Integral</title>
-      <link>https://example.com/teaching/ode/ode-lec-2/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-2/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/ode/ode-lec-2/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-2/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;Notion of an initial-value problem is introduced. Integral representation of solutions of an initial-value problem for differential equations of the form
 &lt;/p&gt;
@@ -266,9 +266,9 @@ is explained.&lt;/p&gt;
     
     <item>
       <title>Transport Equation</title>
-      <link>https://example.com/teaching/pde/pde-lec-2/</link>
+      <link>http://localhost:1313/teaching/pde/pde-lec-2/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/pde/pde-lec-2/</guid>
+      <guid>http://localhost:1313/teaching/pde/pde-lec-2/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;This lecture introduces the transport equation
 &lt;/p&gt;
@@ -294,19 +294,19 @@ for an unknown function $u=u(x,t)$, $u \colon \mathbb{R}^n\times\mathbb{R} \to \
     
     <item>
       <title>Norms</title>
-      <link>https://example.com/teaching/nla/nla-lec-3/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-3/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-3/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-3.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-3/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-3.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Separable Equations</title>
-      <link>https://example.com/teaching/ode/ode-lec-3/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-3/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/ode/ode-lec-3/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-3/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We cover solving separable differential equations which are of the form
 &lt;/p&gt;
@@ -326,9 +326,9 @@ $$&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;
     
     <item>
       <title>Laplace&#39;s Equation</title>
-      <link>https://example.com/teaching/pde/pde-lec-3/</link>
+      <link>http://localhost:1313/teaching/pde/pde-lec-3/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/pde/pde-lec-3/</guid>
+      <guid>http://localhost:1313/teaching/pde/pde-lec-3/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;This lecture introduces Laplace&amp;rsquo;s equation
 &lt;/p&gt;
@@ -343,19 +343,19 @@ and gives a construction of its fundamental solution.&lt;/p&gt;
     
     <item>
       <title>Singular Value Decomposition (SVD)</title>
-      <link>https://example.com/teaching/nla/nla-lec-4/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-4/</link>
       <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-4/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-4.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-4/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-4.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>First-Order Linear ODEs</title>
-      <link>https://example.com/teaching/ode/ode-lec-4/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-4/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/ode/ode-lec-4/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-4/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;This lecture evolves around the fact that if a solution for the first-order linear ODE
 &lt;/p&gt;
@@ -377,9 +377,9 @@ exists, we can always find it. General solution, particular solutions, and using
     
     <item>
       <title>Poisson&#39;s Equation</title>
-      <link>https://example.com/teaching/pde/pde-lec-4/</link>
+      <link>http://localhost:1313/teaching/pde/pde-lec-4/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/pde/pde-lec-4/</guid>
+      <guid>http://localhost:1313/teaching/pde/pde-lec-4/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;This lecture considers Poisson&amp;rsquo;s equation
 &lt;/p&gt;
@@ -391,7 +391,7 @@ where $f\colon \mathbb{R}^n \to \mathbb{R}$ is a given function. We cover some e
 $$
 u(x):= \int\limits_{\mathbb{R}^n} \Phi(x-y) f(y)\\,\mathrm{d}y,
 $$&lt;p&gt;
-where $\Phi$ is the fundamental solution of Laplace&amp;rsquo;s equation constructed in &lt;a href=&#34;https://example.com/teaching/pde/pde-lec-3/&#34;&gt;Lecture 3&lt;/a&gt; and $f\in C^2_\mathrm{c}(\mathbb{R}^n)$. Then&lt;/p&gt;
+where $\Phi$ is the fundamental solution of Laplace&amp;rsquo;s equation constructed in &lt;a href=&#34;http://localhost:1313/teaching/pde/pde-lec-3/&#34;&gt;Lecture 3&lt;/a&gt; and $f\in C^2_\mathrm{c}(\mathbb{R}^n)$. Then&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;$u\in C^2(\mathbb{R}^n)$.&lt;/p&gt;
@@ -407,19 +407,19 @@ where $\Phi$ is the fundamental solution of Laplace&amp;rsquo;s equation constru
     
     <item>
       <title>Straightforward Applications of SVD</title>
-      <link>https://example.com/teaching/nla/nla-lec-4-app/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-4-app/</link>
       <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-4-app/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-4-Applications.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-4-app/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-4-Applications.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>First-Order Linear ODEs with Constant Coefficients</title>
-      <link>https://example.com/teaching/ode/ode-lec-5/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-5/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/ode/ode-lec-5/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-5/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We study how to solve differential equations of the form
 &lt;/p&gt;
@@ -434,9 +434,9 @@ A special case of the Method of Undetermined Coefficients is also introduced.&lt
     
     <item>
       <title>Properties of Harmonic Functions</title>
-      <link>https://example.com/teaching/pde/pde-lec-5/</link>
+      <link>http://localhost:1313/teaching/pde/pde-lec-5/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/pde/pde-lec-5/</guid>
+      <guid>http://localhost:1313/teaching/pde/pde-lec-5/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;This lecture covers properties of harmonic functions such as:&lt;/p&gt;
 &lt;ul&gt;
@@ -456,19 +456,19 @@ A special case of the Method of Undetermined Coefficients is also introduced.&lt
     
     <item>
       <title>More on the SVD</title>
-      <link>https://example.com/teaching/nla/nla-lec-5/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-5/</link>
       <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-5/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-5.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-5/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-5.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Growth and Decay Problems</title>
-      <link>https://example.com/teaching/ode/ode-lec-6/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-6/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/ode/ode-lec-6/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-6/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We cover differential equations that model certain types of growth and decay. Examples include population growth equation, logistic equation, etc.&lt;/p&gt;
 &lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
@@ -485,9 +485,9 @@ A special case of the Method of Undetermined Coefficients is also introduced.&lt
     
     <item>
       <title>Green&#39;s Function for Poisson&#39;s Equation</title>
-      <link>https://example.com/teaching/pde/pde-lec-6/</link>
+      <link>http://localhost:1313/teaching/pde/pde-lec-6/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/pde/pde-lec-6/</guid>
+      <guid>http://localhost:1313/teaching/pde/pde-lec-6/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;In this lecture we let $U\subset \mathbb{R}^n$ be open and bounded with $C^1$ boundary $\partial U$, and obtain a representation for solutions $u\in C^2(\overline{U})$ of the boundary-value problem
 &lt;/p&gt;
@@ -507,19 +507,19 @@ by introducing &lt;strong&gt;Green&amp;rsquo;s functions&lt;/strong&gt;.&lt;/p&g
     
     <item>
       <title>Projectors</title>
-      <link>https://example.com/teaching/nla/nla-lec-6/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-6/</link>
       <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-6/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-6.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-6/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-6.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Second-Order Linear Differential Equations</title>
-      <link>https://example.com/teaching/ode/ode-lec-7/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-7/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/ode/ode-lec-7/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-7/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We cover finding general solution of second-order linear differential equations which are of the form
 &lt;/p&gt;
@@ -534,9 +534,9 @@ The notion of linear independence is also introduced.&lt;/p&gt;
     
     <item>
       <title>Energy Methods for Poisson&#39;s Equation</title>
-      <link>https://example.com/teaching/pde/pde-lec-7/</link>
+      <link>http://localhost:1313/teaching/pde/pde-lec-7/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/pde/pde-lec-7/</guid>
+      <guid>http://localhost:1313/teaching/pde/pde-lec-7/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;In this lecture we cover &lt;strong&gt;energy methods&lt;/strong&gt; for the boundary-value problem (BVP)
 &lt;/p&gt;
@@ -568,19 +568,19 @@ and among other things, cover &lt;strong&gt;Dirichlet&amp;rsquo;s Principle&lt;/
     
     <item>
       <title>QR Factorization</title>
-      <link>https://example.com/teaching/nla/nla-lec-7/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-7/</link>
       <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-7/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-7.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-7/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-7.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Initial-Value Problems for Homogeneous Equations</title>
-      <link>https://example.com/teaching/ode/ode-lec-8/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-8/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/ode/ode-lec-8/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-8/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We continue our study of second-order linear differential equations
 &lt;/p&gt;
@@ -593,9 +593,9 @@ $$&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;
     
     <item>
       <title>Heat Equation</title>
-      <link>https://example.com/teaching/pde/pde-lec-8/</link>
+      <link>http://localhost:1313/teaching/pde/pde-lec-8/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/pde/pde-lec-8/</guid>
+      <guid>http://localhost:1313/teaching/pde/pde-lec-8/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;In this lecture we begin our treatment of the &lt;strong&gt;heat equation&lt;/strong&gt;
 &lt;/p&gt;
@@ -625,19 +625,19 @@ satisfies (IVP) and that $u \in C^{\infty}\left(\mathbb{R}^{n} \times(0, \infty)
     
     <item>
       <title>Gram-Schmidt Orthogonalization</title>
-      <link>https://example.com/teaching/nla/nla-lec-8/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-8/</link>
       <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-8/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-8.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-8/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-8.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Reduction of Order</title>
-      <link>https://example.com/teaching/ode/ode-lec-9/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-9/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/ode/ode-lec-9/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-9/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;Suppose we are lucky enough to know a solution $x_{1}(t)$ of the second-order linear homogeneous ODE
 &lt;/p&gt;
@@ -652,9 +652,9 @@ Then we can find another solution of this ODE by solving a first-order different
     
     <item>
       <title>Heat Equation: Properties of Solutions</title>
-      <link>https://example.com/teaching/pde/pde-lec-9/</link>
+      <link>http://localhost:1313/teaching/pde/pde-lec-9/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/pde/pde-lec-9/</guid>
+      <guid>http://localhost:1313/teaching/pde/pde-lec-9/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We continue the treatment of the heat equation and cover properties of the solutions of the initial-boundary-value problem (IBVP)
 &lt;/p&gt;
@@ -682,19 +682,19 @@ where $U_T:=U \times (0,T]$ is called a &lt;strong&gt;parabolic cylinder&lt;/str
     
     <item>
       <title>Householder Triangularization</title>
-      <link>https://example.com/teaching/nla/nla-lec-10/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-10/</link>
       <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-10/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-10.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-10/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-10.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Second-Order Homogeneous Linear Constant-Coefficient ODEs</title>
-      <link>https://example.com/teaching/ode/ode-lec-10/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-10/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/ode/ode-lec-10/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-10/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We consider the general linear, second-order homogeneous and constant-coefficient differential equation
 &lt;/p&gt;
@@ -709,9 +709,9 @@ where the coefficients $a, b$, and $c$ are real constants and $a \neq 0$.&lt;/p&
     
     <item>
       <title>Heat Equation: Energy Methods</title>
-      <link>https://example.com/teaching/pde/pde-lec-10/</link>
+      <link>http://localhost:1313/teaching/pde/pde-lec-10/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/pde/pde-lec-10/</guid>
+      <guid>http://localhost:1313/teaching/pde/pde-lec-10/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We cover energy methods for the heat equation. In addition to a simple uniqueness argument, they lead to various decay properties for the solutions. See &lt;a href=&#34;https://www.dropbox.com/s/nit8dtvmtn64bly/Math-7006-Sp20-HW5.pdf?dl=0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Homework 5&lt;/a&gt;, for example.&lt;/p&gt;
 &lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
@@ -723,19 +723,19 @@ where the coefficients $a, b$, and $c$ are real constants and $a \neq 0$.&lt;/p&
     
     <item>
       <title>Least Squares Problems</title>
-      <link>https://example.com/teaching/nla/nla-lec-11/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-11/</link>
       <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-11/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-11.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-11/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-11.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Mechanical Vibrations I: Free Response</title>
-      <link>https://example.com/teaching/ode/ode-lec-11/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-11/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/ode/ode-lec-11/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-11/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;This lecture starts the treatment of a horizontal mass-spring system with mass $m&gt;0$ and spring constant $k&gt;0$:
 &lt;/p&gt;
@@ -750,9 +750,9 @@ where the damping parameter $\delta\geq 0$ may or may not be zero. We start with
     
     <item>
       <title>Wave Equation</title>
-      <link>https://example.com/teaching/pde/pde-lec-11/</link>
+      <link>http://localhost:1313/teaching/pde/pde-lec-11/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/pde/pde-lec-11/</guid>
+      <guid>http://localhost:1313/teaching/pde/pde-lec-11/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;In this lecture we begin the treatment of the wave equation
 &lt;/p&gt;
@@ -808,19 +808,19 @@ $$&lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;
     
     <item>
       <title>Conditioning and Condition Numbers</title>
-      <link>https://example.com/teaching/nla/nla-lec-12/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-12/</link>
       <pubDate>Wed, 19 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-12/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-12.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-12/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-12.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Method of Undetermined Coefficients</title>
-      <link>https://example.com/teaching/ode/ode-lec-12/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-12/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/ode/ode-lec-12/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-12/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;The Method of Undetermined Coefficients provides a way to obtain a particular solution of a linear second-order constant-coefficient non-homogeneous ODE
 &lt;/p&gt;
@@ -842,9 +842,9 @@ in case the forcing $f(t)$ is comes from a number of special types of functions 
     
     <item>
       <title>Wave Equation in Higher Dimensions</title>
-      <link>https://example.com/teaching/pde/pde-lec-12/</link>
+      <link>http://localhost:1313/teaching/pde/pde-lec-12/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/pde/pde-lec-12/</guid>
+      <guid>http://localhost:1313/teaching/pde/pde-lec-12/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We treat the initial-value problem for the wave equation in $\mathbb{R}^n\times (0,\infty)$, for $n\geq 2$. Starting with the case $n=3$, using spherical means, we obtain &lt;strong&gt;Kirchoff&amp;rsquo;s solution formula&lt;/strong&gt; for $u(x,t)$. We then employ &lt;strong&gt;Hadamard&amp;rsquo;s method of descent&lt;/strong&gt; to obtain &lt;strong&gt;Poisson&amp;rsquo;s solution formula&lt;/strong&gt; for $u(x,t)$ for the case $n=2$.&lt;/p&gt;
 &lt;p&gt;We generalize this framework to $\mathbb{R}^n$ for $n\geq 3$.&lt;/p&gt;
@@ -856,19 +856,19 @@ in case the forcing $f(t)$ is comes from a number of special types of functions 
     
     <item>
       <title>Floating Point Arithmetic</title>
-      <link>https://example.com/teaching/nla/nla-lec-13/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-13/</link>
       <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-13/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-13.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-13/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-13.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Mechanical Vibrations II: Forced Response</title>
-      <link>https://example.com/teaching/ode/ode-lec-13/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-13/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/ode/ode-lec-13/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-13/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We continue with the solution of ODEs that govern a spring-mass system:
 &lt;/p&gt;
@@ -890,9 +890,9 @@ where $\delta \geqslant 0$ is the damping constant, $m&gt;0$ is the mass of the 
     
     <item>
       <title>Nonhomogeneous Wave Equation</title>
-      <link>https://example.com/teaching/pde/pde-lec-13/</link>
+      <link>http://localhost:1313/teaching/pde/pde-lec-13/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/pde/pde-lec-13/</guid>
+      <guid>http://localhost:1313/teaching/pde/pde-lec-13/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;This lecture is on &lt;strong&gt;Duhamel&amp;rsquo;s principle&lt;/strong&gt; to solve the nonhomogenous initial-value problem:&lt;/p&gt;
 $$
@@ -910,19 +910,19 @@ where $n\geq 2$ and $f\in C^{[n/2]+1}(\mathbb{R}^n \times [0,\infty))$.&lt;/p&gt
     
     <item>
       <title>Stability</title>
-      <link>https://example.com/teaching/nla/nla-lec-14/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-14/</link>
       <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-14/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-14-15.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-14/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-14-15.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Variation of Parameters</title>
-      <link>https://example.com/teaching/ode/ode-lec-14/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-14/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/ode/ode-lec-14/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-14/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;Our quest on finding a particular solution of
 &lt;/p&gt;
@@ -942,9 +942,9 @@ continues. Earlier, we used the Method of Undetermined Coefficients to do that. 
     
     <item>
       <title>Energy Methods for the Wave Equation</title>
-      <link>https://example.com/teaching/pde/pde-lec-14/</link>
+      <link>http://localhost:1313/teaching/pde/pde-lec-14/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/pde/pde-lec-14/</guid>
+      <guid>http://localhost:1313/teaching/pde/pde-lec-14/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We introduce the energy for the wave equation and cover&lt;/p&gt;
 &lt;ul&gt;
@@ -963,9 +963,9 @@ continues. Earlier, we used the Method of Undetermined Coefficients to do that. 
     
     <item>
       <title>Laplace Transform</title>
-      <link>https://example.com/teaching/ode/ode-lec-15/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-15/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/ode/ode-lec-15/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-15/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We introduce the Laplace transform
 &lt;/p&gt;
@@ -980,11 +980,11 @@ of a function $f(t)$ defined for $t\geq 0$. We cover the existence theory and pr
     
     <item>
       <title>Method of Characteristics</title>
-      <link>https://example.com/teaching/pde/pde-lec-15/</link>
+      <link>http://localhost:1313/teaching/pde/pde-lec-15/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/pde/pde-lec-15/</guid>
+      <guid>http://localhost:1313/teaching/pde/pde-lec-15/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
-&lt;p&gt;The method of characteristics was already employed to construct the solution of the (constant-coefficient) transport equation in &lt;a href=&#34;https://example.com/teaching/pde/pde-lec-2/&#34;&gt;Lecture 2&lt;/a&gt;. We now begin the &lt;strong&gt;general treatment of the method of characteristics&lt;/strong&gt; for general first-order PDEs.&lt;/p&gt;
+&lt;p&gt;The method of characteristics was already employed to construct the solution of the (constant-coefficient) transport equation in &lt;a href=&#34;http://localhost:1313/teaching/pde/pde-lec-2/&#34;&gt;Lecture 2&lt;/a&gt;. We now begin the &lt;strong&gt;general treatment of the method of characteristics&lt;/strong&gt; for general first-order PDEs.&lt;/p&gt;
 &lt;p&gt;We write a first order PDE for an unknown function $u$ as
 &lt;/p&gt;
 $$
@@ -1013,19 +1013,19 @@ where $\Gamma \subseteq \partial U$, and $g\colon \Gamma \to \mathbb{R}$ is give
     
     <item>
       <title>Stability of Householder Triangularization</title>
-      <link>https://example.com/teaching/nla/nla-lec-16/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-16/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-16/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-16.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-16/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-16.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Inverse Laplace Transform</title>
-      <link>https://example.com/teaching/ode/ode-lec-16/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-16/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/ode/ode-lec-16/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-16/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We cover the inverse of the Laplace transform.&lt;/p&gt;
 &lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
@@ -1035,11 +1035,11 @@ where $\Gamma \subseteq \partial U$, and $g\colon \Gamma \to \mathbb{R}$ is give
     
     <item>
       <title>Method of Characteristics: Local Theory</title>
-      <link>https://example.com/teaching/pde/pde-lec-16/</link>
+      <link>http://localhost:1313/teaching/pde/pde-lec-16/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/pde/pde-lec-16/</guid>
+      <guid>http://localhost:1313/teaching/pde/pde-lec-16/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
-&lt;p&gt;We continue the general treatment of the method of characteristics &lt;a href=&#34;https://example.com/teaching/pde/pde-lec-15/&#34;&gt;Lecture 15&lt;/a&gt; to construct solutions of the Cauchy problem
+&lt;p&gt;We continue the general treatment of the method of characteristics &lt;a href=&#34;http://localhost:1313/teaching/pde/pde-lec-15/&#34;&gt;Lecture 15&lt;/a&gt; to construct solutions of the Cauchy problem
 &lt;/p&gt;
 $$
 \left\{
@@ -1062,19 +1062,19 @@ We cover&lt;/p&gt;
     
     <item>
       <title>Stability of Backward Substitution</title>
-      <link>https://example.com/teaching/nla/nla-lec-17/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-17/</link>
       <pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-17/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-17.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-17/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-17.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Solving an Initial-Value Problem Using Laplace Transform</title>
-      <link>https://example.com/teaching/ode/ode-lec-17/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-17/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/ode/ode-lec-17/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-17/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We now use Laplace transforms to solve initial-value problems. To do this, we cover how differentiation corresponds to multiplication under the Laplace transform.&lt;/p&gt;
 &lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
@@ -1084,9 +1084,9 @@ We cover&lt;/p&gt;
     
     <item>
       <title>Scalar Conservation Laws</title>
-      <link>https://example.com/teaching/pde/pde-lec-17/</link>
+      <link>http://localhost:1313/teaching/pde/pde-lec-17/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/pde/pde-lec-17/</guid>
+      <guid>http://localhost:1313/teaching/pde/pde-lec-17/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We being our treatment of &lt;strong&gt;scalar conservation laws&lt;/strong&gt;:&lt;/p&gt;
 $$
@@ -1108,9 +1108,9 @@ $$&lt;p&gt;We first observe that if $(F&#39;\circ g)(\zeta)&lt;0$ for some $\zet
     
     <item>
       <title>The Convolution Theorem</title>
-      <link>https://example.com/teaching/ode/ode-lec-18/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-18/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/ode/ode-lec-18/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-18/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;For given $F(s)$ and $G(s)$, we cover how to compute the inverse Laplace transform
 $
@@ -1123,9 +1123,9 @@ $&lt;/p&gt;
     
     <item>
       <title>Riemann&#39;s Problem &amp; Applications</title>
-      <link>https://example.com/teaching/pde/pde-lec-18/</link>
+      <link>http://localhost:1313/teaching/pde/pde-lec-18/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/pde/pde-lec-18/</guid>
+      <guid>http://localhost:1313/teaching/pde/pde-lec-18/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We continue our discussion with &lt;strong&gt;Riemann&amp;rsquo;s problem&lt;/strong&gt;, the initial value problem
 &lt;/p&gt;
@@ -1152,9 +1152,9 @@ with $u_L\neq u_R$. Assuming that $F$ is uniformly convex and $C^2$, we give the
     
     <item>
       <title>Systems of Linear Differential Equations</title>
-      <link>https://example.com/teaching/ode/ode-lec-19/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-19/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/ode/ode-lec-19/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-19/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We cover systems of linear differential equations, introduce the matrix formulation, and cover the relevant matrix theory.&lt;/p&gt;
 &lt;h2 id=&#34;full-set-of-lecture-notes&#34;&gt;Full Set of Lecture Notes&lt;/h2&gt;
@@ -1180,9 +1180,9 @@ with $u_L\neq u_R$. Assuming that $F$ is uniformly convex and $C^2$, we give the
     
     <item>
       <title>Plane Waves, Traveling Waves, and Solitons</title>
-      <link>https://example.com/teaching/pde/pde-lec-19/</link>
+      <link>http://localhost:1313/teaching/pde/pde-lec-19/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/pde/pde-lec-19/</guid>
+      <guid>http://localhost:1313/teaching/pde/pde-lec-19/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We end the semester with some &lt;strong&gt;basic linear wave theory&lt;/strong&gt; and &lt;strong&gt;solitons&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;
@@ -1234,19 +1234,19 @@ $$&lt;figure&gt;&lt;img src=&#34;../img/kdvsolitons.gif&#34;&gt;
     
     <item>
       <title>Gaussian Elimination (LU Factorization)</title>
-      <link>https://example.com/teaching/nla/nla-lec-20/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-20/</link>
       <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-20/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-20.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-20/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-20.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Appendix on Surface Integrals</title>
-      <link>https://example.com/teaching/pde/pde-appendix-1/</link>
+      <link>http://localhost:1313/teaching/pde/pde-appendix-1/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/pde/pde-appendix-1/</guid>
+      <guid>http://localhost:1313/teaching/pde/pde-appendix-1/</guid>
       <description>&lt;p&gt;This is a review on surface integrals.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/ncwnmk55w18vph5/Appendix-Surface-Integrals.pdf?dl=0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The notes for this appendix are available here (13 pages).&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -1254,9 +1254,9 @@ $$&lt;figure&gt;&lt;img src=&#34;../img/kdvsolitons.gif&#34;&gt;
     
     <item>
       <title>Phase Plane Analysis</title>
-      <link>https://example.com/teaching/ode/ode-lec-20/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-20/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/ode/ode-lec-20/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-20/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We continue analyzing solution trajectories for linear systems of first order homogeneous differential equations with constant coefficients:
 &lt;/p&gt;
@@ -1301,19 +1301,19 @@ $$&lt;p&gt;We cover&lt;/p&gt;
     
     <item>
       <title>Pivoting</title>
-      <link>https://example.com/teaching/nla/nla-lec-21/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-21/</link>
       <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-21/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-21.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-21/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-21.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Qualitative Analysis of First-Order ODEs</title>
-      <link>https://example.com/teaching/ode/ode-lec-21/</link>
+      <link>http://localhost:1313/teaching/ode/ode-lec-21/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/ode/ode-lec-21/</guid>
+      <guid>http://localhost:1313/teaching/ode/ode-lec-21/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;We end the semester with qualitative analysis of first order ODEs that are autonomous:
 &lt;/p&gt;
@@ -1324,19 +1324,19 @@ $$\frac{\mathrm{d} x}{\mathrm{~d} t}=f(x).$$&lt;h2 id=&#34;full-set-of-lecture-n
     
     <item>
       <title>Stability of Gaussian Elimination</title>
-      <link>https://example.com/teaching/nla/nla-lec-22/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-22/</link>
       <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-22/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-22.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-22/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-22.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Existence &amp; Uniqueness</title>
-      <link>https://example.com/teaching/ode/appendix-1/</link>
+      <link>http://localhost:1313/teaching/ode/appendix-1/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/ode/appendix-1/</guid>
+      <guid>http://localhost:1313/teaching/ode/appendix-1/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;In this appendix we cover existence and uniqueness theory for initial-value problems of the form
 &lt;/p&gt;
@@ -1358,19 +1358,19 @@ $$&lt;h2 id=&#34;jupyter-notebook&#34;&gt;Jupyter Notebook&lt;/h2&gt;
     
     <item>
       <title>Cholesky Decomposition</title>
-      <link>https://example.com/teaching/nla/nla-lec-23/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-23/</link>
       <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-23/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-23.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-23/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-23.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Some Modeling</title>
-      <link>https://example.com/teaching/ode/appendix-2/</link>
+      <link>http://localhost:1313/teaching/ode/appendix-2/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/ode/appendix-2/</guid>
+      <guid>http://localhost:1313/teaching/ode/appendix-2/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;In this appendix we cover modeling certain physical/chemical phenomena by first-order linear ordinary differential equations.&lt;/p&gt;
 &lt;h2 id=&#34;jupyter-notebook&#34;&gt;Jupyter Notebook&lt;/h2&gt;
@@ -1385,101 +1385,101 @@ $$&lt;h2 id=&#34;jupyter-notebook&#34;&gt;Jupyter Notebook&lt;/h2&gt;
     
     <item>
       <title>Eigenvalue Problems</title>
-      <link>https://example.com/teaching/nla/nla-lec-24/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-24/</link>
       <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-24/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-24.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-24/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-24.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Overview of Eigenvalue Algorithms</title>
-      <link>https://example.com/teaching/nla/nla-lec-25/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-25/</link>
       <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-25/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-25.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-25/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-25.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Reduction to Hessenberg or Tridiagonal Form</title>
-      <link>https://example.com/teaching/nla/nla-lec-26/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-26/</link>
       <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-26/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-26.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-26/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-26.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Rayleigh Quotient &amp; Inverse Iteration</title>
-      <link>https://example.com/teaching/nla/nla-lec-27/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-27/</link>
       <pubDate>Wed, 09 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-27/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-27.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-27/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-27.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>QR Algorithm Without Shifts</title>
-      <link>https://example.com/teaching/nla/nla-lec-28/</link>
+      <link>http://localhost:1313/teaching/nla/nla-lec-28/</link>
       <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/teaching/nla/nla-lec-28/</guid>
-      <description>&lt;a href=&#34;https://example.com/Lecture-28.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>http://localhost:1313/teaching/nla/nla-lec-28/</guid>
+      <description>&lt;a href=&#34;http://localhost:1313/Lecture-28.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Seminar, University of Oregon, Eugene, OR</title>
-      <link>https://example.com/talks/talk2025_9/</link>
+      <link>http://localhost:1313/talks/talk2025_9/</link>
       <pubDate>Sat, 03 Jan 2099 00:00:00 +0000</pubDate>
-      <guid>https://example.com/talks/talk2025_9/</guid>
+      <guid>http://localhost:1313/talks/talk2025_9/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Seminar, University of California Santa Cruz, Santa Cruz, CA</title>
-      <link>https://example.com/talks/talk2025_8/</link>
+      <link>http://localhost:1313/talks/talk2025_8/</link>
       <pubDate>Fri, 02 Jan 2099 00:00:00 +0000</pubDate>
-      <guid>https://example.com/talks/talk2025_8/</guid>
+      <guid>http://localhost:1313/talks/talk2025_8/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Seminar, University of Wisconsin-Madison, Wisconsin, MI</title>
-      <link>https://example.com/talks/talk2025_7/</link>
+      <link>http://localhost:1313/talks/talk2025_7/</link>
       <pubDate>Thu, 01 Jan 2099 00:00:00 +0000</pubDate>
-      <guid>https://example.com/talks/talk2025_7/</guid>
+      <guid>http://localhost:1313/talks/talk2025_7/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Seminar, Institut de Recherche Mathématique de Rennes, Rennes, France</title>
-      <link>https://example.com/talks/talk2025_11/</link>
+      <link>http://localhost:1313/talks/talk2025_11/</link>
       <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/talks/talk2025_11/</guid>
+      <guid>http://localhost:1313/talks/talk2025_11/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AMS Fall Sectional Meeting, Special Session &#39;Integrability and Randomness&#39;, Tulane University, New Orleans, GA</title>
-      <link>https://example.com/talks/talk2025_6/</link>
+      <link>http://localhost:1313/talks/talk2025_6/</link>
       <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/talks/talk2025_6/</guid>
+      <guid>http://localhost:1313/talks/talk2025_6/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Infinite-order rogue waves that are small (but not small in $L^2$)</title>
-      <link>https://example.com/publication/rwio-elliptic-spread/</link>
+      <link>http://localhost:1313/publication/rwio-elliptic-spread/</link>
       <pubDate>Thu, 31 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/rwio-elliptic-spread/</guid>
+      <guid>http://localhost:1313/publication/rwio-elliptic-spread/</guid>
       <description>&lt;!-- ![Infinite-order rogue wave in the elliptic spread asymptotic regime](./header.png ) --&gt;
-&lt;figure&gt;&lt;img src=&#34;https://example.com/publication/rwio-elliptic-spread/header.png&#34;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/rwio-elliptic-spread/header.png&#34;
     alt=&#34;Infinite-order rogue wave in the &amp;rsquo;elliptic spread&amp;rsquo; asymptotic regime.&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Infinite-order rogue wave in the &amp;rsquo;elliptic spread&amp;rsquo; asymptotic regime.&lt;/p&gt;
     &lt;/figcaption&gt;
@@ -1517,25 +1517,25 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>WaDIB: Wave Dynamics, Integrability, and Beyond, Santa Margherita di Pula, Sardinia, Italy</title>
-      <link>https://example.com/talks/talk2025_5/</link>
+      <link>http://localhost:1313/talks/talk2025_5/</link>
       <pubDate>Sun, 25 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/talks/talk2025_5/</guid>
+      <guid>http://localhost:1313/talks/talk2025_5/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Universality, Nonlinearity, and Integrability: In Honor of Percy Deift&#39;s 80th Birthday, KIAS, Seoul, Korea</title>
-      <link>https://example.com/talks/talk2025_4/</link>
+      <link>http://localhost:1313/talks/talk2025_4/</link>
       <pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/talks/talk2025_4/</guid>
+      <guid>http://localhost:1313/talks/talk2025_4/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Efficient computation of soliton gas primitive potentials</title>
-      <link>https://example.com/publication/soliton-gas-kdv/</link>
+      <link>http://localhost:1313/publication/soliton-gas-kdv/</link>
       <pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/soliton-gas-kdv/</guid>
+      <guid>http://localhost:1313/publication/soliton-gas-kdv/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -1555,7 +1555,7 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
 &lt;/div&gt;
 
 Add the publication&#39;s **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --&gt;
-&lt;!-- &lt;figure&gt;&lt;img src=&#34;https://example.com/publication/soliton-gas-kdv/gen3-gas.gif&#34;
+&lt;!-- &lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/soliton-gas-kdv/gen3-gas.gif&#34;
     alt=&#34;Time evolution of a soliton gas supported on three pairs of bands.&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Time evolution of a soliton gas supported on three pairs of bands.&lt;/p&gt;
     &lt;/figcaption&gt;
@@ -1567,74 +1567,74 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Conference on &#39;Dispersive Integrable Equations: Pathfinders in Infinite-Dimensional Hamiltonian Systems&#39;, CIRM, Luminy, France</title>
-      <link>https://example.com/talks/talk2025_3/</link>
+      <link>http://localhost:1313/talks/talk2025_3/</link>
       <pubDate>Mon, 28 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/talks/talk2025_3/</guid>
+      <guid>http://localhost:1313/talks/talk2025_3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Seminar, Virginia Tech, Blacksburg, VA</title>
-      <link>https://example.com/talks/talk2025_12/</link>
+      <link>http://localhost:1313/talks/talk2025_12/</link>
       <pubDate>Thu, 27 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/talks/talk2025_12/</guid>
+      <guid>http://localhost:1313/talks/talk2025_12/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IMACS Nonlinear Wave Conference, Special Session &#39;Advances in Integrable Systems and Inverse Scattering&#39;, Athens, GA</title>
-      <link>https://example.com/talks/talk2025_2/</link>
+      <link>http://localhost:1313/talks/talk2025_2/</link>
       <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/talks/talk2025_2/</guid>
+      <guid>http://localhost:1313/talks/talk2025_2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AMS Spring Sectional Meeting, Special Session &#39;Analysis of Nonlinear Wave Models&#39;, University of Kansas, Lawrence, KS</title>
-      <link>https://example.com/talks/talk2025_1/</link>
+      <link>http://localhost:1313/talks/talk2025_1/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/talks/talk2025_1/</guid>
+      <guid>http://localhost:1313/talks/talk2025_1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AMS Spring Sectional Meeting, Special Session &#39;Recent Advances in the Analysis of Integrable Systems&#39;, University of Kansas, Lawrence, KS</title>
-      <link>https://example.com/talks/talk2025_10/</link>
+      <link>http://localhost:1313/talks/talk2025_10/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/talks/talk2025_10/</guid>
+      <guid>http://localhost:1313/talks/talk2025_10/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Seminar, SUNY University at Buffalo, Buffalo, NY</title>
-      <link>https://example.com/talks/talk2024_1/</link>
+      <link>http://localhost:1313/talks/talk2024_1/</link>
       <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.com/talks/talk2024_1/</guid>
+      <guid>http://localhost:1313/talks/talk2024_1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Seminar, University Washington, Seattle, WA</title>
-      <link>https://example.com/talks/talk2024_2/</link>
+      <link>http://localhost:1313/talks/talk2024_2/</link>
       <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.com/talks/talk2024_2/</guid>
+      <guid>http://localhost:1313/talks/talk2024_2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Seminar, &#39;Emergent phenomena in Nonlinear Dispersive Waves&#39; Programme of Isaac Newton Institute, Northumbria University, Newcastle Upon Tyne, UK</title>
-      <link>https://example.com/talks/talk2024_3/</link>
+      <link>http://localhost:1313/talks/talk2024_3/</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.com/talks/talk2024_3/</guid>
+      <guid>http://localhost:1313/talks/talk2024_3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>General rogue waves of infinite order: exact properties, asymptotic behavior, and effective numerical computation</title>
-      <link>https://example.com/publication/rwio-nls-asymptotics/</link>
+      <link>http://localhost:1313/publication/rwio-nls-asymptotics/</link>
       <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/rwio-nls-asymptotics/</guid>
-      <description>&lt;p&gt;This work has also resulted in the software package &lt;a href=&#34;https://example.com/publication/rwioNLS-jl/&#34;&gt;RogueWaveInfiniteNLS.jl&lt;/a&gt; for Julia. Visit the &lt;a href=&#34;https://zenodo.org/records/13283788&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;official release here&lt;/a&gt;.&lt;/p&gt;
+      <guid>http://localhost:1313/publication/rwio-nls-asymptotics/</guid>
+      <description>&lt;p&gt;This work has also resulted in the software package &lt;a href=&#34;http://localhost:1313/publication/rwioNLS-jl/&#34;&gt;RogueWaveInfiniteNLS.jl&lt;/a&gt; for Julia. Visit the &lt;a href=&#34;https://zenodo.org/records/13283788&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;official release here&lt;/a&gt;.&lt;/p&gt;
 &lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -1659,9 +1659,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Extreme superposition: high-order fundamental rogue waves in the far-field regime</title>
-      <link>https://example.com/publication/extreme-far-field/</link>
+      <link>http://localhost:1313/publication/extreme-far-field/</link>
       <pubDate>Wed, 07 Aug 2024 14:29:12 -0400</pubDate>
-      <guid>https://example.com/publication/extreme-far-field/</guid>
+      <guid>http://localhost:1313/publication/extreme-far-field/</guid>
       <description>&lt;!-- 
 
 
@@ -1701,9 +1701,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>RogueWaveInfiniteNLS.jl</title>
-      <link>https://example.com/publication/rwionls-jl/</link>
+      <link>http://localhost:1313/publication/rwionls-jl/</link>
       <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/rwionls-jl/</guid>
+      <guid>http://localhost:1313/publication/rwionls-jl/</guid>
       <description>&lt;!-- 
 
 
@@ -1740,17 +1740,17 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>SIAM Nonlinear Waves and Coherent Structures Conference 2024, Special Session &#39;Recent Developments in Dispersive Partial Differential Equations&#39;, Baltimore, MD</title>
-      <link>https://example.com/talks/talk2024_4/</link>
+      <link>http://localhost:1313/talks/talk2024_4/</link>
       <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.com/talks/talk2024_4/</guid>
+      <guid>http://localhost:1313/talks/talk2024_4/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Solitons of fractional order: interpolating between coherent structures</title>
-      <link>https://example.com/ongoing/fractional-solitons/</link>
+      <link>http://localhost:1313/ongoing/fractional-solitons/</link>
       <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.com/ongoing/fractional-solitons/</guid>
+      <guid>http://localhost:1313/ongoing/fractional-solitons/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -1775,9 +1775,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Infinite-order solutions for the AKNS hierarchy and their asymptotic behavior</title>
-      <link>https://example.com/ongoing/rwio-mkdv/</link>
+      <link>http://localhost:1313/ongoing/rwio-mkdv/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.com/ongoing/rwio-mkdv/</guid>
+      <guid>http://localhost:1313/ongoing/rwio-mkdv/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -1802,25 +1802,25 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>AMS Spring Sectional Meeting, Special Session &#39;Nonlinear Hamiltonian PDEs&#39;, Washington, DC</title>
-      <link>https://example.com/talks/talk2024_5/</link>
+      <link>http://localhost:1313/talks/talk2024_5/</link>
       <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.com/talks/talk2024_5/</guid>
+      <guid>http://localhost:1313/talks/talk2024_5/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Seminar, University of Kansas, Lawrence, KS</title>
-      <link>https://example.com/talks/talk2024_6/</link>
+      <link>http://localhost:1313/talks/talk2024_6/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.com/talks/talk2024_6/</guid>
+      <guid>http://localhost:1313/talks/talk2024_6/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Asymptotic behavior of large-order soliton solutions of the modified Korteweg-de Vries equation</title>
-      <link>https://example.com/ongoing/kurt-mkdv/</link>
+      <link>http://localhost:1313/ongoing/kurt-mkdv/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.com/ongoing/kurt-mkdv/</guid>
+      <guid>http://localhost:1313/ongoing/kurt-mkdv/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -1845,9 +1845,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Far-field symptotics of large-order breathers for the sine-Gordon equation</title>
-      <link>https://example.com/ongoing/sine-gordon/</link>
+      <link>http://localhost:1313/ongoing/sine-gordon/</link>
       <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.com/ongoing/sine-gordon/</guid>
+      <guid>http://localhost:1313/ongoing/sine-gordon/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -1872,17 +1872,17 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Colloquium, University of Indiana-Purdue University at Indianapolis, Indianapolis, IN</title>
-      <link>https://example.com/talks/talk2024_7/</link>
+      <link>http://localhost:1313/talks/talk2024_7/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.com/talks/talk2024_7/</guid>
+      <guid>http://localhost:1313/talks/talk2024_7/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Long-time development of initial data with spectral pole singularities</title>
-      <link>https://example.com/ongoing/spec-sing/</link>
+      <link>http://localhost:1313/ongoing/spec-sing/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.com/ongoing/spec-sing/</guid>
+      <guid>http://localhost:1313/ongoing/spec-sing/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -1907,9 +1907,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Long-time asymptotics for the Korteweg-de Vries equation</title>
-      <link>https://example.com/ongoing/kdv/</link>
+      <link>http://localhost:1313/ongoing/kdv/</link>
       <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.com/ongoing/kdv/</guid>
+      <guid>http://localhost:1313/ongoing/kdv/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -1934,9 +1934,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Computation of large-genus solutions of the Korteweg-de Vries equation</title>
-      <link>https://example.com/publication/kdv-periodic-nist/</link>
+      <link>http://localhost:1313/publication/kdv-periodic-nist/</link>
       <pubDate>Sat, 01 Jul 2023 14:29:44 -0400</pubDate>
-      <guid>https://example.com/publication/kdv-periodic-nist/</guid>
+      <guid>http://localhost:1313/publication/kdv-periodic-nist/</guid>
       <description>&lt;!-- 
 
 
@@ -1970,14 +1970,14 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
 &lt;/div&gt; --&gt;
 &lt;!-- Add the publication&#39;s **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --&gt;
 &lt;p&gt;As part of this work, we have constructed a solution of the Korteweg-de Vries equation by densely packing spectral bands inside a fixed interval. An animation of the resulting solution is given below. It seems to exhibit rogue-wave-type behavior on a periodic background.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://example.com/publication/kdv-periodic-nist/rogue_hi.gif&#34;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/kdv-periodic-nist/rogue_hi.gif&#34;
     alt=&#34;Time evolution of the solution constructed via accumulation of bands.&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Time evolution of the solution constructed via accumulation of bands.&lt;/p&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;The contour plot of the same solution approximated by using $g=30$ gaps is given below.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://example.com/publication/kdv-periodic-nist/contour-g-30.png&#34;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/kdv-periodic-nist/contour-g-30.png&#34;
     alt=&#34;Time evolution of the solution constructed via accumulation of bands.&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Time evolution of the solution constructed via accumulation of bands.&lt;/p&gt;
     &lt;/figcaption&gt;
@@ -1989,9 +1989,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Broader universality of rogue waves of infinite order</title>
-      <link>https://example.com/publication/broader-universality-rwio/</link>
+      <link>http://localhost:1313/publication/broader-universality-rwio/</link>
       <pubDate>Wed, 30 Mar 2022 14:29:12 -0400</pubDate>
-      <guid>https://example.com/publication/broader-universality-rwio/</guid>
+      <guid>http://localhost:1313/publication/broader-universality-rwio/</guid>
       <description>&lt;!-- 
 
 
@@ -2029,9 +2029,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Far-field asymptotics for multiple-pole solitons in the large-order limit</title>
-      <link>https://example.com/publication/multipole-nls-far-field/</link>
+      <link>http://localhost:1313/publication/multipole-nls-far-field/</link>
       <pubDate>Thu, 14 Jan 2021 14:29:12 -0400</pubDate>
-      <guid>https://example.com/publication/multipole-nls-far-field/</guid>
+      <guid>http://localhost:1313/publication/multipole-nls-far-field/</guid>
       <description>&lt;!-- 
 
 
@@ -2070,9 +2070,9 @@ Supplementary notes can be added here, including [code, math, and images](https:
     
     <item>
       <title>On numerical inverse scattering for the Korteweg-de Vries equation with discontinuous step-like data</title>
-      <link>https://example.com/publication/kdv-step-nist/</link>
+      <link>http://localhost:1313/publication/kdv-step-nist/</link>
       <pubDate>Mon, 16 Mar 2020 14:29:44 -0400</pubDate>
-      <guid>https://example.com/publication/kdv-step-nist/</guid>
+      <guid>http://localhost:1313/publication/kdv-step-nist/</guid>
       <description>&lt;!-- 
 
 
@@ -2107,7 +2107,7 @@ Supplementary notes can be added here, including [code, math, and images](https:
 
 Add the publication&#39;s **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --&gt;
 &lt;p&gt;Time evolution of step-like initial-data that has a soliton component.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://example.com/publication/kdv-step-nist/DSW-sol-slow.gif&#34;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/kdv-step-nist/DSW-sol-slow.gif&#34;
     alt=&#34;Time evolution of step-like initial-data that has a soliton component.&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Time evolution of step-like initial-data that has a soliton component.&lt;/p&gt;
     &lt;/figcaption&gt;
@@ -2118,9 +2118,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Extreme superposition: rogue waves of infinite order and the Painlevé-III hierarchy</title>
-      <link>https://example.com/publication/extreme-superposition/</link>
+      <link>http://localhost:1313/publication/extreme-superposition/</link>
       <pubDate>Sun, 15 Mar 2020 00:00:44 -0400</pubDate>
-      <guid>https://example.com/publication/extreme-superposition/</guid>
+      <guid>http://localhost:1313/publication/extreme-superposition/</guid>
       <description>&lt;!-- 
 
 
@@ -2159,8 +2159,8 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
 $$
 \mathrm{i}\Psi_t + \frac{1}{2}\Psi_{XX}+|\Psi|^2\Psi=0,
 $$&lt;p&gt;
-identified in this work. The computational method developed in this work is based on numerical solution of the Riemann-Hilbert problem representation of $\Psi(X,T)$ for each $(X,T)$. While this Mathematica module can be used in code repository linked above, we recommend using the more recent Julia software package &lt;a href=&#34;https://example.com/publication/rwionls-jl/&#34;&gt;RogueWaveInfiniteNLS.jl&lt;/a&gt;&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://example.com/publication/extreme-superposition/anim.gif&#34;
+identified in this work. The computational method developed in this work is based on numerical solution of the Riemann-Hilbert problem representation of $\Psi(X,T)$ for each $(X,T)$. While this Mathematica module can be used in code repository linked above, we recommend using the more recent Julia software package &lt;a href=&#34;http://localhost:1313/publication/rwionls-jl/&#34;&gt;RogueWaveInfiniteNLS.jl&lt;/a&gt;&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/extreme-superposition/anim.gif&#34;
     alt=&#34;Time evolution of the special solution. Blue: the real part, purple: the imaginary part&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Time evolution of the special solution. Blue: the real part, purple: the imaginary part&lt;/p&gt;
     &lt;/figcaption&gt;
@@ -2171,9 +2171,9 @@ identified in this work. The computational method developed in this work is base
     
     <item>
       <title>Large-order asymptotics for multiple-pole solitons of the focusing nonlinear Schrödinger equation</title>
-      <link>https://example.com/publication/multipole-nls/</link>
+      <link>http://localhost:1313/publication/multipole-nls/</link>
       <pubDate>Tue, 16 Apr 2019 14:28:55 -0400</pubDate>
-      <guid>https://example.com/publication/multipole-nls/</guid>
+      <guid>http://localhost:1313/publication/multipole-nls/</guid>
       <description>&lt;!-- 
 
 
@@ -2213,18 +2213,18 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Benchmarking numerical methods for lattice equations with the Toda lattice</title>
-      <link>https://example.com/publication/toda-benchmark/</link>
+      <link>http://localhost:1313/publication/toda-benchmark/</link>
       <pubDate>Fri, 27 Jul 2018 14:31:04 -0400</pubDate>
-      <guid>https://example.com/publication/toda-benchmark/</guid>
+      <guid>http://localhost:1313/publication/toda-benchmark/</guid>
       <description>&lt;!-- Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). --&gt;
 </description>
     </item>
     
     <item>
       <title>A robust inverse scattering transform for the focusing nonlinear Schrödinger equation</title>
-      <link>https://example.com/publication/robust-ist/</link>
+      <link>http://localhost:1313/publication/robust-ist/</link>
       <pubDate>Thu, 19 Oct 2017 00:00:44 -0400</pubDate>
-      <guid>https://example.com/publication/robust-ist/</guid>
+      <guid>http://localhost:1313/publication/robust-ist/</guid>
       <description>&lt;!-- 
 
 
@@ -2263,9 +2263,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Discrete integrable systems, Darboux transformations, and Yang–Baxter maps</title>
-      <link>https://example.com/publication/discrete-integrable-book/</link>
+      <link>http://localhost:1313/publication/discrete-integrable-book/</link>
       <pubDate>Sat, 01 Jul 2017 14:31:18 -0400</pubDate>
-      <guid>https://example.com/publication/discrete-integrable-book/</guid>
+      <guid>http://localhost:1313/publication/discrete-integrable-book/</guid>
       <description>&lt;!-- 
 
 
@@ -2304,24 +2304,24 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Numerical inverse scattering for the Toda lattice</title>
-      <link>https://example.com/publication/toda-nist/</link>
+      <link>http://localhost:1313/publication/toda-nist/</link>
       <pubDate>Mon, 16 Jan 2017 14:29:44 -0400</pubDate>
-      <guid>https://example.com/publication/toda-nist/</guid>
+      <guid>http://localhost:1313/publication/toda-nist/</guid>
       <description>&lt;p&gt;Time evolution of purely dispersive initial data is computed at $t=10000$ without time-stepping, at least by setting $t=10000$ in the Riemann-Hilbert problem and solving different Riemann-Hilbert problems as $n$ varies. Below are plots of $a_n$ (the off-diagonal of the bi-infinite Jacobi matrix) and $b_n$ (the diagonal of the bi-infinite Jacobi matrix).&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://example.com/publication/toda-nist/TodaSolution-NoS-a-10000.png&#34;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/toda-nist/TodaSolution-NoS-a-10000.png&#34;
     alt=&#34;$a_n(t=10000)$, $-7500\leq n\leq 7500$. There are no solitons.&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;$a_n(t=10000)$, $-7500\leq n\leq 7500$. There are no solitons.&lt;/p&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;figure&gt;&lt;img src=&#34;https://example.com/publication/toda-nist/TodaSolution-NoS-b-10000.png&#34;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/toda-nist/TodaSolution-NoS-b-10000.png&#34;
     alt=&#34;$b_n(t=10000)$, $-7500\leq n\leq 7500$. There are no solitons.&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;$b_n(t=10000)$, $-7500\leq n\leq 7500$. There are no solitons.&lt;/p&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Below is the space-evolution of (truncated) contour for the Riemann-Hilbert problem that&amp;rsquo;s solved to compute the time evolution of initial data that generates a soliton to $t=1000$. Here $n$ varies from $n=-1250$ to $n=0$.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://example.com/publication/toda-nist/Toda-1000.gif&#34;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/toda-nist/Toda-1000.gif&#34;
     alt=&#34;Numerical contours for the Riemann-Hilbert problem as $n$ varies for fixed $t$.&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Numerical contours for the Riemann-Hilbert problem as $n$ varies for fixed $t$.&lt;/p&gt;
     &lt;/figcaption&gt;
@@ -2332,9 +2332,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>On the evolution of scattering data under perturbations of the Toda lattice</title>
-      <link>https://example.com/publication/toda-perturbations/</link>
+      <link>http://localhost:1313/publication/toda-perturbations/</link>
       <pubDate>Thu, 01 Sep 2016 14:31:34 -0400</pubDate>
-      <guid>https://example.com/publication/toda-perturbations/</guid>
+      <guid>http://localhost:1313/publication/toda-perturbations/</guid>
       <description>&lt;!-- Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). --&gt;</description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Inverse-Scattering Transform | Deniz Bilman</title>
-    <link>https://example.com/tags/inverse-scattering-transform/</link>
-      <atom:link href="https://example.com/tags/inverse-scattering-transform/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/tags/inverse-scattering-transform/</link>
+      <atom:link href="http://localhost:1313/tags/inverse-scattering-transform/index.xml" rel="self" type="application/rss+xml" />
     <description>Inverse-Scattering Transform</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 19 Oct 2017 00:00:44 -0400</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu7729264130191091259.png</url>
+      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
       <title>Inverse-Scattering Transform</title>
-      <link>https://example.com/tags/inverse-scattering-transform/</link>
+      <link>http://localhost:1313/tags/inverse-scattering-transform/</link>
     </image>
     
     <item>
       <title>A robust inverse scattering transform for the focusing nonlinear Schrödinger equation</title>
-      <link>https://example.com/publication/robust-ist/</link>
+      <link>http://localhost:1313/publication/robust-ist/</link>
       <pubDate>Thu, 19 Oct 2017 00:00:44 -0400</pubDate>
-      <guid>https://example.com/publication/robust-ist/</guid>
+      <guid>http://localhost:1313/publication/robust-ist/</guid>
       <description>&lt;!-- 
 
 

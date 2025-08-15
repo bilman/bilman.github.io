@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Asymptotic Behavior | Deniz Bilman</title>
-    <link>https://example.com/tags/asymptotic-behavior/</link>
-      <atom:link href="https://example.com/tags/asymptotic-behavior/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/tags/asymptotic-behavior/</link>
+      <atom:link href="http://localhost:1313/tags/asymptotic-behavior/index.xml" rel="self" type="application/rss+xml" />
     <description>Asymptotic Behavior</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 14 Jan 2021 14:29:12 -0400</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu7729264130191091259.png</url>
+      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
       <title>Asymptotic Behavior</title>
-      <link>https://example.com/tags/asymptotic-behavior/</link>
+      <link>http://localhost:1313/tags/asymptotic-behavior/</link>
     </image>
     
     <item>
       <title>Far-field asymptotics for multiple-pole solitons in the large-order limit</title>
-      <link>https://example.com/publication/multipole-nls-far-field/</link>
+      <link>http://localhost:1313/publication/multipole-nls-far-field/</link>
       <pubDate>Thu, 14 Jan 2021 14:29:12 -0400</pubDate>
-      <guid>https://example.com/publication/multipole-nls-far-field/</guid>
+      <guid>http://localhost:1313/publication/multipole-nls-far-field/</guid>
       <description>&lt;!-- 
 
 
