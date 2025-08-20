@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Article | Deniz Bilman</title>
-    <link>http://localhost:1313/publication_types/article/</link>
-      <atom:link href="http://localhost:1313/publication_types/article/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://bilman.github.io/publication_types/article/</link>
+      <atom:link href="https://bilman.github.io/publication_types/article/index.xml" rel="self" type="application/rss+xml" />
     <description>Article</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 31 Jul 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <url>https://bilman.github.io/media/icon_hu7729264130191091259.png</url>
       <title>Article</title>
-      <link>http://localhost:1313/publication_types/article/</link>
+      <link>https://bilman.github.io/publication_types/article/</link>
     </image>
     
     <item>
       <title>Infinite-order rogue waves that are small (but not small in $L^2$)</title>
-      <link>http://localhost:1313/publication/rwio-elliptic-spread/</link>
+      <link>https://bilman.github.io/publication/rwio-elliptic-spread/</link>
       <pubDate>Thu, 31 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/rwio-elliptic-spread/</guid>
+      <guid>https://bilman.github.io/publication/rwio-elliptic-spread/</guid>
       <description>&lt;!-- ![Infinite-order rogue wave in the elliptic spread asymptotic regime](./header.png ) --&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/rwio-elliptic-spread/header.png&#34;
+&lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/publication/rwio-elliptic-spread/header.png&#34;
     alt=&#34;Infinite-order rogue wave in the &amp;rsquo;elliptic spread&amp;rsquo; asymptotic regime.&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Infinite-order rogue wave in the &amp;rsquo;elliptic spread&amp;rsquo; asymptotic regime.&lt;/p&gt;
     &lt;/figcaption&gt;
@@ -56,9 +56,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Efficient computation of soliton gas primitive potentials</title>
-      <link>http://localhost:1313/publication/soliton-gas-kdv/</link>
+      <link>https://bilman.github.io/publication/soliton-gas-kdv/</link>
       <pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/soliton-gas-kdv/</guid>
+      <guid>https://bilman.github.io/publication/soliton-gas-kdv/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -78,7 +78,7 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
 &lt;/div&gt;
 
 Add the publication&#39;s **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --&gt;
-&lt;!-- &lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/soliton-gas-kdv/gen3-gas.gif&#34;
+&lt;!-- &lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/publication/soliton-gas-kdv/gen3-gas.gif&#34;
     alt=&#34;Time evolution of a soliton gas supported on three pairs of bands.&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Time evolution of a soliton gas supported on three pairs of bands.&lt;/p&gt;
     &lt;/figcaption&gt;
@@ -90,10 +90,10 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>General rogue waves of infinite order: exact properties, asymptotic behavior, and effective numerical computation</title>
-      <link>http://localhost:1313/publication/rwio-nls-asymptotics/</link>
+      <link>https://bilman.github.io/publication/rwio-nls-asymptotics/</link>
       <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/rwio-nls-asymptotics/</guid>
-      <description>&lt;p&gt;This work has also resulted in the software package &lt;a href=&#34;http://localhost:1313/publication/rwioNLS-jl/&#34;&gt;RogueWaveInfiniteNLS.jl&lt;/a&gt; for Julia. Visit the &lt;a href=&#34;https://zenodo.org/records/13283788&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;official release here&lt;/a&gt;.&lt;/p&gt;
+      <guid>https://bilman.github.io/publication/rwio-nls-asymptotics/</guid>
+      <description>&lt;p&gt;This work has also resulted in the software package &lt;a href=&#34;https://bilman.github.io/publication/rwioNLS-jl/&#34;&gt;RogueWaveInfiniteNLS.jl&lt;/a&gt; for Julia. Visit the &lt;a href=&#34;https://zenodo.org/records/13283788&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;official release here&lt;/a&gt;.&lt;/p&gt;
 &lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -118,9 +118,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Solitons of fractional order: interpolating between coherent structures</title>
-      <link>http://localhost:1313/ongoing/fractional-solitons/</link>
+      <link>https://bilman.github.io/ongoing/fractional-solitons/</link>
       <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ongoing/fractional-solitons/</guid>
+      <guid>https://bilman.github.io/ongoing/fractional-solitons/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -145,9 +145,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Infinite-order solutions for the AKNS hierarchy and their asymptotic behavior</title>
-      <link>http://localhost:1313/ongoing/rwio-mkdv/</link>
+      <link>https://bilman.github.io/ongoing/rwio-mkdv/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ongoing/rwio-mkdv/</guid>
+      <guid>https://bilman.github.io/ongoing/rwio-mkdv/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -172,9 +172,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Asymptotic behavior of large-order soliton solutions of the modified Korteweg-de Vries equation</title>
-      <link>http://localhost:1313/ongoing/kurt-mkdv/</link>
+      <link>https://bilman.github.io/ongoing/kurt-mkdv/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ongoing/kurt-mkdv/</guid>
+      <guid>https://bilman.github.io/ongoing/kurt-mkdv/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -199,9 +199,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Far-field symptotics of large-order breathers for the sine-Gordon equation</title>
-      <link>http://localhost:1313/ongoing/sine-gordon/</link>
+      <link>https://bilman.github.io/ongoing/sine-gordon/</link>
       <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ongoing/sine-gordon/</guid>
+      <guid>https://bilman.github.io/ongoing/sine-gordon/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -226,9 +226,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Long-time development of initial data with spectral pole singularities</title>
-      <link>http://localhost:1313/ongoing/spec-sing/</link>
+      <link>https://bilman.github.io/ongoing/spec-sing/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ongoing/spec-sing/</guid>
+      <guid>https://bilman.github.io/ongoing/spec-sing/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -253,9 +253,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Long-time asymptotics for the Korteweg-de Vries equation</title>
-      <link>http://localhost:1313/ongoing/kdv/</link>
+      <link>https://bilman.github.io/ongoing/kdv/</link>
       <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ongoing/kdv/</guid>
+      <guid>https://bilman.github.io/ongoing/kdv/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 

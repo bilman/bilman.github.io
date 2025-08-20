@@ -2,262 +2,262 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Numerical Linear Algebra | Deniz Bilman</title>
-    <link>http://localhost:1313/teaching/nla/</link>
-      <atom:link href="http://localhost:1313/teaching/nla/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://bilman.github.io/teaching/nla/</link>
+      <atom:link href="https://bilman.github.io/teaching/nla/index.xml" rel="self" type="application/rss+xml" />
     <description>Numerical Linear Algebra</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/teaching/nla/featured.png</url>
+      <url>https://bilman.github.io/teaching/nla/featured.png</url>
       <title>Numerical Linear Algebra</title>
-      <link>http://localhost:1313/teaching/nla/</link>
+      <link>https://bilman.github.io/teaching/nla/</link>
     </image>
     
     <item>
       <title>Matrix Vector Multiplication</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-1/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-1/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-1/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-1.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-1/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-1.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Orthogonal Vectors and Matrices</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-2/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-2/</link>
       <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-2/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-2.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-2/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-2.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Norms</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-3/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-3/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-3/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-3.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-3/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-3.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Singular Value Decomposition (SVD)</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-4/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-4/</link>
       <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-4/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-4.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-4/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-4.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Straightforward Applications of SVD</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-4-app/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-4-app/</link>
       <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-4-app/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-4-Applications.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-4-app/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-4-Applications.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>More on the SVD</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-5/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-5/</link>
       <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-5/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-5.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-5/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-5.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Projectors</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-6/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-6/</link>
       <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-6/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-6.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-6/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-6.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>QR Factorization</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-7/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-7/</link>
       <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-7/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-7.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-7/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-7.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Gram-Schmidt Orthogonalization</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-8/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-8/</link>
       <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-8/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-8.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-8/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-8.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Householder Triangularization</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-10/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-10/</link>
       <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-10/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-10.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-10/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-10.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Least Squares Problems</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-11/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-11/</link>
       <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-11/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-11.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-11/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-11.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Conditioning and Condition Numbers</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-12/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-12/</link>
       <pubDate>Wed, 19 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-12/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-12.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-12/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-12.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Floating Point Arithmetic</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-13/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-13/</link>
       <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-13/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-13.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-13/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-13.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Stability</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-14/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-14/</link>
       <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-14/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-14-15.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-14/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-14-15.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Stability of Householder Triangularization</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-16/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-16/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-16/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-16.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-16/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-16.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Stability of Backward Substitution</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-17/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-17/</link>
       <pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-17/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-17.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-17/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-17.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Gaussian Elimination (LU Factorization)</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-20/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-20/</link>
       <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-20/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-20.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-20/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-20.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Pivoting</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-21/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-21/</link>
       <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-21/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-21.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-21/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-21.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Stability of Gaussian Elimination</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-22/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-22/</link>
       <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-22/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-22.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-22/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-22.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Cholesky Decomposition</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-23/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-23/</link>
       <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-23/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-23.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-23/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-23.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Eigenvalue Problems</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-24/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-24/</link>
       <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-24/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-24.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-24/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-24.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Overview of Eigenvalue Algorithms</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-25/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-25/</link>
       <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-25/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-25.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-25/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-25.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Reduction to Hessenberg or Tridiagonal Form</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-26/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-26/</link>
       <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-26/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-26.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-26/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-26.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>Rayleigh Quotient &amp; Inverse Iteration</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-27/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-27/</link>
       <pubDate>Wed, 09 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-27/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-27.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-27/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-27.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>
     
     <item>
       <title>QR Algorithm Without Shifts</title>
-      <link>http://localhost:1313/teaching/nla/nla-lec-28/</link>
+      <link>https://bilman.github.io/teaching/nla/nla-lec-28/</link>
       <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nla/nla-lec-28/</guid>
-      <description>&lt;a href=&#34;http://localhost:1313/Lecture-28.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
+      <guid>https://bilman.github.io/teaching/nla/nla-lec-28/</guid>
+      <description>&lt;a href=&#34;https://bilman.github.io/Lecture-28.html&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;
     View Jupyter Notebook
 &lt;/a&gt;</description>
     </item>

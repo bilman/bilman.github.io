@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computer | Deniz Bilman</title>
-    <link>http://localhost:1313/publication_types/computer/</link>
-      <atom:link href="http://localhost:1313/publication_types/computer/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://bilman.github.io/publication_types/computer/</link>
+      <atom:link href="https://bilman.github.io/publication_types/computer/index.xml" rel="self" type="application/rss+xml" />
     <description>Computer</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jul 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <url>https://bilman.github.io/media/icon_hu7729264130191091259.png</url>
       <title>Computer</title>
-      <link>http://localhost:1313/publication_types/computer/</link>
+      <link>https://bilman.github.io/publication_types/computer/</link>
     </image>
     
     <item>
       <title>RogueWaveInfiniteNLS.jl</title>
-      <link>http://localhost:1313/publication/rwionls-jl/</link>
+      <link>https://bilman.github.io/publication/rwionls-jl/</link>
       <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/rwionls-jl/</guid>
+      <guid>https://bilman.github.io/publication/rwionls-jl/</guid>
       <description>&lt;!-- 
 
 

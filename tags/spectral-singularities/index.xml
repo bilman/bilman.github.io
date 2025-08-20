@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Spectral Singularities | Deniz Bilman</title>
-    <link>http://localhost:1313/tags/spectral-singularities/</link>
-      <atom:link href="http://localhost:1313/tags/spectral-singularities/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://bilman.github.io/tags/spectral-singularities/</link>
+      <atom:link href="https://bilman.github.io/tags/spectral-singularities/index.xml" rel="self" type="application/rss+xml" />
     <description>Spectral Singularities</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 11 Aug 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <url>https://bilman.github.io/media/icon_hu7729264130191091259.png</url>
       <title>Spectral Singularities</title>
-      <link>http://localhost:1313/tags/spectral-singularities/</link>
+      <link>https://bilman.github.io/tags/spectral-singularities/</link>
     </image>
     
     <item>
       <title>General rogue waves of infinite order: exact properties, asymptotic behavior, and effective numerical computation</title>
-      <link>http://localhost:1313/publication/rwio-nls-asymptotics/</link>
+      <link>https://bilman.github.io/publication/rwio-nls-asymptotics/</link>
       <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/rwio-nls-asymptotics/</guid>
-      <description>&lt;p&gt;This work has also resulted in the software package &lt;a href=&#34;http://localhost:1313/publication/rwioNLS-jl/&#34;&gt;RogueWaveInfiniteNLS.jl&lt;/a&gt; for Julia. Visit the &lt;a href=&#34;https://zenodo.org/records/13283788&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;official release here&lt;/a&gt;.&lt;/p&gt;
+      <guid>https://bilman.github.io/publication/rwio-nls-asymptotics/</guid>
+      <description>&lt;p&gt;This work has also resulted in the software package &lt;a href=&#34;https://bilman.github.io/publication/rwioNLS-jl/&#34;&gt;RogueWaveInfiniteNLS.jl&lt;/a&gt; for Julia. Visit the &lt;a href=&#34;https://zenodo.org/records/13283788&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;official release here&lt;/a&gt;.&lt;/p&gt;
 &lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -42,9 +42,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Extreme superposition: rogue waves of infinite order and the Painlevé-III hierarchy</title>
-      <link>http://localhost:1313/publication/extreme-superposition/</link>
+      <link>https://bilman.github.io/publication/extreme-superposition/</link>
       <pubDate>Sun, 15 Mar 2020 00:00:44 -0400</pubDate>
-      <guid>http://localhost:1313/publication/extreme-superposition/</guid>
+      <guid>https://bilman.github.io/publication/extreme-superposition/</guid>
       <description>&lt;!-- 
 
 
@@ -83,8 +83,8 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
 $$
 \mathrm{i}\Psi_t + \frac{1}{2}\Psi_{XX}+|\Psi|^2\Psi=0,
 $$&lt;p&gt;
-identified in this work. The computational method developed in this work is based on numerical solution of the Riemann-Hilbert problem representation of $\Psi(X,T)$ for each $(X,T)$. While this Mathematica module can be used in code repository linked above, we recommend using the more recent Julia software package &lt;a href=&#34;http://localhost:1313/publication/rwionls-jl/&#34;&gt;RogueWaveInfiniteNLS.jl&lt;/a&gt;&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/extreme-superposition/anim.gif&#34;
+identified in this work. The computational method developed in this work is based on numerical solution of the Riemann-Hilbert problem representation of $\Psi(X,T)$ for each $(X,T)$. While this Mathematica module can be used in code repository linked above, we recommend using the more recent Julia software package &lt;a href=&#34;https://bilman.github.io/publication/rwionls-jl/&#34;&gt;RogueWaveInfiniteNLS.jl&lt;/a&gt;&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/publication/extreme-superposition/anim.gif&#34;
     alt=&#34;Time evolution of the special solution. Blue: the real part, purple: the imaginary part&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Time evolution of the special solution. Blue: the real part, purple: the imaginary part&lt;/p&gt;
     &lt;/figcaption&gt;
@@ -95,9 +95,9 @@ identified in this work. The computational method developed in this work is base
     
     <item>
       <title>A robust inverse scattering transform for the focusing nonlinear Schrödinger equation</title>
-      <link>http://localhost:1313/publication/robust-ist/</link>
+      <link>https://bilman.github.io/publication/robust-ist/</link>
       <pubDate>Thu, 19 Oct 2017 00:00:44 -0400</pubDate>
-      <guid>http://localhost:1313/publication/robust-ist/</guid>
+      <guid>https://bilman.github.io/publication/robust-ist/</guid>
       <description>&lt;!-- 
 
 

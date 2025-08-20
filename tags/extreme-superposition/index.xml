@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Extreme Superposition | Deniz Bilman</title>
-    <link>http://localhost:1313/tags/extreme-superposition/</link>
-      <atom:link href="http://localhost:1313/tags/extreme-superposition/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://bilman.github.io/tags/extreme-superposition/</link>
+      <atom:link href="https://bilman.github.io/tags/extreme-superposition/index.xml" rel="self" type="application/rss+xml" />
     <description>Extreme Superposition</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 30 Mar 2022 14:29:12 -0400</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <url>https://bilman.github.io/media/icon_hu7729264130191091259.png</url>
       <title>Extreme Superposition</title>
-      <link>http://localhost:1313/tags/extreme-superposition/</link>
+      <link>https://bilman.github.io/tags/extreme-superposition/</link>
     </image>
     
     <item>
       <title>Broader universality of rogue waves of infinite order</title>
-      <link>http://localhost:1313/publication/broader-universality-rwio/</link>
+      <link>https://bilman.github.io/publication/broader-universality-rwio/</link>
       <pubDate>Wed, 30 Mar 2022 14:29:12 -0400</pubDate>
-      <guid>http://localhost:1313/publication/broader-universality-rwio/</guid>
+      <guid>https://bilman.github.io/publication/broader-universality-rwio/</guid>
       <description>&lt;!-- 
 
 
@@ -54,9 +54,9 @@
     
     <item>
       <title>Far-field asymptotics for multiple-pole solitons in the large-order limit</title>
-      <link>http://localhost:1313/publication/multipole-nls-far-field/</link>
+      <link>https://bilman.github.io/publication/multipole-nls-far-field/</link>
       <pubDate>Thu, 14 Jan 2021 14:29:12 -0400</pubDate>
-      <guid>http://localhost:1313/publication/multipole-nls-far-field/</guid>
+      <guid>https://bilman.github.io/publication/multipole-nls-far-field/</guid>
       <description>&lt;!-- 
 
 
@@ -95,9 +95,9 @@ Supplementary notes can be added here, including [code, math, and images](https:
     
     <item>
       <title>Extreme superposition: rogue waves of infinite order and the Painlevé-III hierarchy</title>
-      <link>http://localhost:1313/publication/extreme-superposition/</link>
+      <link>https://bilman.github.io/publication/extreme-superposition/</link>
       <pubDate>Sun, 15 Mar 2020 00:00:44 -0400</pubDate>
-      <guid>http://localhost:1313/publication/extreme-superposition/</guid>
+      <guid>https://bilman.github.io/publication/extreme-superposition/</guid>
       <description>&lt;!-- 
 
 
@@ -136,8 +136,8 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
 $$
 \mathrm{i}\Psi_t + \frac{1}{2}\Psi_{XX}+|\Psi|^2\Psi=0,
 $$&lt;p&gt;
-identified in this work. The computational method developed in this work is based on numerical solution of the Riemann-Hilbert problem representation of $\Psi(X,T)$ for each $(X,T)$. While this Mathematica module can be used in code repository linked above, we recommend using the more recent Julia software package &lt;a href=&#34;http://localhost:1313/publication/rwionls-jl/&#34;&gt;RogueWaveInfiniteNLS.jl&lt;/a&gt;&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/extreme-superposition/anim.gif&#34;
+identified in this work. The computational method developed in this work is based on numerical solution of the Riemann-Hilbert problem representation of $\Psi(X,T)$ for each $(X,T)$. While this Mathematica module can be used in code repository linked above, we recommend using the more recent Julia software package &lt;a href=&#34;https://bilman.github.io/publication/rwionls-jl/&#34;&gt;RogueWaveInfiniteNLS.jl&lt;/a&gt;&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/publication/extreme-superposition/anim.gif&#34;
     alt=&#34;Time evolution of the special solution. Blue: the real part, purple: the imaginary part&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Time evolution of the special solution. Blue: the real part, purple: the imaginary part&lt;/p&gt;
     &lt;/figcaption&gt;
@@ -148,9 +148,9 @@ identified in this work. The computational method developed in this work is base
     
     <item>
       <title>Large-order asymptotics for multiple-pole solitons of the focusing nonlinear Schrödinger equation</title>
-      <link>http://localhost:1313/publication/multipole-nls/</link>
+      <link>https://bilman.github.io/publication/multipole-nls/</link>
       <pubDate>Tue, 16 Apr 2019 14:28:55 -0400</pubDate>
-      <guid>http://localhost:1313/publication/multipole-nls/</guid>
+      <guid>https://bilman.github.io/publication/multipole-nls/</guid>
       <description>&lt;!-- 
 
 

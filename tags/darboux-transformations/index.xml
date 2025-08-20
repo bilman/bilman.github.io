@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Darboux Transformations | Deniz Bilman</title>
-    <link>http://localhost:1313/tags/darboux-transformations/</link>
-      <atom:link href="http://localhost:1313/tags/darboux-transformations/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://bilman.github.io/tags/darboux-transformations/</link>
+      <atom:link href="https://bilman.github.io/tags/darboux-transformations/index.xml" rel="self" type="application/rss+xml" />
     <description>Darboux Transformations</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jul 2017 14:31:18 -0400</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <url>https://bilman.github.io/media/icon_hu7729264130191091259.png</url>
       <title>Darboux Transformations</title>
-      <link>http://localhost:1313/tags/darboux-transformations/</link>
+      <link>https://bilman.github.io/tags/darboux-transformations/</link>
     </image>
     
     <item>
       <title>Discrete integrable systems, Darboux transformations, and Yang–Baxter maps</title>
-      <link>http://localhost:1313/publication/discrete-integrable-book/</link>
+      <link>https://bilman.github.io/publication/discrete-integrable-book/</link>
       <pubDate>Sat, 01 Jul 2017 14:31:18 -0400</pubDate>
-      <guid>http://localhost:1313/publication/discrete-integrable-book/</guid>
+      <guid>https://bilman.github.io/publication/discrete-integrable-book/</guid>
       <description>&lt;!-- 
 
 

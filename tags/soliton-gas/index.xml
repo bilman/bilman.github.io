@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Soliton Gas | Deniz Bilman</title>
-    <link>http://localhost:1313/tags/soliton-gas/</link>
-      <atom:link href="http://localhost:1313/tags/soliton-gas/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://bilman.github.io/tags/soliton-gas/</link>
+      <atom:link href="https://bilman.github.io/tags/soliton-gas/index.xml" rel="self" type="application/rss+xml" />
     <description>Soliton Gas</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 04 May 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <url>https://bilman.github.io/media/icon_hu7729264130191091259.png</url>
       <title>Soliton Gas</title>
-      <link>http://localhost:1313/tags/soliton-gas/</link>
+      <link>https://bilman.github.io/tags/soliton-gas/</link>
     </image>
     
     <item>
       <title>Efficient computation of soliton gas primitive potentials</title>
-      <link>http://localhost:1313/publication/soliton-gas-kdv/</link>
+      <link>https://bilman.github.io/publication/soliton-gas-kdv/</link>
       <pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/soliton-gas-kdv/</guid>
+      <guid>https://bilman.github.io/publication/soliton-gas-kdv/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -36,7 +36,7 @@
 &lt;/div&gt;
 
 Add the publication&#39;s **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --&gt;
-&lt;!-- &lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/soliton-gas-kdv/gen3-gas.gif&#34;
+&lt;!-- &lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/publication/soliton-gas-kdv/gen3-gas.gif&#34;
     alt=&#34;Time evolution of a soliton gas supported on three pairs of bands.&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Time evolution of a soliton gas supported on three pairs of bands.&lt;/p&gt;
     &lt;/figcaption&gt;

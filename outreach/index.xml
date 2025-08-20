@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Outreaches | Deniz Bilman</title>
-    <link>http://localhost:1313/outreach/</link>
-      <atom:link href="http://localhost:1313/outreach/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://bilman.github.io/outreach/</link>
+      <atom:link href="https://bilman.github.io/outreach/index.xml" rel="self" type="application/rss+xml" />
     <description>Outreaches</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
     <image>
-      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <url>https://bilman.github.io/media/icon_hu7729264130191091259.png</url>
       <title>Outreaches</title>
-      <link>http://localhost:1313/outreach/</link>
+      <link>https://bilman.github.io/outreach/</link>
     </image>
     
     <item>
       <title>Member of the Organizing Committee, UC Math Bowl Competition (since Fall 2019)</title>
-      <link>http://localhost:1313/outreach/outreach2/</link>
+      <link>https://bilman.github.io/outreach/outreach2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/outreach/outreach2/</guid>
+      <guid>https://bilman.github.io/outreach/outreach2/</guid>
       <description>&lt;p&gt;Math Bowl is a high school/junior high school math contest held annually in March at the University of Cincinnati for the past 40 years. It is a popular event in Greater Cincinnati, offered in 3 levels of math curriculum, and it is attended by a large and diverse group of students — about 80 teams of 2–5 students from 27 schools in 2019, for example.&lt;/p&gt;
 &lt;p&gt;My role involves coming up with problems, evaluating the work submitted by the teams, and showing up on the day of competition to interact with the students.&lt;/p&gt;
 </description>
@@ -24,9 +24,9 @@
     
     <item>
       <title>Curriculum Developer and Instructor, CHANCE Program, UIC (2014, 2015, 2016)</title>
-      <link>http://localhost:1313/outreach/outreach1/</link>
+      <link>https://bilman.github.io/outreach/outreach1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/outreach/outreach1/</guid>
+      <guid>https://bilman.github.io/outreach/outreach1/</guid>
       <description>&lt;p&gt;CHANCE is a program at the University of Illinois at Chicago that supports underrepresented and under-resourced students by fostering meaningful academic engagement and promoting student success. It plays a key role in UIC’s efforts to recruit, support, and retain these students through partnerships with Chicago Public Schools, City Colleges of Chicago, community organizations, and regional school districts. By offering mentoring, academic support, and access to college and career resources, CHANCE helps students navigate the path to higher education and graduation.&lt;/p&gt;
 &lt;p&gt;I have designed their mathematics curriculum and taught at their summer camps.&lt;/p&gt;
 </description>

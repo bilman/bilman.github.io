@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python | Deniz Bilman</title>
-    <link>http://localhost:1313/tags/python/</link>
-      <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://bilman.github.io/tags/python/</link>
+      <atom:link href="https://bilman.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <description>Python</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <url>https://bilman.github.io/media/icon_hu7729264130191091259.png</url>
       <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
+      <link>https://bilman.github.io/tags/python/</link>
     </image>
     
     <item>
       <title>Ordinary Differential Equations</title>
-      <link>http://localhost:1313/teaching/ode/</link>
+      <link>https://bilman.github.io/teaching/ode/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/ode/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/teaching/ode/featured.png&#34;&gt;
+      <guid>https://bilman.github.io/teaching/ode/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/teaching/ode/featured.png&#34;&gt;
 &lt;/figure&gt;
 
 

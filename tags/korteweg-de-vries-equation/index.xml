@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Korteweg-De Vries Equation | Deniz Bilman</title>
-    <link>http://localhost:1313/tags/korteweg-de-vries-equation/</link>
-      <atom:link href="http://localhost:1313/tags/korteweg-de-vries-equation/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://bilman.github.io/tags/korteweg-de-vries-equation/</link>
+      <atom:link href="https://bilman.github.io/tags/korteweg-de-vries-equation/index.xml" rel="self" type="application/rss+xml" />
     <description>Korteweg-De Vries Equation</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 04 May 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <url>https://bilman.github.io/media/icon_hu7729264130191091259.png</url>
       <title>Korteweg-De Vries Equation</title>
-      <link>http://localhost:1313/tags/korteweg-de-vries-equation/</link>
+      <link>https://bilman.github.io/tags/korteweg-de-vries-equation/</link>
     </image>
     
     <item>
       <title>Efficient computation of soliton gas primitive potentials</title>
-      <link>http://localhost:1313/publication/soliton-gas-kdv/</link>
+      <link>https://bilman.github.io/publication/soliton-gas-kdv/</link>
       <pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/soliton-gas-kdv/</guid>
+      <guid>https://bilman.github.io/publication/soliton-gas-kdv/</guid>
       <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
@@ -36,7 +36,7 @@
 &lt;/div&gt;
 
 Add the publication&#39;s **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --&gt;
-&lt;!-- &lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/soliton-gas-kdv/gen3-gas.gif&#34;
+&lt;!-- &lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/publication/soliton-gas-kdv/gen3-gas.gif&#34;
     alt=&#34;Time evolution of a soliton gas supported on three pairs of bands.&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Time evolution of a soliton gas supported on three pairs of bands.&lt;/p&gt;
     &lt;/figcaption&gt;
@@ -48,9 +48,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Computation of large-genus solutions of the Korteweg-de Vries equation</title>
-      <link>http://localhost:1313/publication/kdv-periodic-nist/</link>
+      <link>https://bilman.github.io/publication/kdv-periodic-nist/</link>
       <pubDate>Sat, 01 Jul 2023 14:29:44 -0400</pubDate>
-      <guid>http://localhost:1313/publication/kdv-periodic-nist/</guid>
+      <guid>https://bilman.github.io/publication/kdv-periodic-nist/</guid>
       <description>&lt;!-- 
 
 
@@ -84,14 +84,14 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
 &lt;/div&gt; --&gt;
 &lt;!-- Add the publication&#39;s **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --&gt;
 &lt;p&gt;As part of this work, we have constructed a solution of the Korteweg-de Vries equation by densely packing spectral bands inside a fixed interval. An animation of the resulting solution is given below. It seems to exhibit rogue-wave-type behavior on a periodic background.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/kdv-periodic-nist/rogue_hi.gif&#34;
+&lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/publication/kdv-periodic-nist/rogue_hi.gif&#34;
     alt=&#34;Time evolution of the solution constructed via accumulation of bands.&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Time evolution of the solution constructed via accumulation of bands.&lt;/p&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;The contour plot of the same solution approximated by using $g=30$ gaps is given below.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/kdv-periodic-nist/contour-g-30.png&#34;
+&lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/publication/kdv-periodic-nist/contour-g-30.png&#34;
     alt=&#34;Time evolution of the solution constructed via accumulation of bands.&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Time evolution of the solution constructed via accumulation of bands.&lt;/p&gt;
     &lt;/figcaption&gt;
@@ -103,9 +103,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>On numerical inverse scattering for the Korteweg-de Vries equation with discontinuous step-like data</title>
-      <link>http://localhost:1313/publication/kdv-step-nist/</link>
+      <link>https://bilman.github.io/publication/kdv-step-nist/</link>
       <pubDate>Mon, 16 Mar 2020 14:29:44 -0400</pubDate>
-      <guid>http://localhost:1313/publication/kdv-step-nist/</guid>
+      <guid>https://bilman.github.io/publication/kdv-step-nist/</guid>
       <description>&lt;!-- 
 
 
@@ -140,7 +140,7 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
 
 Add the publication&#39;s **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --&gt;
 &lt;p&gt;Time evolution of step-like initial-data that has a soliton component.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/publication/kdv-step-nist/DSW-sol-slow.gif&#34;
+&lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/publication/kdv-step-nist/DSW-sol-slow.gif&#34;
     alt=&#34;Time evolution of step-like initial-data that has a soliton component.&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Time evolution of step-like initial-data that has a soliton component.&lt;/p&gt;
     &lt;/figcaption&gt;
