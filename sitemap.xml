@@ -300,11 +300,15 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://bilman.github.io/talks/talk2025_7/</loc>
-    <lastmod>2099-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://bilman.github.io/talks/talk2025_11/</loc>
     <lastmod>2025-11-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://bilman.github.io/talks/talk2025_18/</loc>
+    <lastmod>2025-11-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://bilman.github.io/talks/talk2025_17/</loc>
