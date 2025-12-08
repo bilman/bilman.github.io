@@ -59,7 +59,8 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
       <link>https://bilman.github.io/publication/rwio-nls-asymptotics/</link>
       <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://bilman.github.io/publication/rwio-nls-asymptotics/</guid>
-      <description>&lt;p&gt;This work has also resulted in the software package &lt;a href=&#34;https://bilman.github.io/publication/rwioNLS-jl/&#34;&gt;RogueWaveInfiniteNLS.jl&lt;/a&gt; for Julia. Visit the &lt;a href=&#34;https://zenodo.org/records/13283788&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;official release here&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;This work has also resulted in the software package &lt;a href=&#34;https://bilman.github.io/publication/rwioNLS-jl/&#34;&gt;RogueWaveInfiniteNLS.jl&lt;/a&gt; for Julia. The &lt;a href=&#34;https://zenodo.org/records/13283788&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;official release is available here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The computations performed to generate the plots in the paper is available in &lt;a href=&#34;https://github.com/bilman/AsymptoticsOfRWIO-Paper-Code&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this notebook &amp;mdash; papers with code for the win!&lt;/a&gt;&lt;/p&gt;
 &lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
 
 
