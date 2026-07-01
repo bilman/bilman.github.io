@@ -1492,57 +1492,9 @@ $$&lt;h2 id=&#34;jupyter-notebook&#34;&gt;Jupyter Notebook&lt;/h2&gt;
     </item>
     
     <item>
-      <title>Dispersive integrable equations: Pathfinders in Hamiltonian PDE, Institut Henri Poincaré, Paris, France</title>
-      <link>https://bilman.github.io/talks/talk2026_8/</link>
-      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2026_8/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mini-course on Riemann-Hilbert methods for PDEs, Institut Henri Poincaré, Paris, France</title>
-      <link>https://bilman.github.io/talks/talk2026_7/</link>
-      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2026_7/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Seminar, University of California Santa Cruz, Santa Cruz, CA</title>
-      <link>https://bilman.github.io/talks/talk2026_5/</link>
-      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2026_5/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SIAM Nonlinear Waves and Coherent Structures, Montréal, Canada</title>
-      <link>https://bilman.github.io/talks/talk2026_6/</link>
-      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2026_6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Seminar, University of Michigan, Ann Arbor, MI</title>
-      <link>https://bilman.github.io/talks/talk2026_4/</link>
-      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2026_4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Seminar, University of Wisconsin-Madison, Wisconsin, WI</title>
-      <link>https://bilman.github.io/talks/talk2026_3/</link>
-      <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://bilman.github.io/talks/talk2026_3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Infinite-order rogue waves that are small (but not small in $L^2$)</title>
       <link>https://bilman.github.io/publication/rwio-elliptic-spread/</link>
-      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2026 00:00:44 -0400</pubDate>
       <guid>https://bilman.github.io/publication/rwio-elliptic-spread/</guid>
       <description>&lt;!-- ![Infinite-order rogue wave in the elliptic spread asymptotic regime](./header.png ) --&gt;
 &lt;figure&gt;&lt;img src=&#34;https://bilman.github.io/publication/rwio-elliptic-spread/header.png&#34;
@@ -1579,6 +1531,54 @@ I thank [Baudry Greene on Endell Street in London](https://www.instagram.com/bau
 
 Add the publication&#39;s **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Dispersive integrable equations: Pathfinders in Hamiltonian PDE, Institut Henri Poincaré, Paris, France</title>
+      <link>https://bilman.github.io/talks/talk2026_8/</link>
+      <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/talks/talk2026_8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Minicourse `Riemann-Hilbert methods for PDEs&#39;, Institut Henri Poincaré, Paris, France</title>
+      <link>https://bilman.github.io/talks/talk2026_7/</link>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/talks/talk2026_7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seminar, University of California Santa Cruz, Santa Cruz, CA</title>
+      <link>https://bilman.github.io/talks/talk2026_5/</link>
+      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/talks/talk2026_5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SIAM Nonlinear Waves and Coherent Structures, Montréal, Canada</title>
+      <link>https://bilman.github.io/talks/talk2026_6/</link>
+      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/talks/talk2026_6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seminar, University of Michigan, Ann Arbor, MI</title>
+      <link>https://bilman.github.io/talks/talk2026_4/</link>
+      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/talks/talk2026_4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seminar, University of Wisconsin-Madison, Wisconsin, WI</title>
+      <link>https://bilman.github.io/talks/talk2026_3/</link>
+      <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://bilman.github.io/talks/talk2026_3/</guid>
+      <description></description>
     </item>
     
     <item>
