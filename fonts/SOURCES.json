@@ -1,0 +1,292 @@
+[
+  {
+    "family": "IBM Plex Mono",
+    "style": "normal",
+    "weight": "400",
+    "subset": "cyrillic-ext",
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1iIq129k.woff2",
+    "file": "ibm-plex-mono-normal-400-cyrillic-ext.woff2",
+    "sha256": "f8c22ec1804bd6966b70f43ac7c327025645b4c09597117fca2a5a6c750106fe",
+    "bytes": 6912
+  },
+  {
+    "family": "IBM Plex Mono",
+    "style": "normal",
+    "weight": "400",
+    "subset": "cyrillic",
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1isq129k.woff2",
+    "file": "ibm-plex-mono-normal-400-cyrillic.woff2",
+    "sha256": "7635422bd10ddbbcb0e0caa1154b928298f5c8319b8c00b30978d4395f4783ce",
+    "bytes": 8356
+  },
+  {
+    "family": "IBM Plex Mono",
+    "style": "normal",
+    "weight": "400",
+    "subset": "vietnamese",
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1iAq129k.woff2",
+    "file": "ibm-plex-mono-normal-400-vietnamese.woff2",
+    "sha256": "62632b6375305e70ddcafdd895218e6ae41a184fcd280a69c739460604ca00a9",
+    "bytes": 5868
+  },
+  {
+    "family": "IBM Plex Mono",
+    "style": "normal",
+    "weight": "400",
+    "subset": "latin-ext",
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1iEq129k.woff2",
+    "file": "ibm-plex-mono-normal-400-latin-ext.woff2",
+    "sha256": "6bc0f226a5b7884a8170e3f62c63d7675609d4631bdc5931b5cdab81821f00eb",
+    "bytes": 13348
+  },
+  {
+    "family": "IBM Plex Mono",
+    "style": "normal",
+    "weight": "400",
+    "subset": "latin",
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1i8q1w.woff2",
+    "file": "ibm-plex-mono-normal-400-latin.woff2",
+    "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+    "bytes": 14708
+  },
+  {
+    "family": "IBM Plex Mono",
+    "style": "normal",
+    "weight": "500",
+    "subset": "cyrillic-ext",
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwl1FgtIU.woff2",
+    "file": "ibm-plex-mono-normal-500-cyrillic-ext.woff2",
+    "sha256": "3febe5c7f22e4b07b4552738673c3dbe8bced2dc5f48b866edf7ccd9552d109a",
+    "bytes": 6972
+  },
+  {
+    "family": "IBM Plex Mono",
+    "style": "normal",
+    "weight": "500",
+    "subset": "cyrillic",
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwlRFgtIU.woff2",
+    "file": "ibm-plex-mono-normal-500-cyrillic.woff2",
+    "sha256": "1d89462e86cb8e87e7e9d6f6635605bd7c3081baca6caaecee84916bf7b60edc",
+    "bytes": 8460
+  },
+  {
+    "family": "IBM Plex Mono",
+    "style": "normal",
+    "weight": "500",
+    "subset": "vietnamese",
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwl9FgtIU.woff2",
+    "file": "ibm-plex-mono-normal-500-vietnamese.woff2",
+    "sha256": "781633d95de88040fb77141d1e65d928c87c0144691fbc74da5a64d137a7e910",
+    "bytes": 6040
+  },
+  {
+    "family": "IBM Plex Mono",
+    "style": "normal",
+    "weight": "500",
+    "subset": "latin-ext",
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwl5FgtIU.woff2",
+    "file": "ibm-plex-mono-normal-500-latin-ext.woff2",
+    "sha256": "6bb06407c97584b0867a959e05e8874693bfeb8c317de190811c51598f2d99ea",
+    "bytes": 13432
+  },
+  {
+    "family": "IBM Plex Mono",
+    "style": "normal",
+    "weight": "500",
+    "subset": "latin",
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwlBFgg.woff2",
+    "file": "ibm-plex-mono-normal-500-latin.woff2",
+    "sha256": "01d285447409c8a588692162439a038b8cbd7871309ee20267b0d2d91c6e8e22",
+    "bytes": 14888
+  },
+  {
+    "family": "IBM Plex Sans",
+    "style": "italic",
+    "weight": "400 600",
+    "subset": "cyrillic-ext",
+    "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXxKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbGYnYALZg.woff2",
+    "file": "ibm-plex-sans-italic-400-600-cyrillic-ext.woff2",
+    "sha256": "a2d42695992c09c9ea546a48cbcae7b7d140d0e8e163c7cccf0e9bc86c54b5b3",
+    "bytes": 26832
+  },
+  {
+    "family": "IBM Plex Sans",
+    "style": "italic",
+    "weight": "400 600",
+    "subset": "cyrillic",
+    "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXxKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbGYDYALZg.woff2",
+    "file": "ibm-plex-sans-italic-400-600-cyrillic.woff2",
+    "sha256": "e71db60f3419842ad61305fcb22100fc0ea34f6aaa98d1f028de948751f08d88",
+    "bytes": 32632
+  },
+  {
+    "family": "IBM Plex Sans",
+    "style": "italic",
+    "weight": "400 600",
+    "subset": "greek",
+    "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXxKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbGYfYALZg.woff2",
+    "file": "ibm-plex-sans-italic-400-600-greek.woff2",
+    "sha256": "f1fae68d3ec66f93b54f951d1b1e3ff91250d0201c74d0904b9b76f842b6dcb1",
+    "bytes": 21752
+  },
+  {
+    "family": "IBM Plex Sans",
+    "style": "italic",
+    "weight": "400 600",
+    "subset": "vietnamese",
+    "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXxKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbGYvYALZg.woff2",
+    "file": "ibm-plex-sans-italic-400-600-vietnamese.woff2",
+    "sha256": "7077db90dd878de58b87c5d6762658b04ab940e644104211945b58203856a9ca",
+    "bytes": 14868
+  },
+  {
+    "family": "IBM Plex Sans",
+    "style": "italic",
+    "weight": "400 600",
+    "subset": "latin-ext",
+    "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXxKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbGYrYALZg.woff2",
+    "file": "ibm-plex-sans-italic-400-600-latin-ext.woff2",
+    "sha256": "bf44b77cc751203b2f0ce95c048a9d8f984313f84b58106c7c4410ca50314016",
+    "bytes": 33900
+  },
+  {
+    "family": "IBM Plex Sans",
+    "style": "italic",
+    "weight": "400 600",
+    "subset": "latin",
+    "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXxKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbGYTYAA.woff2",
+    "file": "ibm-plex-sans-italic-400-600-latin.woff2",
+    "sha256": "4363757d2695c7633f98472855849f7c30528eba869d7968ee35b58c87cf14c1",
+    "bytes": 50184
+  },
+  {
+    "family": "IBM Plex Sans",
+    "style": "normal",
+    "weight": "400 600",
+    "subset": "cyrillic-ext",
+    "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxTKYbABA.woff2",
+    "file": "ibm-plex-sans-normal-400-600-cyrillic-ext.woff2",
+    "sha256": "7d0037a170882a49e65a45c38ef195237bb07b1cc791d078379f0ac0d7ae1935",
+    "bytes": 23568
+  },
+  {
+    "family": "IBM Plex Sans",
+    "style": "normal",
+    "weight": "400 600",
+    "subset": "cyrillic",
+    "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxaKYbABA.woff2",
+    "file": "ibm-plex-sans-normal-400-600-cyrillic.woff2",
+    "sha256": "9409ee21811f0f5272b7e1d828fe8838005b0573481ef906e7e55b63f6610ab0",
+    "bytes": 29512
+  },
+  {
+    "family": "IBM Plex Sans",
+    "style": "normal",
+    "weight": "400 600",
+    "subset": "greek",
+    "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxdKYbABA.woff2",
+    "file": "ibm-plex-sans-normal-400-600-greek.woff2",
+    "sha256": "f598dd0700f155e2facfaa8ecfacace397d4c2c153e9ce37ab7ad310e8505bc2",
+    "bytes": 19500
+  },
+  {
+    "family": "IBM Plex Sans",
+    "style": "normal",
+    "weight": "400 600",
+    "subset": "vietnamese",
+    "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxRKYbABA.woff2",
+    "file": "ibm-plex-sans-normal-400-600-vietnamese.woff2",
+    "sha256": "73e7f7b1c980416ae0c2461268b14c7cfcce0668e683dc43fbb11a82a227b9f2",
+    "bytes": 13160
+  },
+  {
+    "family": "IBM Plex Sans",
+    "style": "normal",
+    "weight": "400 600",
+    "subset": "latin-ext",
+    "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxQKYbABA.woff2",
+    "file": "ibm-plex-sans-normal-400-600-latin-ext.woff2",
+    "sha256": "d160e20920ae4d6556518d352d3af27a74e9b0de3d8fe17b1c1044fc75aa2f81",
+    "bytes": 30964
+  },
+  {
+    "family": "IBM Plex Sans",
+    "style": "normal",
+    "weight": "400 600",
+    "subset": "latin",
+    "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYY.woff2",
+    "file": "ibm-plex-sans-normal-400-600-latin.woff2",
+    "sha256": "e2291e842cf5af167122a22881a740c7f2dda7716f1e8cd76680264f4a859470",
+    "bytes": 45712
+  },
+  {
+    "family": "Newsreader",
+    "style": "italic",
+    "weight": "300 600",
+    "subset": "vietnamese",
+    "url": "https://fonts.gstatic.com/s/newsreader/v26/cY9CfjOCX1hbuyalUrK439vCgYhCFpY.woff2",
+    "file": "newsreader-italic-300-600-vietnamese.woff2",
+    "sha256": "0c22099dbcb30110e74c393b51e00018b9b5d7d224a1a5324d9701b3a8266bb3",
+    "bytes": 27904
+  },
+  {
+    "family": "Newsreader",
+    "style": "italic",
+    "weight": "300 600",
+    "subset": "latin-ext",
+    "url": "https://fonts.gstatic.com/s/newsreader/v26/cY9CfjOCX1hbuyalUrK439vCgIhCFpY.woff2",
+    "file": "newsreader-italic-300-600-latin-ext.woff2",
+    "sha256": "bb24f6648f75d909eb74535916015c97ef72a1344e532ec7bbaf3f80eb6f389f",
+    "bytes": 95540
+  },
+  {
+    "family": "Newsreader",
+    "style": "italic",
+    "weight": "300 600",
+    "subset": "latin",
+    "url": "https://fonts.gstatic.com/s/newsreader/v26/cY9CfjOCX1hbuyalUrK439vCjohC.woff2",
+    "file": "newsreader-italic-300-600-latin.woff2",
+    "sha256": "5dfcd10d24af8c82927ba57f7983dd997f7b200594c09c35a1b1ed9fc4597506",
+    "bytes": 146872
+  },
+  {
+    "family": "Newsreader",
+    "style": "normal",
+    "weight": "300 600",
+    "subset": "vietnamese",
+    "url": "https://fonts.gstatic.com/s/newsreader/v26/cY9AfjOCX1hbuyalUrK439HyjJBG.woff2",
+    "file": "newsreader-normal-300-600-vietnamese.woff2",
+    "sha256": "6d0543f06b9d5393afe5baaeb040817e85af372bf5609d5d55746b1eb56b4010",
+    "bytes": 27248
+  },
+  {
+    "family": "Newsreader",
+    "style": "normal",
+    "weight": "300 600",
+    "subset": "latin-ext",
+    "url": "https://fonts.gstatic.com/s/newsreader/v26/cY9AfjOCX1hbuyalUrK439DyjJBG.woff2",
+    "file": "newsreader-normal-300-600-latin-ext.woff2",
+    "sha256": "45683de03de37187604102316c0b42c0cb2d8dc9c4140a20ad471c3148cc1278",
+    "bytes": 86608
+  },
+  {
+    "family": "Newsreader",
+    "style": "normal",
+    "weight": "300 600",
+    "subset": "latin",
+    "url": "https://fonts.gstatic.com/s/newsreader/v26/cY9AfjOCX1hbuyalUrK4397yjA.woff2",
+    "file": "newsreader-normal-300-600-latin.woff2",
+    "sha256": "6e4f2958c3a7c4a80acde4e5a679abe7e01bc1e30b92be3c7a8b696ef401d101",
+    "bytes": 132000
+  },
+  {
+    "family": "Inter",
+    "style": "normal",
+    "weight": "600",
+    "subset": "latin",
+    "url": "https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYAZ9hiA.woff2",
+    "file": "inter-normal-600-latin.woff2",
+    "sha256": "f9a06e79cd3a2a20951c0f0e28f66dd0e6d3fda73911d640a2125c8fcb78f21a",
+    "bytes": 24452
+  }
+]
